@@ -1,10 +1,10 @@
-# Neuro-Symbolic Codenames Agent 🕵️‍♂️🤖
+# Neuro-Symbolic Codenames Agent
 
-A sophisticated AI agent that plays the role of **Spymaster** in the game of *Codenames*.
+An AI agent that plays the role of **Spymaster** in the game of *Codenames*.
 
 This project demonstrates a **Neuro-Symbolic architecture**: it combines the creative, associative power of Neural Networks (Word Vectors) with the strict, logical constraints of Symbolic AI (Knowledge Graphs) to generate clues that are both clever and safe.
 
-## 🧠 How It Works
+## How It Works
 
 The agent operates in a two-stage "System 1 / System 2" thinking process:
 
@@ -25,7 +25,7 @@ The agent operates in a two-stage "System 1 / System 2" thinking process:
 
 * **Why:** Vectors often hallucinate dangerous connections (e.g., *King* is close to *Queen*, but also to *Prince*). Symbolic logic ensures the agent never accidentally triggers the Assassin.
 
-## 🛠️ Installation
+## Installation
 
 **Prerequisites:** Python 3.10 or 3.11 is recommended.
 
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 
 
 
-## 🚀 How to Run
+## How to Run
 
 Follow these steps in order to set up the data and run the agent.
 
@@ -78,7 +78,7 @@ python main.py
 
 ```
 
-## 📂 Project Structure
+## Project Structure
 
 * `main.py`: The central agent logic. It manages the game loop, coordinates the vector engine and graph, and makes final decisions.
 * `src/vector_engine.py`: Handles the Neural layer. Loads the binary model and performs vector math (centroids, cosine similarity).
@@ -86,7 +86,7 @@ python main.py
 * `src/optimize_vectors.py`: Utility to convert text-based GloVe models to memory-mapped binary files.
 * `data/`: Stores the word list and generated graph/vector files.
 
-## 📚 Credits & Sources
+## Credits & Sources
 
 This project stands on the shoulders of open-source giants.
 
