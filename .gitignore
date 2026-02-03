@@ -1,0 +1,13 @@
+# Ignore the virtual environment (This is huge!)
+codenames_env/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Ignore the heavy data files anywhere in the project
+*.kv
+*.npy
+*.gz
+*.bin
+codenames_agent/data/glove*.txt
