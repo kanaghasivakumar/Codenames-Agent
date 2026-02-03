@@ -1,83 +1,70 @@
 import networkx as nx
-import requests
-import time
 import json
 import os
 from tqdm import tqdm
 
+from vector_engine import VectorEngine
+
+WORD_LIST_PATH = "data/codenames_words.txt"
+OUTPUT_PATH = "data/safety_graph.json"
+
 class KnowledgeGraphBuilder:
-    def __init__(self, word_list_path, output_path):
-        self.word_list = self._load_words(word_list_path)
-        self.output_path = output_path
-        self.graph = nx.Graph()
-
-    def _load_words(self, path):
-        with open(path, 'r') as f:
-            return [w.strip().upper() for w in f.readlines()]
-
-    def fetch_edges(self, word, limit=5):
-        # ConceptNet API
-        url = f"http://api.conceptnet.io/c/en/{word.lower()}?limit={limit}"
-        try:
-            # Increased timeout to 10s to prevent empty returns on slow connections
-            response = requests.get(url, timeout=10)
+    def __init__(self):
+        print("--- KNOWLEDGE GRAPH BUILDER (SEMANTIC) ---")
+        
+        # 1. Load the vocabulary
+        if not os.path.exists(WORD_LIST_PATH):
+            print(f"ERROR: {WORD_LIST_PATH} not found.")
+            exit()
             
-            if response.status_code != 200:
-                print(f"  [!] API Error {response.status_code} for {word}")
-                return []
-                
-            data = response.json()
-            edges = []
+        with open(WORD_LIST_PATH, 'r') as f:
+            self.word_list = [w.strip().upper() for w in f.readlines()]
             
-            for edge in data.get('edges', []):
-                start = edge['start']['label'].upper()
-                end = edge['end']['label'].upper()
-                weight = edge['weight']
-                
-                neighbor = end if start == word else start
-                
-                # Filter out phrases (keep single words)
-                if ' ' in neighbor: continue 
-                
-                edges.append((neighbor, weight))
-            
-            return edges
-        except Exception as e:
-            print(f"  [!] Exception for {word}: {e}")
-            return []
+        # 2. Load the Vector Engine
+        self.engine = VectorEngine()
 
     def build_graph(self):
-        print(f"Re-building graph for {len(self.word_list)} words...")
+        graph = nx.Graph()
         
-        # Reset graph to ensure we aren't saving an empty state
-        self.graph = nx.Graph()
+        print(f"\nBuilding Semantic Graph for {len(self.word_list)} nodes...")
         
-        for i, word in enumerate(tqdm(self.word_list)):
-            self.graph.add_node(word, type='game_word')
-            
-            neighbors = self.fetch_edges(word)
-            
-            # DEBUG PRINT: Show us it's working!
-            if i % 10 == 0: 
-                tqdm.write(f"  > {word}: Found {len(neighbors)} edges")
+        # Add all words to graph first
+        for word in self.word_list:
+            graph.add_node(word, type='game_word')
 
-            for neighbor, weight in neighbors:
-                self.graph.add_node(neighbor, type='concept')
-                self.graph.add_edge(word, neighbor, weight=weight)
-            
-            # Sleep 0.5s to be safe
-            time.sleep(0.5) 
+        # Create edges based on vector similarity
+        # Compare every word to every other word using KNN
+        valid_words = [w for w in self.word_list if w.lower() in self.engine.model]
+        
+        print("Connecting nodes based on vector similarity...")
+        for word_a in tqdm(valid_words):
+            # Get top 10 most similar words from the vector model
+            try:
+                neighbors = self.engine.model.most_similar(word_a.lower(), topn=10)
+                
+                for neighbor_word, score in neighbors:
+                    neighbor_upper = neighbor_word.upper()
+                    
+                    # Constraint: Only add edge if the neighbor is ALSO in our game vocabulary
+                    # This creates a dense, closed graph perfect for the game
+                    if neighbor_upper in self.word_list:
+                        graph.add_edge(word_a, neighbor_upper, weight=score)
+                        
+            except KeyError:
+                continue
 
-        self.save_graph()
-
-    def save_graph(self):
-        data = nx.node_link_data(self.graph)
-        with open(self.output_path, 'w') as f:
+        # Save to file
+        print(f"\nGraph Stats:")
+        print(f"  Nodes: {len(graph.nodes)}")
+        print(f"  Edges: {len(graph.edges)}")
+        
+        data = nx.node_link_data(graph)
+        with open(OUTPUT_PATH, 'w') as f:
             json.dump(data, f)
-        print(f"\nSUCCESS: Graph saved to {self.output_path}")
-        print(f"Total Nodes: {len(self.graph.nodes)} (Should be > 1000)")
-        print(f"Total Edges: {len(self.graph.edges)}")
+        print(f"Saved to {OUTPUT_PATH}")
 
 if __name__ == "__main__":
-    builder = KnowledgeGraphBuilder("data/codenames_words.txt", "data/safety_graph.json")
+    os.makedirs("data", exist_ok=True)
+    
+    builder = KnowledgeGraphBuilder()
     builder.build_graph()
