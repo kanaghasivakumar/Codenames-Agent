@@ -11,3 +11,5 @@ __pycache__/
 *.gz
 *.bin
 codenames_agent/data/glove*.txt
+
+.DS_Store
