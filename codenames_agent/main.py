@@ -3,6 +3,7 @@ import json
 import networkx as nx
 from src.vector_engine import VectorEngine
 
+# Paths
 WORD_LIST_PATH = "data/codenames_words.txt"
 GRAPH_PATH = "data/safety_graph.json"
 
@@ -18,79 +19,133 @@ class CodenamesAgent:
             self.safety_graph = nx.node_link_graph(graph_data)
             print(f"Graph loaded with {len(self.safety_graph.nodes)} nodes.")
         except FileNotFoundError:
-            print("ERROR: Safety Graph not found. Run the offline builder first.")
+            print("ERROR: Safety Graph not found. Run the graph builder first.")
             exit()
 
     def generate_board(self):
+        """
+        Standard Codenames Setup:
+        - 25 Words Total on Board
+        - 9 Red (Starting Team)
+        - 8 Blue
+        - 1 Assassin
+        - 7 Innocent Bystanders
+        """
         with open(WORD_LIST_PATH, 'r') as f:
             words = [w.strip().upper() for w in f.readlines()]
         random.shuffle(words)
+        
+        # KEY FIX: Slice to exactly 25 words first
         board = words[:25]
-        return board[:9], board[9:17], board[17], board[18:]
+        
+        red_team = board[:9]
+        blue_team = board[9:17]
+        assassin = board[17]
+        bystanders = board[18:] # Indices 18 to 24 (7 words)
+        
+        return red_team, blue_team, assassin, bystanders
 
-    def is_safe(self, clue, assassin_word):
-        """Checks Knowledge Graph for shortest path to Assassin"""
-        if clue not in self.safety_graph or assassin_word not in self.safety_graph:
-            return True, "Unknown word (Risk Penalty)" # Return penalty flag
+    def get_risk_level(self, clue, assassin, blue_team, bystanders):
+        # 1. Check ASSASSIN (Instant Loss)
+        if self.is_too_close(clue, assassin):
+             return 1.0, f"Too close to Assassin ({assassin})"
 
+        # 2. Check BLUE TEAM (High Penalty)
+        for blue_word in blue_team:
+            if self.is_too_close(clue, blue_word):
+                return 0.9, f"Too close to Opponent ({blue_word})"
+
+        # 3. Check BYSTANDERS (Medium Penalty)
+        for neutral in bystanders:
+            if self.is_too_close(clue, neutral):
+                return 0.5, f"Too close to Bystander ({neutral})"
+                
+        # 4. Unknown Word (Small Penalty)
+        if clue not in self.safety_graph:
+            return 0.1, "Unknown word"
+
+        return 0.0, "Safe"
+
+    def is_too_close(self, clue, target):
+        if clue not in self.safety_graph or target not in self.safety_graph:
+            return False
         try:
-            dist = nx.shortest_path_length(self.safety_graph, clue, assassin_word)
-            if dist <= 1: return False, f"Too close to Assassin (Dist: {dist})"
-            return True, "Verified Safe"
+            dist = nx.shortest_path_length(self.safety_graph, clue, target)
+            return dist <= 1
         except nx.NetworkXNoPath:
-            return True, "Verified Safe (No connection)"
+            return False
 
-    def play_turn(self, red_team, blue_team, assassin):
-        print(f"\n{'='*40}")
-        print(f"ASSASSIN: {assassin}")
-        print(f"RED TEAM: {red_team}")
-        print(f"BLUE TEAM: {blue_team}")
-        print(f"{'='*40}\n")
+    def play_game(self):
+        red_team, blue_team, assassin, bystanders = self.generate_board()
         
-        print("[1] Brainstorming Clues (Vector Engine)...")
+        print("\n" + "="*60)
+        print("🕵️‍♂️  NEW GAME STARTED")
+        print(f"🔴 RED TEAM ({len(red_team)}): {red_team}")
+        print(f"🔵 BLUE TEAM ({len(blue_team)}): {blue_team}")
+        print(f"⚪ NEUTRAL ({len(bystanders)}): {bystanders}")
+        print(f"💀 ASSASSIN: {assassin}")
+        print("="*60)
+
+        turn_count = 1
+        game_over = False
+
+        while not game_over:
+            print(f"\n--- ROUND {turn_count} ---")
+            print(f"Words remaining: {red_team}")
+            
+            # Get best clue
+            clue, count, targets = self.play_turn(red_team, blue_team, assassin, bystanders)
+            
+            if not clue:
+                print(">>> PASS (No safe clues found)")
+                break
+                
+            print(f">>> SPYMASTER SAYS: '{clue}' ({count})")
+            
+            # SIMULATION LOGIC: Remove guessed words
+            for target in targets:
+                target_upper = target.upper()
+                if target_upper in red_team:
+                    print(f"    ✅ Team guessed '{target_upper}' -> CORRECT!")
+                    red_team.remove(target_upper)
+                else:
+                    # In a real game, if they guessed a Blue/Neutral word, the turn ends.
+                    # We just print the error here.
+                    print(f"    ❌ Team guessed '{target_upper}' -> WRONG! (Turn Ends)")
+                    break
+            
+            if not red_team:
+                print("\n🎉 VICTORY! All Red words found.")
+                game_over = True
+            
+            turn_count += 1
+            if turn_count > 15:
+                print("\n⏱️ GAME OVER (Too many turns)")
+                break
+
+    def play_turn(self, red_team, blue_team, assassin, bystanders):
         candidates = self.vector_engine.get_clue(red_team, blue_team, assassin)
-        
-        print("\n[2] Verifying Safety (Knowledge Graph)...")
         best_move = None
         
-        for clue, targets, score in candidates:
-            # Check Graph Safety
-            is_safe, reason = self.is_safe(clue, assassin)
+        print("  Thinking...")
+        for clue, targets, raw_score in candidates:
+            # Check Risk
+            risk_penalty, reason = self.get_risk_level(clue, assassin, blue_team, bystanders)
+            final_score = raw_score - risk_penalty
             
-            # Formatting for the user
-            target_str = ", ".join([t.upper() for t in targets])
-            
-            # Apply Penalty for Unknown Words
-            final_score = score
-            status = "✅ ACCEPTABLE"
-            if "Unknown" in reason:
-                final_score -= 0.1  # Heavier penalty
-                status = "⚠️ UNCERTAIN"
-                
-            print(f"  > Candidate: '{clue}' -> Targets: [{target_str}]")
-            print(f"    Raw Score: {score:.2f} | Safety: {reason}")
-            
-            if not is_safe:
-                print(f"    ❌ REJECTED: {reason}\n")
-                continue
-                
-            print(f"    Final Score: {final_score:.2f} [{status}]\n")
-            
+            if final_score > 0.45:
+                status = "✅" if risk_penalty == 0 else f"⚠️ ({reason})"
+                print(f"    Candidate: '{clue}' -> {targets} | Score: {final_score:.2f} {status}")
+
+            if risk_penalty >= 0.9: continue
+
             if best_move is None or final_score > best_move['score']:
                 best_move = {'clue': clue, 'count': len(targets), 'targets': targets, 'score': final_score}
 
         if best_move:
-            print(f">>> FINAL MOVE: Clue '{best_move['clue']}' for {best_move['count']}")
-            print(f">>> INTENDED TARGETS: {best_move['targets']}")
-        else:
-            print(">>> PASS (No safe clues found)")
+            return best_move['clue'], best_move['count'], best_move['targets']
+        return None, 0, []
 
 if __name__ == "__main__":
     agent = CodenamesAgent()
-    # red = ['PARK', 'FAIR', 'DRAGON', 'TICK', 'CENTAUR', 'BATTERY', 'EMBASSY', 'SUPERHERO', 'WEB']
-    # blue = ['CODE', 'CAPITAL', 'BRIDGE'] 
-    # assassin = 'CARROT'
-    # Use this instead:
-    red, blue, assassin, bystanders = agent.generate_board()
-    
-    agent.play_turn(red, blue, assassin)
+    agent.play_game()

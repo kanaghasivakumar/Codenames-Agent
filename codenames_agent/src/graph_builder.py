@@ -5,7 +5,7 @@ from tqdm import tqdm
 
 from vector_engine import VectorEngine
 
-WORD_LIST_PATH = "data/codenames_words.txt"
+WORD_LIST_PATH = "data/google-10000-english-no-swears.txt"
 OUTPUT_PATH = "data/safety_graph.json"
 
 class KnowledgeGraphBuilder:
