@@ -14,7 +14,6 @@ This module integrates with:
 - Wikipedia Pageviews (word validation)
 - Top English Words (clue filtering)
 
-Author: Aasritha (Reasoning Task)
 """
 
 import os

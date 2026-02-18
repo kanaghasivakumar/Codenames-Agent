@@ -1,22 +1,4 @@
-"""
-Codenames Agent with Full Reasoning Pipeline
-==============================================
-Integrates all components:
 
-1. Vector Engine (GloVe) - Neural clue brainstorming
-2. ConceptNet Offline - Knowledge graph relationships
-3. Reasoning Engine - Deductive, Rule-based, FOPL, Abductive reasoning
-4. Wikipedia Pageviews - Word validation
-5. Top English Words - Clue filtering
-
-This is the complete implementation combining:
-- Katie's task: Wikipedia pageviews + Top English words
-- Aasritha's task: ConceptNet knowledge graphs + Reasoning
-- Kanagha's tasks: Multi-round framework, game rules
-
-Usage:
-    python main_with_reasoning.py
-"""
 
 import random
 import os

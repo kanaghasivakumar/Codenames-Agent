@@ -1,19 +1,4 @@
-"""
-Setup Script for ConceptNet Offline Data
-=========================================
-Downloads and processes ConceptNet data for offline use.
 
-This script will:
-1. Download the ConceptNet assertions file (~500MB compressed)
-2. Extract English-only edges
-3. Save as pickle for fast loading (~100MB)
-
-Total time: 10-15 minutes (depending on internet speed)
-Disk space needed: ~2GB during processing, ~100MB final
-
-Usage:
-    python src/setup_conceptnet_offline.py
-"""
 
 import os
 import sys
@@ -272,11 +257,7 @@ def main():
     print("\n" + "=" * 60)
     print("SETUP COMPLETE!")
     print("=" * 60)
-    print("\nYou can now use ConceptNet offline:")
-    print("  python src/conceptnet_offline.py")
-    print("\nOr import in your code:")
-    print("  from src.conceptnet_offline import ConceptNetOffline")
-    print("  cn = ConceptNetOffline()")
+    
 
 
 if __name__ == "__main__":
