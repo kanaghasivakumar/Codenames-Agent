@@ -13,3 +13,4 @@ __pycache__/
 codenames_agent/data/glove*.txt
 
 .DS_Store
+codenames_agent/rrl/
