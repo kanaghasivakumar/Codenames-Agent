@@ -14,3 +14,4 @@ codenames_agent/data/glove*.txt
 
 .DS_Store
 codenames_agent/rrl/
+codenames_agent/data/conceptnet_english.pkl
