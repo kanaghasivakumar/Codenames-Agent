@@ -1,0 +1,226 @@
+{
+  "game_id": "20260222_170141",
+  "started": "2026-02-22T17:01:47.538242",
+  "board": {
+    "red": [
+      "TABLET",
+      "PARK",
+      "PISTOL",
+      "BERMUDA",
+      "LAWYER",
+      "PHOENIX",
+      "ROULETTE",
+      "SUB",
+      "EGYPT"
+    ],
+    "blue": [
+      "POLICE",
+      "PRESS",
+      "DICE",
+      "ROOT",
+      "CHICK",
+      "SPY",
+      "RING",
+      "BRUSH"
+    ],
+    "assassin": "BOW",
+    "neutral": [
+      "DANCE",
+      "PASS",
+      "BUCK",
+      "GIANT",
+      "ARM",
+      "BUG",
+      "SLIP"
+    ]
+  },
+  "ended": "2026-02-22T17:03:15.450340",
+  "winner": "RED",
+  "reason": "BLUE hit the assassin",
+  "events": [
+    {
+      "time": "2026-02-22T17:01:47.538242",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "TABLET",
+          "PARK",
+          "PISTOL",
+          "BERMUDA",
+          "LAWYER",
+          "PHOENIX",
+          "ROULETTE",
+          "SUB",
+          "EGYPT"
+        ],
+        "blue": [
+          "POLICE",
+          "PRESS",
+          "DICE",
+          "ROOT",
+          "CHICK",
+          "SPY",
+          "RING",
+          "BRUSH"
+        ],
+        "assassin": "BOW",
+        "neutral": [
+          "DANCE",
+          "PASS",
+          "BUCK",
+          "GIANT",
+          "ARM",
+          "BUG",
+          "SLIP"
+        ]
+      }
+    },
+    {
+      "time": "2026-02-22T17:01:53.764159",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "AFRICA",
+        "count": 3,
+        "targets": [
+          "PARK",
+          "SUB",
+          "EGYPT"
+        ],
+        "source": "vector",
+        "score": 0.5447
+      }
+    },
+    {
+      "time": "2026-02-22T17:02:04.496719",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "GIANT",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-02-22T17:02:04.496719",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-02-22T17:02:07.747333",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "SLANG",
+        "count": 2,
+        "targets": [
+          "ROOT",
+          "CHICK"
+        ],
+        "source": "reasoning",
+        "score": 14.324
+      }
+    },
+    {
+      "time": "2026-02-22T17:02:18.036815",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "CHICK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-22T17:02:32.889360",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-02-22T17:02:38.035418",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "AFRICA",
+        "count": 3,
+        "targets": [
+          "PARK",
+          "SUB",
+          "EGYPT"
+        ],
+        "source": "vector",
+        "score": 0.5447
+      }
+    },
+    {
+      "time": "2026-02-22T17:02:50.366212",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "EGYPT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-22T17:03:04.549123",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-02-22T17:03:07.009478",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "HAIR",
+        "count": 2,
+        "targets": [
+          "ROOT",
+          "BRUSH"
+        ],
+        "source": "reasoning",
+        "score": 14.28
+      }
+    },
+    {
+      "time": "2026-02-22T17:03:12.444969",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "BRUSH",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-22T17:03:15.450340",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "BOW",
+        "result": "assassin"
+      }
+    },
+    {
+      "time": "2026-02-22T17:03:15.450340",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit assassin"
+      }
+    },
+    {
+      "time": "2026-02-22T17:03:15.450340",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "RED",
+        "reason": "BLUE hit the assassin"
+      }
+    }
+  ]
+}

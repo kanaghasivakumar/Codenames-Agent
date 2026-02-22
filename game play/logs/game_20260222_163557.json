@@ -1,0 +1,154 @@
+{
+  "game_id": "20260222_163557",
+  "start": "2026-02-22T16:36:08.486103",
+  "board": {
+    "red": [
+      "RAY",
+      "BRUSH",
+      "PIANO",
+      "SUPERHERO",
+      "SEAL",
+      "DOG",
+      "FAN",
+      "DECK",
+      "WIND"
+    ],
+    "blue": [
+      "MINE",
+      "REVOLUTION",
+      "ROBOT",
+      "PILOT",
+      "COPPER",
+      "CZECH",
+      "CHINA",
+      "SNOWMAN"
+    ],
+    "assassin": "DRAGON",
+    "neutral": [
+      "BAND",
+      "LEAD",
+      "PRINCESS",
+      "CAR",
+      "SHARK",
+      "GAS",
+      "EMBASSY"
+    ]
+  },
+  "end": "2026-02-22T16:40:49.729949",
+  "winner": "BLUE",
+  "reason": "RED hit the assassin",
+  "events": [
+    {
+      "timestamp": "2026-02-22T16:36:08.486103",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "RAY",
+          "BRUSH",
+          "PIANO",
+          "SUPERHERO",
+          "SEAL",
+          "DOG",
+          "FAN",
+          "DECK",
+          "WIND"
+        ],
+        "blue": [
+          "MINE",
+          "REVOLUTION",
+          "ROBOT",
+          "PILOT",
+          "COPPER",
+          "CZECH",
+          "CHINA",
+          "SNOWMAN"
+        ],
+        "assassin": "DRAGON",
+        "neutral": [
+          "BAND",
+          "LEAD",
+          "PRINCESS",
+          "CAR",
+          "SHARK",
+          "GAS",
+          "EMBASSY"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-02-22T16:36:23.460364",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "TAIL",
+        "count": 2,
+        "targets": [
+          "BRUSH",
+          "DOG"
+        ],
+        "source": "reasoning",
+        "score": 16.866
+      }
+    },
+    {
+      "timestamp": "2026-02-22T16:36:55.553475",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "guess": "SEAL",
+        "result": "correct"
+      }
+    },
+    {
+      "timestamp": "2026-02-22T16:36:59.090983",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player chose to stop"
+      }
+    },
+    {
+      "timestamp": "2026-02-22T16:37:02.765561",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "TAIL",
+        "count": 2,
+        "targets": [
+          "BRUSH",
+          "DOG"
+        ],
+        "source": "reasoning",
+        "score": 16.866
+      }
+    },
+    {
+      "timestamp": "2026-02-22T16:37:39.675037",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "guess": "DOG",
+        "result": "opponent"
+      }
+    },
+    {
+      "timestamp": "2026-02-22T16:37:39.675037",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "timestamp": "2026-02-22T16:37:42.287413",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "VIOLIN",
+        "count": 2,
+        "targets": [
+          "PIANO",
+          "WIND"
+        ],
+        "source": "vector",
+        "score": 
