@@ -16,9 +16,10 @@ from src.reasoning_engine import ReasoningEngine
 from wikipedia_lookup import get_weekly_wikipedia_pageviews
 
 # Configuration
-WORD_LIST_PATH = "data/codenames_words.txt"
-CONCEPTNET_PKL = "data/conceptnet_english.pkl"
-TOP_WORD_LIST_PATH = "data/top_english_words_lower_100000.txt"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+WORD_LIST_PATH = os.path.join(BASE_DIR, "data", "codenames_words.txt")
+CONCEPTNET_PKL = os.path.join(BASE_DIR, "data", "conceptnet_english.pkl")
+TOP_WORD_LIST_PATH = os.path.join(BASE_DIR, "data", "top_english_words_lower_100000.txt")
 WIKI_THRESHOLD = 50
 
 
@@ -75,7 +76,7 @@ class CodenamesAgentWithReasoning:
         print("\n[4/4] Loading Top English Words...")
         self.top_words = set()
         try:
-            with open(TOP_WORD_LIST_PATH, 'r') as f:
+            with open(TOP_WORD_LIST_PATH, 'r', encoding='utf-8') as f:
                 self.top_words = set(w.strip().upper() for w in f.readlines() if w.strip())
             print(f"  Loaded {len(self.top_words):,} words")
         except FileNotFoundError:
