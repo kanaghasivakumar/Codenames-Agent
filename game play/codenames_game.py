@@ -213,7 +213,7 @@ class CodenamesGame:
         if result is None:
             print(team_color(team, f'  {team} Spymaster passes.'))
             logger.clue(team, 'PASS', 0, [], 'none', 0.0)
-            return 'PASS', 0, []
+            return 'PASS', 0, [], 'none', 0.0
 
         clue    = result['clue']
         count   = result['count']
@@ -229,13 +229,13 @@ class CodenamesGame:
         print()
 
         logger.clue(team, clue, count, targets, source, score)
-        return clue, count, targets
+        return clue, count, targets, source, score
 
     # ── Human operative ───────────────────────────────────────────────────────
 
     def operative_turn(self, team, clue, count,
                        t_w, o_w, assassin, neutral,
-                       board, revealed, logger, bonus=False):
+                       board, revealed, logger, bonus=False, source='vector'):
         opp   = 'BLUE' if team == 'RED' else 'RED'
         max_g = count + 1 if bonus else count
         guesses = 0
@@ -245,6 +245,9 @@ class CodenamesGame:
         print(f'  Clue: {BOLD(clue)}   Count: {BOLD(str(count))}   '
               f'(up to {BOLD(str(max_g))} guesses)')
         print(f'  Type {BOLD("PASS")} to end your turn early.')
+
+        guessed_targets = []
+        intended_targets = [w.upper() for w in t_w]
 
         while guesses < max_g:
             if not self._rem(t_w, revealed):
@@ -259,6 +262,12 @@ class CodenamesGame:
             if raw == 'PASS':
                 logger.turn_end(team, 'player passed')
                 print(f'  {YELLOW("⏭")}  Turn passed.')
+                # record outcome for profiling
+                agent = self.red_agent if team == 'RED' else self.blue_agent
+                try:
+                    agent.record_outcome(clue, source, intended_targets, guessed_targets)
+                except Exception:
+                    pass
                 return 'continue'
 
             if raw not in board:
@@ -277,32 +286,69 @@ class CodenamesGame:
                 print(RED(BOLD(f'      {team} TEAM LOSES!')))
                 logger.guess(team, raw, 'assassin')
                 logger.turn_end(team, 'hit assassin')
+                # record outcome
+                agent = self.red_agent if team == 'RED' else self.blue_agent
+                try:
+                    agent.record_outcome(clue, source, intended_targets, guessed_targets)
+                except Exception:
+                    pass
                 return 'assassin'
 
             elif raw in t_w:
                 print(f'  {GREEN("✓")}  {BOLD(raw)} — {team_color(team, "YOUR WORD!")}')
                 logger.guess(team, raw, 'correct')
+                guessed_targets.append(raw)
                 if not self._rem(t_w, revealed):
+                    # record outcome (all found)
+                    agent = self.red_agent if team == 'RED' else self.blue_agent
+                    try:
+                        agent.record_outcome(clue, source, intended_targets, guessed_targets)
+                    except Exception:
+                        pass
                     return 'win'
                 if guesses < max_g:
                     again = input(f'  Keep guessing? ({max_g - guesses} left) [Y/n]: ').strip().lower()
                     if again == 'n':
                         logger.turn_end(team, 'player stopped')
+                        # record outcome
+                        agent = self.red_agent if team == 'RED' else self.blue_agent
+                        try:
+                            agent.record_outcome(clue, source, intended_targets, guessed_targets)
+                        except Exception:
+                            pass
                         return 'continue'
                 else:
                     print(f'  {YELLOW("⏭")}  Max guesses used. Turn ends.')
                     logger.turn_end(team, 'max guesses reached')
+                    # record outcome
+                    agent = self.red_agent if team == 'RED' else self.blue_agent
+                    try:
+                        agent.record_outcome(clue, source, intended_targets, guessed_targets)
+                    except Exception:
+                        pass
 
             elif raw in o_w:
                 print(f'  {YELLOW("✗")}  {BOLD(raw)} — {team_color(opp, "OPPONENT")} word! Turn ends.')
                 logger.guess(team, raw, 'opponent')
                 logger.turn_end(team, 'hit opponent word')
+                # record outcome
+                agent = self.red_agent if team == 'RED' else self.blue_agent
+                try:
+                    agent.record_outcome(clue, source, intended_targets, guessed_targets)
+                except Exception:
+                    pass
                 return 'continue'
 
             else:
                 print(f'  {YELLOW("~")}  {BOLD(raw)} — {GRAY("NEUTRAL")}. Turn ends.')
                 logger.guess(team, raw, 'neutral')
                 logger.turn_end(team, 'hit neutral word')
+                # record outcome
+                agent = self.red_agent if team == 'RED' else self.blue_agent
+                try:
+                    agent.record_outcome(clue, source, intended_targets, guessed_targets)
+                except Exception:
+                    pass
                 return 'continue'
 
         return 'continue'
@@ -340,7 +386,7 @@ class CodenamesGame:
                 logger.game_over(winner, f'{winner} found all words')
                 break
 
-            clue, count, _ = self.spymaster_think(
+            clue, count, _, source, score = self.spymaster_think(
                 turn, t_w, o_w, assassin, neutral, revealed, logger
             )
             if clue == 'PASS':
@@ -355,7 +401,7 @@ class CodenamesGame:
             outcome = self.operative_turn(
                 turn, clue, count,
                 t_w, o_w, assassin, neutral,
-                board, revealed, logger, bonus=bonus
+                board, revealed, logger, bonus=bonus, source=source
             )
 
             if outcome == 'assassin':
@@ -389,8 +435,9 @@ if __name__ == '__main__':
     print('\nLoading AI Spymasters — please wait...')
     buf = io.StringIO()
     with contextlib.redirect_stdout(buf):
-        red_agent  = CodenamesAgentWithReasoning()
-        blue_agent = CodenamesAgentWithReasoning()
+        user_id = input('  Enter player ID (leave blank for "anon"): ').strip() or 'anon'
+        red_agent  = CodenamesAgentWithReasoning(user_id=user_id)
+        blue_agent = CodenamesAgentWithReasoning(user_id=user_id)
     print('  Ready!\n')
     game = CodenamesGame(red_agent, blue_agent)
 

@@ -4,6 +4,8 @@ import random
 import os
 import sys
 import pickle
+import json
+import pathlib
 from collections import defaultdict
 from typing import List, Tuple, Dict
 
@@ -21,6 +23,8 @@ WORD_LIST_PATH = os.path.join(BASE_DIR, "data", "codenames_words.txt")
 CONCEPTNET_PKL = os.path.join(BASE_DIR, "data", "conceptnet_english.pkl")
 TOP_WORD_LIST_PATH = os.path.join(BASE_DIR, "data", "top_english_words_lower_100000.txt")
 WIKI_THRESHOLD = 50
+PROFILE_DIR = os.path.join(BASE_DIR, "user_profiles")
+os.makedirs(PROFILE_DIR, exist_ok=True)
 
 
 class CodenamesAgentWithReasoning:
@@ -36,10 +40,20 @@ class CodenamesAgentWithReasoning:
     6. DECISION: Select best safe clue
     """
 
-    def __init__(self):
+    def __init__(self, user_id: str = None):
         print("=" * 60)
         print("CODENAMES AGENT WITH REASONING")
         print("=" * 60)
+
+        # User profile
+        self.user_id = user_id or 'anon'
+        self.profile_path = os.path.join(PROFILE_DIR, f'{self.user_id}.json')
+        self.profile = {
+            'user_id': self.user_id,
+            'source_stats': {},
+            'bad_patterns': {}
+        }
+        self._load_profile()
 
         # Load Vector Engine
         print("\n[1/4] Loading Vector Engine...")
@@ -88,6 +102,94 @@ class CodenamesAgentWithReasoning:
         print("\n" + "=" * 60)
         print("AGENT READY")
         print("=" * 60)
+
+    # ---------------------------
+    # Profile persistence
+    # ---------------------------
+    def _load_profile(self):
+        try:
+            with open(self.profile_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            # Merge loaded profile with defaults
+            self.profile.update(data)
+        except FileNotFoundError:
+            self._save_profile()
+
+    def _save_profile(self):
+        with open(self.profile_path, 'w', encoding='utf-8') as f:
+            json.dump(self.profile, f, indent=2)
+
+    def _relation_pattern(self, clue: str, targets: List[str]) -> str:
+        """
+        Produce a canonical relation-pattern describing how `clue` relates
+        to each target according to ConceptNet edge labels. Used to track
+        patterns the human misses.
+        """
+        clue_l = clue.lower()
+        per = []
+        for t in targets:
+            t_l = t.lower()
+            rels = set()
+            for relation, other, _w in self.conceptnet_edges.get(t_l, []):
+                if other == clue_l:
+                    rels.add(relation)
+            for relation, other, _w in self.conceptnet_edges.get(clue_l, []):
+                if other == t_l:
+                    rels.add(relation)
+            per.append(','.join(sorted(rels)) if rels else 'NONE')
+        per_sorted = sorted(per)
+        return '||'.join(per_sorted)
+
+    def _apply_profile_to_score(self, candidate: dict) -> None:
+        """
+        Adjust candidate['score'] in-place based on the user's profile:
+         - downweight sources with low success
+         - penalize relation-patterns the user often misses
+        """
+        source = candidate.get('source', 'vector')
+        src_stats = self.profile.get('source_stats', {}).get(source, {'attempts': 0, 'success': 0.0})
+        attempts = src_stats.get('attempts', 0)
+        success = src_stats.get('success', 0.0)
+        # Map success rate to multiplier in a slightly wider range
+        # so the agent can more strongly prefer sources the user succeeds on
+        if attempts > 0:
+            rate = (success / attempts) if attempts else 0.0
+            # factor in [0.5, 1.4]
+            factor = 0.5 + 0.9 * rate
+        else:
+            factor = 1.0
+
+        # Penalize relation-patterns the user often misses using a softer decay
+        pattern = self._relation_pattern(candidate.get('clue', ''), candidate.get('targets', []))
+        pattern_count = self.profile.get('bad_patterns', {}).get(pattern, 0)
+        if pattern_count > 0:
+            penal = (0.6) ** pattern_count
+            factor *= penal
+
+        candidate['score'] = float(candidate.get('score', 0.0)) * factor
+
+    def record_outcome(self, clue: str, source: str, targets: List[str], guessed_targets: List[str]):
+        """
+        Record the human operative's outcome for a clue.
+        - updates `source_stats` attempts/success
+        - increments `bad_patterns` when intended targets were missed
+        """
+        targets = [t.upper() for t in targets]
+        guessed = [g.upper() for g in guessed_targets]
+        correct = len(set(targets) & set(guessed))
+        attempts = len(targets) if targets else 1
+        src = source or 'vector'
+        ss = self.profile.setdefault('source_stats', {})
+        s = ss.setdefault(src, {'attempts': 0, 'success': 0.0})
+        s['attempts'] += 1
+        s['success'] += (correct / attempts)
+
+        if correct < attempts:
+            pattern = self._relation_pattern(clue, targets)
+            bp = self.profile.setdefault('bad_patterns', {})
+            bp[pattern] = bp.get(pattern, 0) + 1
+
+        self._save_profile()
 
     def generate_board(self):
         """Generate a random Codenames board."""
@@ -368,6 +470,13 @@ class CodenamesAgentWithReasoning:
                 })
 
         print("-" * 60)
+
+        # Apply user profile adjustments to candidate scores
+        for cand in all_candidates:
+            try:
+                self._apply_profile_to_score(cand)
+            except Exception:
+                pass
 
         # Stage 5: Final decision
         print("\n[STAGE 5] Making final decision...")
