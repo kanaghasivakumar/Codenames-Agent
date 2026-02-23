@@ -13,10 +13,18 @@ to persist profile data for the user.
 import argparse
 import random
 import time
+import os
+import sys
 from typing import List
 
-# Import the agent
-from codenames_agent.main_with_reasoning import CodenamesAgentWithReasoning
+# Fix import path — script lives inside codenames_agent/, so we add the project root
+BASE_DIR    = os.path.dirname(os.path.abspath(__file__))
+PROJECT_DIR = os.path.dirname(BASE_DIR)
+sys.path.insert(0, PROJECT_DIR)
+sys.path.insert(0, BASE_DIR)
+sys.path.insert(0, os.path.join(BASE_DIR, 'src'))
+
+from main_with_reasoning import CodenamesAgentWithReasoning
 
 
 def simulate_game_turn(agent: CodenamesAgentWithReasoning, user_pref: dict):
