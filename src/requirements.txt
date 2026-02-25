@@ -1,0 +1,6 @@
+gensim
+numpy
+networkx
+requests
+tqdm
+scipy

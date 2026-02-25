@@ -1,0 +1,13 @@
+# Large data files
+data/conceptnet-assertions-5.7.0.csv.gz
+data/conceptnet_graph.json
+
+# Env and cache
+codenames_env/
+__pycache__/
+*.pyc
+*.pkl
+
+# Logs
+game play/logs/*.json
+game play/logs/*.jsonl
