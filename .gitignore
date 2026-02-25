@@ -10,5 +10,5 @@ __pycache__/
 *.npy
 *.gz
 *.bin
+*.pkl
 codenames_agent/data/glove*.txt
-codenames_agent/data/conceptnet_english.pkl

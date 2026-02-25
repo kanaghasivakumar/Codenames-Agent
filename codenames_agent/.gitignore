@@ -1,0 +1,3 @@
+*.pkl
+codenames_agent/rrl/
+.DS_Store
