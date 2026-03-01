@@ -4,18 +4,23 @@ from collections import defaultdict
 
 GRAPH_PATH = Path("data/conceptnet_graph.json")
 
-# SENIOR DEV FIX: Strict weights to force "Definitional" logic
-RELATION_WEIGHTS = {
-    "IsA": 5.0,        
-    "Category": 5.0,
-    "AtLocation": 3.0, # Physical logic (Whale in Ocean)
-    "UsedFor": 3.0,    # Functional logic
-    "PartOf": 3.0,
-    "HasProperty": 2.0,
-    "CapableOf": 2.0,
-    "RelatedTo": 0.3,   # SEVERE PENALTY: Avoids "Ray to King" nonsense
-    "Antonym": 0.1,    # NEAR TOTAL BAN
-    "DistinctFrom": 0.1
+DEFAUlT_RELATION_WEIGHTS = {
+    "IsA": 0.5,
+    "AtLocation": 0.5,
+    "PartOf": 1.0,
+    "Antonym": 0.75,
+    "UsedFor": 1.0,
+    "DistinctFrom": 1.0,
+    "HasProperty": 0.75,
+    "SimilarTo": 1.0,
+    "CapableOf": 1.0,
+    "Causes": 1.0,
+    "MadeOf": 1.0,
+    "ReceivesAction": 0.75,
+    "HasPrerequisite": 0.75,
+    "HasSubevent": 1.0,    
+    "CreatedBy": 1.0,
+    "LocatedNear": 1.0,
 }
 
 class ReasoningEngine:
@@ -59,12 +64,12 @@ class ReasoningEngine:
             for edge in edges:                                  # iterate through each edge
                 concept = edge['end']                           # word that is somehow related to target
                 rel = edge['relation']                          # relation between concept and target
-                weight = edge['weight']                         # weight of relation
+                weight = edge['normalized_weight']                         # weight of relation
                 
                 if concept.lower() == word.lower(): continue    # skip if concept is same as target
                 
                 # Apply the new strict weights
-                score = weight * RELATION_WEIGHTS.get(rel, 1.0) # score for concept -> target
+                score = weight * DEFAUlT_RELATION_WEIGHTS.get(rel) # score for concept -> target
                 candidates[concept] += score                    # aggregates score for concept for all related targets
                 concept_coverage[concept].add(word)             # keeps track of all targets related to concept
                 logic_chains[concept].append(f"{word} ({rel})") # keeps track of relations related to concept
