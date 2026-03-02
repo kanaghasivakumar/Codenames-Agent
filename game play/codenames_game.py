@@ -181,7 +181,7 @@ class AISpymaster:
         self.used_clues = []
         self.profile = profile
 
-    def get_clue(self, team_words, bad_words):
+    def get_clue(self, team_words, opponent_words, assassin_word, neutral_words):
         """
         team_words : list of remaining words for this team
         bad_words  : list of opponent words + assassin + neutral
@@ -192,7 +192,7 @@ class AISpymaster:
             random.shuffle(combos)
             for subset in combos[:40]:
                 results = self.engine.find_clues(
-                    list(subset), bad_words,
+                    list(subset), opponent_words, assassin_word, neutral_words,
                     used_clues=self.used_clues, top_n=1
                 )
                 if results:
@@ -254,7 +254,9 @@ class CodenamesGame:
                         assassin, neutral, revealed, logger):
         spy       = self.red_spy if team == 'RED' else self.blue_spy
         remaining = self._rem(list(team_words), revealed)
-        bad       = self._rem(list(opp_words), revealed) + [assassin] + self._rem(list(neutral), revealed)
+        opp       = self._rem(list(opp_words), revealed)
+        ass       =  assassin
+        neut   = self._rem(list(neutral), revealed)
 
         print()
         divider('═')
@@ -264,7 +266,7 @@ class CodenamesGame:
         if spy.profile:
             spy.engine.update_relation_weights(spy.profile.give_weights())
 
-        result = spy.get_clue(remaining, bad)
+        result = spy.get_clue(remaining, opp, ass, neut)
 
         if result is None:
             print(team_color(team, f'  {team} Spymaster has no clue — passing.'))

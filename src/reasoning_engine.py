@@ -44,7 +44,7 @@ class ReasoningEngine:
     def get_neighbors(self, word):
         return self.graph.get(word.lower(), [])
 
-    def find_clues(self, targets, bad_words, used_clues=None, top_n=5, debug=False):
+    def find_clues(self, targets, opponent_words, assassin_word, neutral_words, used_clues=None, top_n=5, debug=False):
         if used_clues is None: used_clues = []
         candidates = defaultdict(float)
         concept_coverage = defaultdict(set)
@@ -78,13 +78,26 @@ class ReasoningEngine:
 
             # Safety check
             is_unsafe = False
-            # TODO: investigate ways to be more nuanced with bad words
-            for bad in bad_words:
-                if any(e['end'].lower() == concept.lower() for e in self.get_neighbors(bad)):   # marks unsafe if related to any bad words
+
+            if any(e['end'].lower() == concept.lower() for e in self.get_neighbors(assassin_word)):  # marks unsafe if related to assassin
+                is_unsafe = True; break
+
+            for opp in opponent_words:
+                if any(e['end'].lower() == concept.lower() for e in self.get_neighbors(opp)):   # marks unsafe if related to any bad words
+                    is_unsafe = True; break
+            
+            for neut in neutral_words:
+                # marks unsafe if strongly related to any neutral words
+                if any(e['end'].lower() == concept.lower() and float(e.get('normalized_weight', 0)) > 0.9 for e in self.get_neighbors(neut)):
                     is_unsafe = True; break
             
             if not is_unsafe:
                 safe_candidates[concept] = {"score": score, "logic": list(set(logic_chains[concept]))}
 
-        ranked = sorted(safe_candidates.items(), key=lambda x: x[1]['score'], reverse=True)
+        # Sort by: 1) number of unique target words covered (descending),
+        #           2) score (descending)
+        ranked = sorted(
+            safe_candidates.items(),
+            key=lambda x: ( -len(concept_coverage[x[0]]), -x[1]['score'] )
+        )
         return [{"clue": c, "score": d['score'], "targets": list(concept_coverage[c]), "logic": d['logic']} for c, d in ranked[:top_n]]
