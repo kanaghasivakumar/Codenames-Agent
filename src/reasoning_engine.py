@@ -1,32 +1,20 @@
 import json
 from pathlib import Path
 from collections import defaultdict
+import utils.constants as constants
 
 GRAPH_PATH = Path("data/conceptnet_graph.json")
+DEFAULT_RELATION_WEIGHTS = constants.DEFAULT_RELATION_WEIGHTS
 
-DEFAUlT_RELATION_WEIGHTS = {
-    "IsA": 0.5,
-    "AtLocation": 0.5,
-    "PartOf": 1.0,
-    "Antonym": 0.75,
-    "UsedFor": 1.0,
-    "DistinctFrom": 1.0,
-    "HasProperty": 0.75,
-    "SimilarTo": 1.0,
-    "CapableOf": 1.0,
-    "Causes": 1.0,
-    "MadeOf": 1.0,
-    "ReceivesAction": 0.75,
-    "HasPrerequisite": 0.75,
-    "HasSubevent": 1.0,    
-    "CreatedBy": 1.0,
-    "LocatedNear": 1.0,
-}
 
 class ReasoningEngine:
-    def __init__(self, graph_path=GRAPH_PATH):
+    def __init__(self, graph_path=GRAPH_PATH, relation_weights=None):
         self.graph = self._load_graph(path=graph_path)
         self.stop_words = {"a", "an", "the", "and", "or", "but", "if", "then", "of", "at", "by", "for"}
+        if relation_weights:
+            self.relation_weights = relation_weights
+        else:  
+            self.relation_weights = DEFAULT_RELATION_WEIGHTS
 
     def _load_graph(self, path):
         if not path.exists():
@@ -49,6 +37,9 @@ class ReasoningEngine:
                 return False, "Too similar to previous clue"
         
         return True, ""
+    
+    def update_relation_weights(self, new_weights):
+        self.relation_weights = new_weights
 
     def get_neighbors(self, word):
         return self.graph.get(word.lower(), [])
@@ -68,11 +59,15 @@ class ReasoningEngine:
                 
                 if concept.lower() == word.lower(): continue    # skip if concept is same as target
                 
-                # Apply the new strict weights
-                score = weight * DEFAUlT_RELATION_WEIGHTS.get(rel) # score for concept -> target
-                candidates[concept] += score                    # aggregates score for concept for all related targets
-                concept_coverage[concept].add(word)             # keeps track of all targets related to concept
-                logic_chains[concept].append(f"{word} ({rel})") # keeps track of relations related to concept
+                if word in concept_coverage[concept]:
+                    concept_coverage[concept].add(word)             # adds target to concept coverage if concept already related to target
+                    logic_chains[concept].append(f"{word} ({rel})") # adds relation to logic chains if concept already related to target
+
+                else:
+                    score = weight * self.relation_weights.get(rel) # score for concept -> target
+                    candidates[concept] += score                    # aggregates score for concept for all related targets
+                    concept_coverage[concept].add(word)             # keeps track of all targets related to concept
+                    logic_chains[concept].append(f"{word} ({rel})") # keeps track of relations related to concept
 
         safe_candidates = {}
         for concept, score in candidates.items():
