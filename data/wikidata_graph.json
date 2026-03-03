@@ -1,0 +1,9903 @@
+{
+  "agent": [
+    {
+      "start": "agent",
+      "relation": "SubclassOf",
+      "end": "subject",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "agent",
+      "relation": "IsA",
+      "end": "profession",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "agent",
+      "relation": "IsA",
+      "end": "occupation",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "agent",
+      "relation": "SubclassOf",
+      "end": "actor",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "air": [
+    {
+      "start": "air",
+      "relation": "SubclassOf",
+      "end": "gas",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "air",
+      "relation": "IsA",
+      "end": "gas",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "air",
+      "relation": "UsedFor",
+      "end": "combustion",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "air",
+      "relation": "SubclassOf",
+      "end": "mixture",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "air",
+      "relation": "IsA",
+      "end": "mixture",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "alien": [
+    {
+      "start": "alien",
+      "relation": "IsA",
+      "end": "application",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "ambulance": [
+    {
+      "start": "ambulance",
+      "relation": "LocatedIn",
+      "end": "belgium",
+      "weight": 2.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "ambulance",
+      "relation": "MadeOf",
+      "end": "silver",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ambulance",
+      "relation": "IsA",
+      "end": "medallion",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "angel": [
+    {
+      "start": "angel",
+      "relation": "SubclassOf",
+      "end": "currency",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "angel",
+      "relation": "IsA",
+      "end": "currency",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "angel",
+      "relation": "SubclassOf",
+      "end": "spirit",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "angel",
+      "relation": "MadeOf",
+      "end": "panel",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "apple": [
+    {
+      "start": "apple",
+      "relation": "SubclassOf",
+      "end": "fruit",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "apple",
+      "relation": "SubclassOf",
+      "end": "pome",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "arm": [
+    {
+      "start": "arm",
+      "relation": "SubclassOf",
+      "end": "weapon",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "arm",
+      "relation": "IsA",
+      "end": "software",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "arm",
+      "relation": "SubclassOf",
+      "end": "distributary",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "back": [
+    {
+      "start": "back",
+      "relation": "PartOf",
+      "end": "horse",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "back",
+      "relation": "PartOf",
+      "end": "torso",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "back",
+      "relation": "SubclassOf",
+      "end": "face",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "back",
+      "relation": "SubclassOf",
+      "end": "side",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "ball": [
+    {
+      "start": "ball",
+      "relation": "SubclassOf",
+      "end": "toy",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ball",
+      "relation": "PartOf",
+      "end": "foot",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "ball",
+      "relation": "UsedFor",
+      "end": "juggling",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "ball",
+      "relation": "SubclassOf",
+      "end": "party",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ball",
+      "relation": "SubclassOf",
+      "end": "pitch",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "band": [
+    {
+      "start": "band",
+      "relation": "SubclassOf",
+      "end": "semigroup",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "band",
+      "relation": "SubclassOf",
+      "end": "pattern",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "band",
+      "relation": "SubclassOf",
+      "end": "collar",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "bank": [
+    {
+      "start": "bank",
+      "relation": "SubclassOf",
+      "end": "knife",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bank",
+      "relation": "SubclassOf",
+      "end": "furniture",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bank",
+      "relation": "SubclassOf",
+      "end": "landform",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bank",
+      "relation": "IsA",
+      "end": "occupation",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bank",
+      "relation": "SubclassOf",
+      "end": "shore",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bank",
+      "relation": "SubclassOf",
+      "end": "enterprise",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "bar": [
+    {
+      "start": "bar",
+      "relation": "SubclassOf",
+      "end": "metal",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bar",
+      "relation": "MadeOf",
+      "end": "metal",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bar",
+      "relation": "IsA",
+      "end": "shape",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bar",
+      "relation": "SubclassOf",
+      "end": "counter",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bar",
+      "relation": "SubclassOf",
+      "end": "ship",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bar",
+      "relation": "SubclassOf",
+      "end": "shoal",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bar",
+      "relation": "SubclassOf",
+      "end": "stripe",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bar",
+      "relation": "SubclassOf",
+      "end": "rod",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "bark": [
+    {
+      "start": "bark",
+      "relation": "IsA",
+      "end": "material",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bark",
+      "relation": "PartOf",
+      "end": "tree",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bark",
+      "relation": "UsedFor",
+      "end": "mulch",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bark",
+      "relation": "UsedFor",
+      "end": "firelighting",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bark",
+      "relation": "SubclassOf",
+      "end": "screaming",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "bat": [
+    {
+      "start": "bat",
+      "relation": "SubclassOf",
+      "end": "chiroptera",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bat",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bat",
+      "relation": "SubclassOf",
+      "end": "mammal",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bat",
+      "relation": "SubclassOf",
+      "end": "beast",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "battery": [
+    {
+      "start": "battery",
+      "relation": "SubclassOf",
+      "end": "crime",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "battery",
+      "relation": "SubclassOf",
+      "end": "company",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "battery",
+      "relation": "SubclassOf",
+      "end": "tort",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "battery",
+      "relation": "SubclassOf",
+      "end": "accumulator",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "battery",
+      "relation": "SubclassOf",
+      "end": "violence",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "battery",
+      "relation": "IsA",
+      "end": "theme",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "beach": [
+    {
+      "start": "beach",
+      "relation": "SubclassOf",
+      "end": "shore",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "bear": [
+    {
+      "start": "bear",
+      "relation": "SubclassOf",
+      "end": "gay",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bear",
+      "relation": "MadeOf",
+      "end": "bronze",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bear",
+      "relation": "SubclassOf",
+      "end": "ursidae",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bear",
+      "relation": "MadeOf",
+      "end": "marble",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bear",
+      "relation": "SubclassOf",
+      "end": "carnivore",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bear",
+      "relation": "SubclassOf",
+      "end": "omnivore",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bear",
+      "relation": "IsA",
+      "end": "subculture",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bear",
+      "relation": "SubclassOf",
+      "end": "beast",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bear",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "beat": [
+    {
+      "start": "beat",
+      "relation": "SubclassOf",
+      "end": "rhythm",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "bed": [
+    {
+      "start": "bed",
+      "relation": "SubclassOf",
+      "end": "furniture",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bed",
+      "relation": "UsedFor",
+      "end": "sleep",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bed",
+      "relation": "UsedFor",
+      "end": "sitting",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bed",
+      "relation": "PartOf",
+      "end": "member",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bed",
+      "relation": "UsedFor",
+      "end": "lying",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bed",
+      "relation": "SubclassOf",
+      "end": "fittings",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bed",
+      "relation": "UsedFor",
+      "end": "resting",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "bell": [
+    {
+      "start": "bell",
+      "relation": "PartOf",
+      "end": "carillon",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bell",
+      "relation": "PartOf",
+      "end": "belfry",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bell",
+      "relation": "PartOf",
+      "end": "steeple",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "belt": [
+    {
+      "start": "belt",
+      "relation": "SubclassOf",
+      "end": "zone",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "belt",
+      "relation": "SubclassOf",
+      "end": "equipment",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "belt",
+      "relation": "PartOf",
+      "end": "linkage",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "berlin": [
+    {
+      "start": "berlin",
+      "relation": "UsedFor",
+      "end": "transport",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "berlin",
+      "relation": "SubclassOf",
+      "end": "coach",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "berry": [
+    {
+      "start": "berry",
+      "relation": "IsA",
+      "end": "food",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "berry",
+      "relation": "SubclassOf",
+      "end": "fruit",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "block": [
+    {
+      "start": "block",
+      "relation": "SubclassOf",
+      "end": "length",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "block",
+      "relation": "PartOf",
+      "end": "minecraft",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "block",
+      "relation": "SubclassOf",
+      "end": "effect",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "block",
+      "relation": "SubclassOf",
+      "end": "territory",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "block",
+      "relation": "UsedFor",
+      "end": "punishment",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "block",
+      "relation": "PartOf",
+      "end": "section",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "block",
+      "relation": "SubclassOf",
+      "end": "fortification",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "block",
+      "relation": "IsA",
+      "end": "housing",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "block",
+      "relation": "PartOf",
+      "end": "drive",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "block",
+      "relation": "SubclassOf",
+      "end": "record",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "block",
+      "relation": "SubclassOf",
+      "end": "categorization",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "board": [
+    {
+      "start": "board",
+      "relation": "IsA",
+      "end": "profession",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "board",
+      "relation": "PartOf",
+      "end": "company",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "bolt": [
+    {
+      "start": "bolt",
+      "relation": "IsA",
+      "end": "component",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bolt",
+      "relation": "PartOf",
+      "end": "latch",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bolt",
+      "relation": "PartOf",
+      "end": "gun",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "bomb": [
+    {
+      "start": "bomb",
+      "relation": "SubclassOf",
+      "end": "icon",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "bond": [
+    {
+      "start": "bond",
+      "relation": "SubclassOf",
+      "end": "loan",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "boom": [
+    {
+      "start": "boom",
+      "relation": "SubclassOf",
+      "end": "jig",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "boom",
+      "relation": "SubclassOf",
+      "end": "economics",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "boom",
+      "relation": "MadeOf",
+      "end": "steel",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "boom",
+      "relation": "IsA",
+      "end": "phase",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "boom",
+      "relation": "SubclassOf",
+      "end": "obstacle",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "boom",
+      "relation": "PartOf",
+      "end": "derrick",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "boom",
+      "relation": "PartOf",
+      "end": "crane",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "boom",
+      "relation": "PartOf",
+      "end": "snorkel",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "boom",
+      "relation": "UsedFor",
+      "end": "lifting",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "boot": [
+    {
+      "start": "boot",
+      "relation": "MadeOf",
+      "end": "leather",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "boot",
+      "relation": "MadeOf",
+      "end": "felt",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "boot",
+      "relation": "MadeOf",
+      "end": "polyester",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "boot",
+      "relation": "SubclassOf",
+      "end": "footwear",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "bottle": [
+    {
+      "start": "bottle",
+      "relation": "MadeOf",
+      "end": "ceramic",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bottle",
+      "relation": "MadeOf",
+      "end": "glass",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bottle",
+      "relation": "IsA",
+      "end": "plate",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bottle",
+      "relation": "MadeOf",
+      "end": "porcelain",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bottle",
+      "relation": "SubclassOf",
+      "end": "container",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bottle",
+      "relation": "SubclassOf",
+      "end": "vessel",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "bow": [
+    {
+      "start": "bow",
+      "relation": "PartOf",
+      "end": "hull",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "box": [
+    {
+      "start": "box",
+      "relation": "LocatedIn",
+      "end": "summit",
+      "weight": 2.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "box",
+      "relation": "MadeOf",
+      "end": "horn",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "box",
+      "relation": "SubclassOf",
+      "end": "room",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "box",
+      "relation": "MadeOf",
+      "end": "porcelain",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "box",
+      "relation": "SubclassOf",
+      "end": "container",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "box",
+      "relation": "IsA",
+      "end": "container",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "box",
+      "relation": "PartOf",
+      "end": "auditorium",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "box",
+      "relation": "MadeOf",
+      "end": "lumber",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "box",
+      "relation": "MadeOf",
+      "end": "cardboard",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "bridge": [
+    {
+      "start": "bridge",
+      "relation": "MadeOf",
+      "end": "paper",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bridge",
+      "relation": "PartOf",
+      "end": "ship",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bridge",
+      "relation": "IsA",
+      "end": "gymnastics",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bridge",
+      "relation": "SubclassOf",
+      "end": "thoroughfare",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bridge",
+      "relation": "SubclassOf",
+      "end": "metre",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bridge",
+      "relation": "SubclassOf",
+      "end": "edge",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bridge",
+      "relation": "IsA",
+      "end": "posture",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bridge",
+      "relation": "SubclassOf",
+      "end": "passage",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "bridge",
+      "relation": "PartOf",
+      "end": "street",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "bridge",
+      "relation": "SubclassOf",
+      "end": "spacer",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "brush": [
+    {
+      "start": "brush",
+      "relation": "UsedFor",
+      "end": "cleaning",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "brush",
+      "relation": "PartOf",
+      "end": "commutator",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "buck": [
+    {
+      "start": "buck",
+      "relation": "SubclassOf",
+      "end": "cocktail",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "buffalo": [
+    {
+      "start": "buffalo",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "buffalo",
+      "relation": "SubclassOf",
+      "end": "mammal",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "bugle": [
+    {
+      "start": "bugle",
+      "relation": "IsA",
+      "end": "herb",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "button": [
+    {
+      "start": "button",
+      "relation": "SubclassOf",
+      "end": "switch",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "button",
+      "relation": "PartOf",
+      "end": "clothing",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "button",
+      "relation": "SubclassOf",
+      "end": "mercery",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "button",
+      "relation": "SubclassOf",
+      "end": "fastener",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "calf": [
+    {
+      "start": "calf",
+      "relation": "SubclassOf",
+      "end": "cattle",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "calf",
+      "relation": "SubclassOf",
+      "end": "mammal",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "cap": [
+    {
+      "start": "cap",
+      "relation": "UsedFor",
+      "end": "fashion",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "cap",
+      "relation": "SubclassOf",
+      "end": "headgear",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "cap",
+      "relation": "MadeOf",
+      "end": "textile",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "capital": [
+    {
+      "start": "capital",
+      "relation": "PartOf",
+      "end": "column",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "capital",
+      "relation": "MadeOf",
+      "end": "sandstone",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "capital",
+      "relation": "MadeOf",
+      "end": "onyx",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "capital",
+      "relation": "LocatedIn",
+      "end": "frohnau",
+      "weight": 2.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "capital",
+      "relation": "SubclassOf",
+      "end": "debt",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "capital",
+      "relation": "SubclassOf",
+      "end": "resource",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "capital",
+      "relation": "IsA",
+      "end": "buildings",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "car": [
+    {
+      "start": "car",
+      "relation": "UsedFor",
+      "end": "transport",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "car",
+      "relation": "UsedFor",
+      "end": "taxi",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "card": [
+    {
+      "start": "card",
+      "relation": "MadeOf",
+      "end": "metal",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "card",
+      "relation": "MadeOf",
+      "end": "paper",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "card",
+      "relation": "MadeOf",
+      "end": "plastic",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "card",
+      "relation": "UsedFor",
+      "end": "authentication",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "carrot": [
+    {
+      "start": "carrot",
+      "relation": "SubclassOf",
+      "end": "vegetable",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "carrot",
+      "relation": "SubclassOf",
+      "end": "taproot",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "casino": [
+    {
+      "start": "casino",
+      "relation": "IsA",
+      "end": "organization",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "casino",
+      "relation": "SubclassOf",
+      "end": "facility",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "casino",
+      "relation": "SubclassOf",
+      "end": "business",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "cast": [
+    {
+      "start": "cast",
+      "relation": "SubclassOf",
+      "end": "product",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "cast",
+      "relation": "PartOf",
+      "end": "eusociality",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "cat": [
+    {
+      "start": "cat",
+      "relation": "SubclassOf",
+      "end": "felidae",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "cat",
+      "relation": "SubclassOf",
+      "end": "pet",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "cat",
+      "relation": "UsedFor",
+      "end": "pet",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "cat",
+      "relation": "MadeOf",
+      "end": "terracotta",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "cat",
+      "relation": "UsedFor",
+      "end": "mouser",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "cat",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "cat",
+      "relation": "SubclassOf",
+      "end": "beast",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "cell": [
+    {
+      "start": "cell",
+      "relation": "PartOf",
+      "end": "tissue",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "cell",
+      "relation": "SubclassOf",
+      "end": "room",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "cell",
+      "relation": "SubclassOf",
+      "end": "polyhedron",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "cell",
+      "relation": "SubclassOf",
+      "end": "face",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "cell",
+      "relation": "SubclassOf",
+      "end": "compartment",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "centaur": [
+    {
+      "start": "centaur",
+      "relation": "SubclassOf",
+      "end": "monstrosity",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "centaur",
+      "relation": "MadeOf",
+      "end": "panel",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "center": [
+    {
+      "start": "center",
+      "relation": "SubclassOf",
+      "end": "organization",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "center",
+      "relation": "IsA",
+      "end": "occupation",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "center",
+      "relation": "SubclassOf",
+      "end": "point",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "center",
+      "relation": "SubclassOf",
+      "end": "subring",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "center",
+      "relation": "LocatedIn",
+      "end": "intersection",
+      "weight": 2.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "center",
+      "relation": "SubclassOf",
+      "end": "square",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "center",
+      "relation": "PartOf",
+      "end": "chessboard",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "chair": [
+    {
+      "start": "chair",
+      "relation": "MadeOf",
+      "end": "wood",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "chair",
+      "relation": "MadeOf",
+      "end": "steel",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "chair",
+      "relation": "MadeOf",
+      "end": "metal",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "chair",
+      "relation": "MadeOf",
+      "end": "plastic",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "chair",
+      "relation": "SubclassOf",
+      "end": "litter",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "chair",
+      "relation": "MadeOf",
+      "end": "lumber",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "chair",
+      "relation": "SubclassOf",
+      "end": "furniture",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "chair",
+      "relation": "SubclassOf",
+      "end": "professorship",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "change": [
+    {
+      "start": "change",
+      "relation": "SubclassOf",
+      "end": "money",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "change",
+      "relation": "SubclassOf",
+      "end": "cash",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "change",
+      "relation": "SubclassOf",
+      "end": "difference",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "change",
+      "relation": "SubclassOf",
+      "end": "occurrent",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "charge": [
+    {
+      "start": "charge",
+      "relation": "IsA",
+      "end": "quantity",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "charge",
+      "relation": "SubclassOf",
+      "end": "attack",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "charge",
+      "relation": "LocatedIn",
+      "end": "field",
+      "weight": 2.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "charge",
+      "relation": "SubclassOf",
+      "end": "caricature",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "charge",
+      "relation": "PartOf",
+      "end": "cartridge",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "charge",
+      "relation": "PartOf",
+      "end": "offensive",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "charge",
+      "relation": "IsA",
+      "end": "tactic",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "charge",
+      "relation": "SubclassOf",
+      "end": "motif",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "check": [
+    {
+      "start": "check",
+      "relation": "IsA",
+      "end": "theme",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "chest": [
+    {
+      "start": "chest",
+      "relation": "PartOf",
+      "end": "thorax",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "chest",
+      "relation": "SubclassOf",
+      "end": "furniture",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "chest",
+      "relation": "SubclassOf",
+      "end": "container",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "chick": [
+    {
+      "start": "chick",
+      "relation": "SubclassOf",
+      "end": "hatchling",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "chick",
+      "relation": "SubclassOf",
+      "end": "bird",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "chocolate": [
+    {
+      "start": "chocolate",
+      "relation": "SubclassOf",
+      "end": "brown",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "chocolate",
+      "relation": "MadeOf",
+      "end": "sugar",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "chocolate",
+      "relation": "SubclassOf",
+      "end": "candy",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "chocolate",
+      "relation": "MadeOf",
+      "end": "cocoa",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "chocolate",
+      "relation": "SubclassOf",
+      "end": "condiment",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "chocolate",
+      "relation": "SubclassOf",
+      "end": "confection",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "church": [
+    {
+      "start": "church",
+      "relation": "MadeOf",
+      "end": "glass",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "church",
+      "relation": "IsA",
+      "end": "definition",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "church",
+      "relation": "LocatedIn",
+      "end": "ballum",
+      "weight": 2.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "church",
+      "relation": "IsA",
+      "end": "institution",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "church",
+      "relation": "LocatedIn",
+      "end": "ottenheim",
+      "weight": 2.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "church",
+      "relation": "MadeOf",
+      "end": "panel",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "church",
+      "relation": "MadeOf",
+      "end": "canvas",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "church",
+      "relation": "SubclassOf",
+      "end": "buildings",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "circle": [
+    {
+      "start": "circle",
+      "relation": "PartOf",
+      "end": "sphere",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "circle",
+      "relation": "SubclassOf",
+      "end": "ellipse",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "circle",
+      "relation": "IsA",
+      "end": "shape",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "circle",
+      "relation": "SubclassOf",
+      "end": "locus",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "circle",
+      "relation": "IsA",
+      "end": "separator",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "circle",
+      "relation": "PartOf",
+      "end": "disk",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "circle",
+      "relation": "SubclassOf",
+      "end": "hypersphere",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "circle",
+      "relation": "SubclassOf",
+      "end": "rose",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "cliff": [
+    {
+      "start": "cliff",
+      "relation": "SubclassOf",
+      "end": "landform",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "cliff",
+      "relation": "SubclassOf",
+      "end": "escarpment",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "cliff",
+      "relation": "PartOf",
+      "end": "geomorphology",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "cloak": [
+    {
+      "start": "cloak",
+      "relation": "SubclassOf",
+      "end": "outerwear",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "club": [
+    {
+      "start": "club",
+      "relation": "SubclassOf",
+      "end": "weapon",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "club",
+      "relation": "MadeOf",
+      "end": "wood",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "club",
+      "relation": "MadeOf",
+      "end": "cotton",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "club",
+      "relation": "SubclassOf",
+      "end": "stick",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "code": [
+    {
+      "start": "code",
+      "relation": "SubclassOf",
+      "end": "regulation",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "code",
+      "relation": "SubclassOf",
+      "end": "cipher",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "cold": [
+    {
+      "start": "cold",
+      "relation": "IsA",
+      "end": "thermoception",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "comic": [
+    {
+      "start": "comic",
+      "relation": "SubclassOf",
+      "end": "mood",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "compound": [
+    {
+      "start": "compound",
+      "relation": "SubclassOf",
+      "end": "lexeme",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "concert": [
+    {
+      "start": "concert",
+      "relation": "MadeOf",
+      "end": "canvas",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "conductor": [
+    {
+      "start": "conductor",
+      "relation": "IsA",
+      "end": "profession",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "conductor",
+      "relation": "SubclassOf",
+      "end": "measurement",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "conductor",
+      "relation": "SubclassOf",
+      "end": "material",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "conductor",
+      "relation": "SubclassOf",
+      "end": "musician",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "conductor",
+      "relation": "SubclassOf",
+      "end": "guarantor",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "contract": [
+    {
+      "start": "contract",
+      "relation": "PartOf",
+      "end": "document",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "contract",
+      "relation": "IsA",
+      "end": "institution",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "contract",
+      "relation": "SubclassOf",
+      "end": "promise",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "contract",
+      "relation": "SubclassOf",
+      "end": "agreement",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "cook": [
+    {
+      "start": "cook",
+      "relation": "IsA",
+      "end": "profession",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "cook",
+      "relation": "SubclassOf",
+      "end": "artisan",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "copper": [
+    {
+      "start": "copper",
+      "relation": "SubclassOf",
+      "end": "color",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "copper",
+      "relation": "IsA",
+      "end": "color",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "copper",
+      "relation": "SubclassOf",
+      "end": "metal",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "copper",
+      "relation": "SubclassOf",
+      "end": "medication",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "copper",
+      "relation": "MadeOf",
+      "end": "azurite",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "copper",
+      "relation": "MadeOf",
+      "end": "bornite",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "copper",
+      "relation": "MadeOf",
+      "end": "chalcopyrite",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "copper",
+      "relation": "MadeOf",
+      "end": "malachite",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "copper",
+      "relation": "MadeOf",
+      "end": "chrysocolla",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "copper",
+      "relation": "MadeOf",
+      "end": "enargite",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "copper",
+      "relation": "MadeOf",
+      "end": "chalcocite",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "copper",
+      "relation": "MadeOf",
+      "end": "covellite",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "copper",
+      "relation": "MadeOf",
+      "end": "cuprite",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "copper",
+      "relation": "MadeOf",
+      "end": "dioptase",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "copper",
+      "relation": "MadeOf",
+      "end": "digenite",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "copper",
+      "relation": "IsA",
+      "end": "metal",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "cotton": [
+    {
+      "start": "cotton",
+      "relation": "UsedFor",
+      "end": "batting",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "cotton",
+      "relation": "UsedFor",
+      "end": "cordage",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "court": [
+    {
+      "start": "court",
+      "relation": "IsA",
+      "end": "designation",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "court",
+      "relation": "SubclassOf",
+      "end": "tribunal",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "court",
+      "relation": "SubclassOf",
+      "end": "pitch",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "cover": [
+    {
+      "start": "cover",
+      "relation": "SubclassOf",
+      "end": "identity",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "cover",
+      "relation": "SubclassOf",
+      "end": "defense",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "crane": [
+    {
+      "start": "crane",
+      "relation": "SubclassOf",
+      "end": "bird",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "crash": [
+    {
+      "start": "crash",
+      "relation": "MadeOf",
+      "end": "linen",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "cricket": [
+    {
+      "start": "cricket",
+      "relation": "SubclassOf",
+      "end": "orthoptera",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "cricket",
+      "relation": "SubclassOf",
+      "end": "darts",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "cross": [
+    {
+      "start": "cross",
+      "relation": "MadeOf",
+      "end": "sandstone",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "cross",
+      "relation": "PartOf",
+      "end": "crown",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "cross",
+      "relation": "SubclassOf",
+      "end": "award",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "cross",
+      "relation": "IsA",
+      "end": "punch",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "crown": [
+    {
+      "start": "crown",
+      "relation": "PartOf",
+      "end": "bell",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "crown",
+      "relation": "PartOf",
+      "end": "tooth",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "crown",
+      "relation": "SubclassOf",
+      "end": "coin",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "crown",
+      "relation": "SubclassOf",
+      "end": "currency",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "crown",
+      "relation": "UsedFor",
+      "end": "adjustment",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "crown",
+      "relation": "SubclassOf",
+      "end": "headdress",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "crown",
+      "relation": "IsA",
+      "end": "knob",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "crown",
+      "relation": "PartOf",
+      "end": "wristwatch",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "cycle": [
+    {
+      "start": "cycle",
+      "relation": "SubclassOf",
+      "end": "chain",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "cycle",
+      "relation": "SubclassOf",
+      "end": "circuit",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "dance": [
+    {
+      "start": "dance",
+      "relation": "IsA",
+      "end": "sport",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "dance",
+      "relation": "IsA",
+      "end": "hobby",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "dance",
+      "relation": "IsA",
+      "end": "periodical",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "date": [
+    {
+      "start": "date",
+      "relation": "SubclassOf",
+      "end": "fruit",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "date",
+      "relation": "SubclassOf",
+      "end": "food",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "date",
+      "relation": "PartOf",
+      "end": "dating",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "date",
+      "relation": "SubclassOf",
+      "end": "metadata",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "date",
+      "relation": "SubclassOf",
+      "end": "rendezvous",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "date",
+      "relation": "SubclassOf",
+      "end": "meeting",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "day": [
+    {
+      "start": "day",
+      "relation": "PartOf",
+      "end": "week",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "day",
+      "relation": "SubclassOf",
+      "end": "duration",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "death": [
+    {
+      "start": "death",
+      "relation": "SubclassOf",
+      "end": "end",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "death",
+      "relation": "IsA",
+      "end": "end",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "deck": [
+    {
+      "start": "deck",
+      "relation": "PartOf",
+      "end": "ship",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "deck",
+      "relation": "PartOf",
+      "end": "bridge",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "deck",
+      "relation": "SubclassOf",
+      "end": "stack",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "deck",
+      "relation": "SubclassOf",
+      "end": "terrace",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "deck",
+      "relation": "SubclassOf",
+      "end": "paver",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "degree": [
+    {
+      "start": "degree",
+      "relation": "SubclassOf",
+      "end": "offset",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "diamond": [
+    {
+      "start": "diamond",
+      "relation": "SubclassOf",
+      "end": "suit",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "diamond",
+      "relation": "IsA",
+      "end": "suit",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "diamond",
+      "relation": "MadeOf",
+      "end": "carbon",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "diamond",
+      "relation": "SubclassOf",
+      "end": "gemstone",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "diamond",
+      "relation": "UsedFor",
+      "end": "gemstone",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "dinosaur": [
+    {
+      "start": "dinosaur",
+      "relation": "IsA",
+      "end": "reptile",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "dinosaur",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "dinosaur",
+      "relation": "SubclassOf",
+      "end": "beast",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "dinosaur",
+      "relation": "SubclassOf",
+      "end": "animalia",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "doctor": [
+    {
+      "start": "doctor",
+      "relation": "HasOccupation",
+      "end": "physician",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "dog": [
+    {
+      "start": "dog",
+      "relation": "UsedFor",
+      "end": "hunting",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "dog",
+      "relation": "UsedFor",
+      "end": "pet",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "dog",
+      "relation": "UsedFor",
+      "end": "guard",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "dog",
+      "relation": "MadeOf",
+      "end": "earthenware",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "dog",
+      "relation": "IsA",
+      "end": "motif",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "dog",
+      "relation": "IsA",
+      "end": "client",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "dog",
+      "relation": "SubclassOf",
+      "end": "zoomorph",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "dog",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "dog",
+      "relation": "UsedFor",
+      "end": "guarding",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "draft": [
+    {
+      "start": "draft",
+      "relation": "SubclassOf",
+      "end": "distance",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "draft",
+      "relation": "IsA",
+      "end": "difference",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "dragon": [
+    {
+      "start": "dragon",
+      "relation": "MadeOf",
+      "end": "bronze",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "dragon",
+      "relation": "SubclassOf",
+      "end": "cannon",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "dragon",
+      "relation": "SubclassOf",
+      "end": "blunderbuss",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "dragon",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "dress": [
+    {
+      "start": "dress",
+      "relation": "SubclassOf",
+      "end": "clothing",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "dress",
+      "relation": "SubclassOf",
+      "end": "costume",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "dress",
+      "relation": "PartOf",
+      "end": "etiquette",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "dress",
+      "relation": "HasOccupation",
+      "end": "musician",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "drill": [
+    {
+      "start": "drill",
+      "relation": "MadeOf",
+      "end": "cotton",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "drill",
+      "relation": "UsedFor",
+      "end": "uniform",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "drill",
+      "relation": "IsA",
+      "end": "textile",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "drill",
+      "relation": "UsedFor",
+      "end": "workwear",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "drill",
+      "relation": "SubclassOf",
+      "end": "twill",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "drill",
+      "relation": "SubclassOf",
+      "end": "training",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "drop": [
+    {
+      "start": "drop",
+      "relation": "MadeOf",
+      "end": "liquid",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "drop",
+      "relation": "SubclassOf",
+      "end": "passage",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "duck": [
+    {
+      "start": "duck",
+      "relation": "SubclassOf",
+      "end": "poultry",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "duck",
+      "relation": "IsA",
+      "end": "motif",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "duck",
+      "relation": "IsA",
+      "end": "netsuke",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "duck",
+      "relation": "SubclassOf",
+      "end": "bird",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "duck",
+      "relation": "SubclassOf",
+      "end": "zoomorph",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "dwarf": [
+    {
+      "start": "dwarf",
+      "relation": "SubclassOf",
+      "end": "humanoid",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "eagle": [
+    {
+      "start": "eagle",
+      "relation": "IsA",
+      "end": "bird",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "eagle",
+      "relation": "MadeOf",
+      "end": "copper",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "eagle",
+      "relation": "MadeOf",
+      "end": "gold",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "eagle",
+      "relation": "SubclassOf",
+      "end": "accipitridae",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "eagle",
+      "relation": "SubclassOf",
+      "end": "score",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "eagle",
+      "relation": "IsA",
+      "end": "motif",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "eagle",
+      "relation": "SubclassOf",
+      "end": "zoomorph",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "eagle",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "eagle",
+      "relation": "SubclassOf",
+      "end": "beast",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "embassy": [
+    {
+      "start": "embassy",
+      "relation": "PartOf",
+      "end": "state",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "embassy",
+      "relation": "PartOf",
+      "end": "diplomacy",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "engine": [
+    {
+      "start": "engine",
+      "relation": "SubclassOf",
+      "end": "machine",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "engine",
+      "relation": "UsedFor",
+      "end": "propulsion",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "engine",
+      "relation": "PartOf",
+      "end": "powertrain",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "eye": [
+    {
+      "start": "eye",
+      "relation": "SubclassOf",
+      "end": "territory",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "face": [
+    {
+      "start": "face",
+      "relation": "PartOf",
+      "end": "head",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "face",
+      "relation": "PartOf",
+      "end": "polytope",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "fair": [
+    {
+      "start": "fair",
+      "relation": "PartOf",
+      "end": "trade",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "fall": [
+    {
+      "start": "fall",
+      "relation": "SubclassOf",
+      "end": "accident",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fall",
+      "relation": "HasGenre",
+      "end": "highlife",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fall",
+      "relation": "IsA",
+      "end": "measurement",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "fall",
+      "relation": "SubclassOf",
+      "end": "hairpiece",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fall",
+      "relation": "SubclassOf",
+      "end": "descent",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "fan": [
+    {
+      "start": "fan",
+      "relation": "MadeOf",
+      "end": "silk",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fan",
+      "relation": "SubclassOf",
+      "end": "turbomachinery",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fan",
+      "relation": "IsA",
+      "end": "subculture",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "fan",
+      "relation": "MadeOf",
+      "end": "lacquer",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fan",
+      "relation": "MadeOf",
+      "end": "ivory",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fan",
+      "relation": "IsA",
+      "end": "occupation",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "fan",
+      "relation": "SubclassOf",
+      "end": "tsun",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "fence": [
+    {
+      "start": "fence",
+      "relation": "MadeOf",
+      "end": "wood",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fence",
+      "relation": "SubclassOf",
+      "end": "obstacle",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fence",
+      "relation": "SubclassOf",
+      "end": "jig",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fence",
+      "relation": "MadeOf",
+      "end": "glass",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fence",
+      "relation": "MadeOf",
+      "end": "wire",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fence",
+      "relation": "UsedFor",
+      "end": "woodworking",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "fence",
+      "relation": "MadeOf",
+      "end": "girder",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fence",
+      "relation": "SubclassOf",
+      "end": "criminal",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fence",
+      "relation": "SubclassOf",
+      "end": "boundary",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fence",
+      "relation": "MadeOf",
+      "end": "wattle",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fence",
+      "relation": "IsA",
+      "end": "occupation",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "fence",
+      "relation": "IsA",
+      "end": "buildings",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "field": [
+    {
+      "start": "field",
+      "relation": "PartOf",
+      "end": "flag",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "field",
+      "relation": "SubclassOf",
+      "end": "plateau",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "field",
+      "relation": "SubclassOf",
+      "end": "landform",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "field",
+      "relation": "SubclassOf",
+      "end": "bialgebra",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "field",
+      "relation": "PartOf",
+      "end": "record",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "fighter": [
+    {
+      "start": "fighter",
+      "relation": "SubclassOf",
+      "end": "warrior",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "figure": [
+    {
+      "start": "figure",
+      "relation": "SubclassOf",
+      "end": "shadow",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "figure",
+      "relation": "SubclassOf",
+      "end": "image",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "figure",
+      "relation": "SubclassOf",
+      "end": "representation",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "file": [
+    {
+      "start": "file",
+      "relation": "SubclassOf",
+      "end": "stationery",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "file",
+      "relation": "UsedFor",
+      "end": "filing",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "fire": [
+    {
+      "start": "fire",
+      "relation": "UsedFor",
+      "end": "cooking",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "fire",
+      "relation": "UsedFor",
+      "end": "roasting",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "fire",
+      "relation": "SubclassOf",
+      "end": "combustion",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "fish": [
+    {
+      "start": "fish",
+      "relation": "UsedFor",
+      "end": "research",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "fish",
+      "relation": "UsedFor",
+      "end": "ornament",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "fish",
+      "relation": "UsedFor",
+      "end": "food",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "fish",
+      "relation": "IsA",
+      "end": "grade",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "fish",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fish",
+      "relation": "UsedFor",
+      "end": "bycatch",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "flute": [
+    {
+      "start": "flute",
+      "relation": "SubclassOf",
+      "end": "landform",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "fly": [
+    {
+      "start": "fly",
+      "relation": "SubclassOf",
+      "end": "insect",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fly",
+      "relation": "HasOccupation",
+      "end": "squatter",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "fly",
+      "relation": "HasOccupation",
+      "end": "artist",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "fly",
+      "relation": "IsA",
+      "end": "insect",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "foot": [
+    {
+      "start": "foot",
+      "relation": "PartOf",
+      "end": "mountain",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "foot",
+      "relation": "SubclassOf",
+      "end": "verse",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "foot",
+      "relation": "PartOf",
+      "end": "leg",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "foot",
+      "relation": "SubclassOf",
+      "end": "metre",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "foot",
+      "relation": "SubclassOf",
+      "end": "organ",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "foot",
+      "relation": "PartOf",
+      "end": "line",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "foot",
+      "relation": "SubclassOf",
+      "end": "component",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "force": [
+    {
+      "start": "force",
+      "relation": "SubclassOf",
+      "end": "violence",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "force",
+      "relation": "PartOf",
+      "end": "interaction",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "forest": [
+    {
+      "start": "forest",
+      "relation": "SubclassOf",
+      "end": "ecosystem",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "forest",
+      "relation": "PartOf",
+      "end": "biosphere",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "forest",
+      "relation": "SubclassOf",
+      "end": "habitat",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "forest",
+      "relation": "SubclassOf",
+      "end": "biome",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "forest",
+      "relation": "PartOf",
+      "end": "biome",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "fork": [
+    {
+      "start": "fork",
+      "relation": "SubclassOf",
+      "end": "cutlery",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fork",
+      "relation": "SubclassOf",
+      "end": "data",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fork",
+      "relation": "UsedFor",
+      "end": "eating",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "fork",
+      "relation": "SubclassOf",
+      "end": "update",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fork",
+      "relation": "IsA",
+      "end": "theme",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "fork",
+      "relation": "SubclassOf",
+      "end": "development",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "fork",
+      "relation": "SubclassOf",
+      "end": "blockchain",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "game": [
+    {
+      "start": "game",
+      "relation": "UsedFor",
+      "end": "food",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "game",
+      "relation": "SubclassOf",
+      "end": "animalia",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "game",
+      "relation": "PartOf",
+      "end": "culture",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "game",
+      "relation": "SubclassOf",
+      "end": "wildlife",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "game",
+      "relation": "PartOf",
+      "end": "wildlife",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "game",
+      "relation": "UsedFor",
+      "end": "trophy",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "game",
+      "relation": "UsedFor",
+      "end": "leathermaking",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "gas": [
+    {
+      "start": "gas",
+      "relation": "SubclassOf",
+      "end": "fluid",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "genius": [
+    {
+      "start": "genius",
+      "relation": "SubclassOf",
+      "end": "daemon",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "genius",
+      "relation": "IsA",
+      "end": "approbative",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "ghost": [
+    {
+      "start": "ghost",
+      "relation": "SubclassOf",
+      "end": "spirit",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ghost",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ghost",
+      "relation": "SubclassOf",
+      "end": "undead",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ghost",
+      "relation": "SubclassOf",
+      "end": "terran",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "giant": [
+    {
+      "start": "giant",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "glass": [
+    {
+      "start": "glass",
+      "relation": "SubclassOf",
+      "end": "solid",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "glass",
+      "relation": "SubclassOf",
+      "end": "material",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "glass",
+      "relation": "IsA",
+      "end": "material",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "glove": [
+    {
+      "start": "glove",
+      "relation": "UsedFor",
+      "end": "safety",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "glove",
+      "relation": "UsedFor",
+      "end": "fashion",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "glove",
+      "relation": "SubclassOf",
+      "end": "handwear",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "gold": [
+    {
+      "start": "gold",
+      "relation": "SubclassOf",
+      "end": "yellow",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "gold",
+      "relation": "SubclassOf",
+      "end": "orange",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "grace": [
+    {
+      "start": "grace",
+      "relation": "SubclassOf",
+      "end": "prayer",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "grace",
+      "relation": "IsA",
+      "end": "prayer",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "grace",
+      "relation": "IsA",
+      "end": "quotation",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "grass": [
+    {
+      "start": "grass",
+      "relation": "SubclassOf",
+      "end": "plant",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "grass",
+      "relation": "SubclassOf",
+      "end": "pitch",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "green": [
+    {
+      "start": "green",
+      "relation": "SubclassOf",
+      "end": "color",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "green",
+      "relation": "SubclassOf",
+      "end": "light",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "ground": [
+    {
+      "start": "ground",
+      "relation": "IsA",
+      "end": "description",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "ham": [
+    {
+      "start": "ham",
+      "relation": "SubclassOf",
+      "end": "pork",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "hand": [
+    {
+      "start": "hand",
+      "relation": "SubclassOf",
+      "end": "asset",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "hand",
+      "relation": "UsedFor",
+      "end": "holding",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "hand",
+      "relation": "SubclassOf",
+      "end": "manipulator",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "hawk": [
+    {
+      "start": "hawk",
+      "relation": "SubclassOf",
+      "end": "beast",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "hawk",
+      "relation": "SubclassOf",
+      "end": "accipitridae",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "hawk",
+      "relation": "UsedFor",
+      "end": "plastering",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "hawk",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "head": [
+    {
+      "start": "head",
+      "relation": "PartOf",
+      "end": "screw",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "head",
+      "relation": "MadeOf",
+      "end": "stone",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "head",
+      "relation": "PartOf",
+      "end": "nail",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "head",
+      "relation": "PartOf",
+      "end": "phrase",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "head",
+      "relation": "PartOf",
+      "end": "list",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "head",
+      "relation": "PartOf",
+      "end": "body",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "head",
+      "relation": "PartOf",
+      "end": "sail",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "head",
+      "relation": "PartOf",
+      "end": "rivet",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "head",
+      "relation": "SubclassOf",
+      "end": "node",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "head",
+      "relation": "IsA",
+      "end": "motif",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "head",
+      "relation": "PartOf",
+      "end": "bell",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "head",
+      "relation": "OwnedBy",
+      "end": "zollikofen",
+      "weight": 2.0,
+      "source": "wikidata"
+    }
+  ],
+  "heart": [
+    {
+      "start": "heart",
+      "relation": "IsA",
+      "end": "suit",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "heart",
+      "relation": "SubclassOf",
+      "end": "shape",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "heart",
+      "relation": "IsA",
+      "end": "motif",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "helicopter": [
+    {
+      "start": "helicopter",
+      "relation": "SubclassOf",
+      "end": "rotorcraft",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "helicopter",
+      "relation": "UsedFor",
+      "end": "aviation",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "hole": [
+    {
+      "start": "hole",
+      "relation": "SubclassOf",
+      "end": "turbulence",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "hole",
+      "relation": "PartOf",
+      "end": "limnology",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "honey": [
+    {
+      "start": "honey",
+      "relation": "MadeOf",
+      "end": "water",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "honey",
+      "relation": "SubclassOf",
+      "end": "color",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "honey",
+      "relation": "IsA",
+      "end": "color",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "honey",
+      "relation": "UsedFor",
+      "end": "medicine",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "honey",
+      "relation": "SubclassOf",
+      "end": "brown",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "honey",
+      "relation": "SubclassOf",
+      "end": "fodder",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "honey",
+      "relation": "UsedFor",
+      "end": "spread",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "honey",
+      "relation": "MadeOf",
+      "end": "nectar",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "honey",
+      "relation": "SubclassOf",
+      "end": "syrup",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "honey",
+      "relation": "UsedFor",
+      "end": "ingredient",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "honey",
+      "relation": "SubclassOf",
+      "end": "confection",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "hood": [
+    {
+      "start": "hood",
+      "relation": "SubclassOf",
+      "end": "headgear",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "hood",
+      "relation": "MadeOf",
+      "end": "textile",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "hood",
+      "relation": "PartOf",
+      "end": "coach",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "hood",
+      "relation": "IsA",
+      "end": "cloth",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "hook": [
+    {
+      "start": "hook",
+      "relation": "PartOf",
+      "end": "software",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "hook",
+      "relation": "SubclassOf",
+      "end": "punch",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "hook",
+      "relation": "UsedFor",
+      "end": "customizing",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "hook",
+      "relation": "SubclassOf",
+      "end": "fastener",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "hook",
+      "relation": "IsA",
+      "end": "action",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "hook",
+      "relation": "IsA",
+      "end": "means",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "hook",
+      "relation": "SubclassOf",
+      "end": "connector",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "horse": [
+    {
+      "start": "horse",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "horse",
+      "relation": "SubclassOf",
+      "end": "beast",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "horse",
+      "relation": "MadeOf",
+      "end": "wood",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "horse",
+      "relation": "OwnedBy",
+      "end": "ostermundigen",
+      "weight": 2.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "horse",
+      "relation": "UsedFor",
+      "end": "equestrianism",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "horse",
+      "relation": "UsedFor",
+      "end": "chariot",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "horse",
+      "relation": "MadeOf",
+      "end": "earthenware",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "horse",
+      "relation": "MadeOf",
+      "end": "canvas",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "horseshoe": [
+    {
+      "start": "horseshoe",
+      "relation": "SubclassOf",
+      "end": "footwear",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "hospital": [
+    {
+      "start": "hospital",
+      "relation": "SubclassOf",
+      "end": "institution",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "hospital",
+      "relation": "SubclassOf",
+      "end": "workplace",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "hotel": [
+    {
+      "start": "hotel",
+      "relation": "PartOf",
+      "end": "horeca",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "hotel",
+      "relation": "SubclassOf",
+      "end": "lodging",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "hotel",
+      "relation": "SubclassOf",
+      "end": "enterprise",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "ice": [
+    {
+      "start": "ice",
+      "relation": "SubclassOf",
+      "end": "water",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ice",
+      "relation": "MadeOf",
+      "end": "water",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ice",
+      "relation": "SubclassOf",
+      "end": "solid",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "ice cream": [
+    {
+      "start": "ice cream",
+      "relation": "MadeOf",
+      "end": "milk",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ice cream",
+      "relation": "MadeOf",
+      "end": "sugar",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ice cream",
+      "relation": "MadeOf",
+      "end": "flavoring",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "iron": [
+    {
+      "start": "iron",
+      "relation": "IsA",
+      "end": "metal",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "iron",
+      "relation": "SubclassOf",
+      "end": "medication",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "iron",
+      "relation": "UsedFor",
+      "end": "ferroalloy",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "iron",
+      "relation": "SubclassOf",
+      "end": "heater",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "iron",
+      "relation": "IsA",
+      "end": "color",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "ivory": [
+    {
+      "start": "ivory",
+      "relation": "SubclassOf",
+      "end": "white",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ivory",
+      "relation": "SubclassOf",
+      "end": "dentin",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "jack": [
+    {
+      "start": "jack",
+      "relation": "SubclassOf",
+      "end": "ball",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "jam": [
+    {
+      "start": "jam",
+      "relation": "SubclassOf",
+      "end": "food",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "jam",
+      "relation": "MadeOf",
+      "end": "sugar",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "jam",
+      "relation": "MadeOf",
+      "end": "fruit",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "jam",
+      "relation": "SubclassOf",
+      "end": "spread",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "jam",
+      "relation": "UsedFor",
+      "end": "spread",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "jam",
+      "relation": "SubclassOf",
+      "end": "confection",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "jet": [
+    {
+      "start": "jet",
+      "relation": "SubclassOf",
+      "end": "lignite",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "jet",
+      "relation": "SubclassOf",
+      "end": "mineraloid",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "kangaroo": [
+    {
+      "start": "kangaroo",
+      "relation": "SubclassOf",
+      "end": "diprotodontia",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "ketchup": [
+    {
+      "start": "ketchup",
+      "relation": "MadeOf",
+      "end": "sugar",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ketchup",
+      "relation": "MadeOf",
+      "end": "vinegar",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ketchup",
+      "relation": "SubclassOf",
+      "end": "condiment",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ketchup",
+      "relation": "MadeOf",
+      "end": "onion",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ketchup",
+      "relation": "SubclassOf",
+      "end": "sauce",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ketchup",
+      "relation": "MadeOf",
+      "end": "tomato",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ketchup",
+      "relation": "MadeOf",
+      "end": "garlic",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "key": [
+    {
+      "start": "key",
+      "relation": "SubclassOf",
+      "end": "information",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "key",
+      "relation": "SubclassOf",
+      "end": "lever",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "key",
+      "relation": "IsA",
+      "end": "metaphor",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "key",
+      "relation": "SubclassOf",
+      "end": "data",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "key",
+      "relation": "SubclassOf",
+      "end": "reference",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "key",
+      "relation": "UsedFor",
+      "end": "access",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "kid": [
+    {
+      "start": "kid",
+      "relation": "SubclassOf",
+      "end": "juvenile",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "kid",
+      "relation": "SubclassOf",
+      "end": "kitz",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "kid",
+      "relation": "SubclassOf",
+      "end": "goat",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "king": [
+    {
+      "start": "king",
+      "relation": "SubclassOf",
+      "end": "monarch",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "king",
+      "relation": "HasOccupation",
+      "end": "monarch",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "king",
+      "relation": "SubclassOf",
+      "end": "man",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "king",
+      "relation": "IsA",
+      "end": "profession",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "king",
+      "relation": "PartOf",
+      "end": "shogi",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "kiwi": [
+    {
+      "start": "kiwi",
+      "relation": "IsA",
+      "end": "crossbreed",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "knife": [
+    {
+      "start": "knife",
+      "relation": "MadeOf",
+      "end": "leather",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "knife",
+      "relation": "UsedFor",
+      "end": "cutting",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "knife",
+      "relation": "MadeOf",
+      "end": "bone",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "knife",
+      "relation": "MadeOf",
+      "end": "antlers",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "knife",
+      "relation": "SubclassOf",
+      "end": "die",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "knight": [
+    {
+      "start": "knight",
+      "relation": "IsA",
+      "end": "profession",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "knight",
+      "relation": "SubclassOf",
+      "end": "warrior",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "knight",
+      "relation": "SubclassOf",
+      "end": "hippogonal",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "lap": [
+    {
+      "start": "lap",
+      "relation": "SubclassOf",
+      "end": "loop",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "laser": [
+    {
+      "start": "laser",
+      "relation": "SubclassOf",
+      "end": "apiaceae",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "lawyer": [
+    {
+      "start": "lawyer",
+      "relation": "IsA",
+      "end": "profession",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "lawyer",
+      "relation": "SubclassOf",
+      "end": "jurist",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "lead": [
+    {
+      "start": "lead",
+      "relation": "MadeOf",
+      "end": "aluminium",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "lead",
+      "relation": "MadeOf",
+      "end": "copper",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "lead",
+      "relation": "PartOf",
+      "end": "electrode",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "lead",
+      "relation": "MadeOf",
+      "end": "anglesite",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "lead",
+      "relation": "MadeOf",
+      "end": "galena",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "lead",
+      "relation": "MadeOf",
+      "end": "boulangerite",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "lead",
+      "relation": "MadeOf",
+      "end": "cerussite",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "lead",
+      "relation": "SubclassOf",
+      "end": "component",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "lead",
+      "relation": "IsA",
+      "end": "metal",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "lemon": [
+    {
+      "start": "lemon",
+      "relation": "SubclassOf",
+      "end": "yellow",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "lemon",
+      "relation": "IsA",
+      "end": "color",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "lemon",
+      "relation": "SubclassOf",
+      "end": "car",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "lemon",
+      "relation": "SubclassOf",
+      "end": "berry",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "lemon",
+      "relation": "UsedFor",
+      "end": "food",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "lemon",
+      "relation": "UsedFor",
+      "end": "cosmetics",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "lemon",
+      "relation": "SubclassOf",
+      "end": "hesperidium",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "lemon",
+      "relation": "IsA",
+      "end": "fruit",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "leprechaun": [
+    {
+      "start": "leprechaun",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "leprechaun",
+      "relation": "SubclassOf",
+      "end": "fey",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "leprechaun",
+      "relation": "SubclassOf",
+      "end": "gnome",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "leprechaun",
+      "relation": "SubclassOf",
+      "end": "fairy",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "life": [
+    {
+      "start": "life",
+      "relation": "SubclassOf",
+      "end": "lyfe",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "life",
+      "relation": "SubclassOf",
+      "end": "being",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "life",
+      "relation": "SubclassOf",
+      "end": "criterion",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "light": [
+    {
+      "start": "light",
+      "relation": "SubclassOf",
+      "end": "color",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "light",
+      "relation": "UsedFor",
+      "end": "art",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "light",
+      "relation": "UsedFor",
+      "end": "photosynthesis",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "light",
+      "relation": "IsA",
+      "end": "taste",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "limousine": [
+    {
+      "start": "limousine",
+      "relation": "SubclassOf",
+      "end": "car",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "line": [
+    {
+      "start": "line",
+      "relation": "SubclassOf",
+      "end": "sequence",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "line",
+      "relation": "SubclassOf",
+      "end": "acting",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "line",
+      "relation": "SubclassOf",
+      "end": "film",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "line",
+      "relation": "SubclassOf",
+      "end": "oration",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "line",
+      "relation": "PartOf",
+      "end": "plane",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "line",
+      "relation": "PartOf",
+      "end": "puntu",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "line",
+      "relation": "SubclassOf",
+      "end": "locus",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "line",
+      "relation": "SubclassOf",
+      "end": "text",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "line",
+      "relation": "SubclassOf",
+      "end": "ornament",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "line",
+      "relation": "SubclassOf",
+      "end": "street",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "line",
+      "relation": "PartOf",
+      "end": "stanza",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "line",
+      "relation": "SubclassOf",
+      "end": "pattern",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "link": [
+    {
+      "start": "link",
+      "relation": "IsA",
+      "end": "handle",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "link",
+      "relation": "PartOf",
+      "end": "atom",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "lion": [
+    {
+      "start": "lion",
+      "relation": "IsA",
+      "end": "color",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "lion",
+      "relation": "IsA",
+      "end": "motif",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "lion",
+      "relation": "MadeOf",
+      "end": "plaster",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "lion",
+      "relation": "SubclassOf",
+      "end": "zoomorph",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "lion",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "lion",
+      "relation": "SubclassOf",
+      "end": "cat",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "litter": [
+    {
+      "start": "litter",
+      "relation": "MadeOf",
+      "end": "wood",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "litter",
+      "relation": "UsedFor",
+      "end": "transport",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "litter",
+      "relation": "SubclassOf",
+      "end": "animalia",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "litter",
+      "relation": "MadeOf",
+      "end": "wool",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "litter",
+      "relation": "IsA",
+      "end": "vehicle",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "litter",
+      "relation": "MadeOf",
+      "end": "glass",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "litter",
+      "relation": "SubclassOf",
+      "end": "waste",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "litter",
+      "relation": "SubclassOf",
+      "end": "stretcher",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "litter",
+      "relation": "IsA",
+      "end": "material",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "litter",
+      "relation": "MadeOf",
+      "end": "textile",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "litter",
+      "relation": "SubclassOf",
+      "end": "transgression",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "litter",
+      "relation": "SubclassOf",
+      "end": "disposal",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "litter",
+      "relation": "MadeOf",
+      "end": "silk",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "lock": [
+    {
+      "start": "lock",
+      "relation": "SubclassOf",
+      "end": "mechanism",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "lock",
+      "relation": "PartOf",
+      "end": "canal",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "lock",
+      "relation": "UsedFor",
+      "end": "ascent",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "lock",
+      "relation": "UsedFor",
+      "end": "descent",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "lock",
+      "relation": "SubclassOf",
+      "end": "sluice",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "log": [
+    {
+      "start": "log",
+      "relation": "SubclassOf",
+      "end": "wood",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "log",
+      "relation": "MadeOf",
+      "end": "wood",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "log",
+      "relation": "IsA",
+      "end": "material",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "luck": [
+    {
+      "start": "luck",
+      "relation": "PartOf",
+      "end": "superstition",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "mail": [
+    {
+      "start": "mail",
+      "relation": "SubclassOf",
+      "end": "metal",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mail",
+      "relation": "SubclassOf",
+      "end": "transport",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mail",
+      "relation": "SubclassOf",
+      "end": "industry",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mail",
+      "relation": "IsA",
+      "end": "service",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "mammoth": [
+    {
+      "start": "mammoth",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mammoth",
+      "relation": "SubclassOf",
+      "end": "beast",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "marble": [
+    {
+      "start": "marble",
+      "relation": "SubclassOf",
+      "end": "toy",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "marble",
+      "relation": "SubclassOf",
+      "end": "ball",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "marble",
+      "relation": "SubclassOf",
+      "end": "limestone",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "marble",
+      "relation": "MadeOf",
+      "end": "glass",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "march": [
+    {
+      "start": "march",
+      "relation": "SubclassOf",
+      "end": "demonstration",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "match": [
+    {
+      "start": "match",
+      "relation": "MadeOf",
+      "end": "wood",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "match",
+      "relation": "MadeOf",
+      "end": "phosphorus",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "match",
+      "relation": "MadeOf",
+      "end": "cardboard",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "match",
+      "relation": "UsedFor",
+      "end": "firelighting",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "mercury": [
+    {
+      "start": "mercury",
+      "relation": "IsA",
+      "end": "metal",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "mercury",
+      "relation": "MadeOf",
+      "end": "sphalerite",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mercury",
+      "relation": "PartOf",
+      "end": "tailings",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "mercury",
+      "relation": "MadeOf",
+      "end": "metacinnabar",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mercury",
+      "relation": "MadeOf",
+      "end": "livingstonite",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mercury",
+      "relation": "MadeOf",
+      "end": "cinnabar",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mercury",
+      "relation": "MadeOf",
+      "end": "corderoite",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "mexico": [
+    {
+      "start": "mexico",
+      "relation": "HasOccupation",
+      "end": "writer",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "mexico",
+      "relation": "HasOccupation",
+      "end": "engineer",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "microscope": [
+    {
+      "start": "microscope",
+      "relation": "MadeOf",
+      "end": "silver",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "microscope",
+      "relation": "MadeOf",
+      "end": "leather",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "microscope",
+      "relation": "MadeOf",
+      "end": "steel",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "microscope",
+      "relation": "MadeOf",
+      "end": "glass",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "microscope",
+      "relation": "MadeOf",
+      "end": "paper",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "microscope",
+      "relation": "MadeOf",
+      "end": "silk",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "microscope",
+      "relation": "MadeOf",
+      "end": "ebony",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "microscope",
+      "relation": "MadeOf",
+      "end": "rosewood",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "microscope",
+      "relation": "MadeOf",
+      "end": "ivory",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "microscope",
+      "relation": "MadeOf",
+      "end": "wool",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "microscope",
+      "relation": "UsedFor",
+      "end": "microscopy",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "microscope",
+      "relation": "MadeOf",
+      "end": "cardboard",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "microscope",
+      "relation": "MadeOf",
+      "end": "purpleheart",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "millionaire": [
+    {
+      "start": "millionaire",
+      "relation": "SubclassOf",
+      "end": "rich",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "mine": [
+    {
+      "start": "mine",
+      "relation": "SubclassOf",
+      "end": "facility",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "mint": [
+    {
+      "start": "mint",
+      "relation": "SubclassOf",
+      "end": "green",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mint",
+      "relation": "MadeOf",
+      "end": "mentha",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mint",
+      "relation": "SubclassOf",
+      "end": "factory",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mint",
+      "relation": "SubclassOf",
+      "end": "candy",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mint",
+      "relation": "SubclassOf",
+      "end": "facility",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "missile": [
+    {
+      "start": "missile",
+      "relation": "SubclassOf",
+      "end": "rocket",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "model": [
+    {
+      "start": "model",
+      "relation": "PartOf",
+      "end": "logic",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "model",
+      "relation": "SubclassOf",
+      "end": "information",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "model",
+      "relation": "IsA",
+      "end": "profession",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "model",
+      "relation": "SubclassOf",
+      "end": "doll",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "model",
+      "relation": "SubclassOf",
+      "end": "mannequin",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "mole": [
+    {
+      "start": "mole",
+      "relation": "IsA",
+      "end": "disease",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "mole",
+      "relation": "SubclassOf",
+      "end": "sauce",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mole",
+      "relation": "SubclassOf",
+      "end": "nevus",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mole",
+      "relation": "UsedFor",
+      "end": "breakwater",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "mole",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mole",
+      "relation": "IsA",
+      "end": "occupation",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "mole",
+      "relation": "UsedFor",
+      "end": "pier",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "mole",
+      "relation": "SubclassOf",
+      "end": "informant",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "moon": [
+    {
+      "start": "moon",
+      "relation": "IsA",
+      "end": "air",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "mount": [
+    {
+      "start": "mount",
+      "relation": "SubclassOf",
+      "end": "component",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mount",
+      "relation": "SubclassOf",
+      "end": "support",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mount",
+      "relation": "SubclassOf",
+      "end": "earth",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "mouse": [
+    {
+      "start": "mouse",
+      "relation": "SubclassOf",
+      "end": "animalia",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mouse",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "mouth": [
+    {
+      "start": "mouth",
+      "relation": "UsedFor",
+      "end": "breathing",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "mouth",
+      "relation": "PartOf",
+      "end": "head",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "mouth",
+      "relation": "UsedFor",
+      "end": "eating",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "mouth",
+      "relation": "PartOf",
+      "end": "bell",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "mouth",
+      "relation": "UsedFor",
+      "end": "ingestion",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "mouth",
+      "relation": "PartOf",
+      "end": "container",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "mouth",
+      "relation": "SubclassOf",
+      "end": "disk",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mouth",
+      "relation": "SubclassOf",
+      "end": "hole",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "mug": [
+    {
+      "start": "mug",
+      "relation": "MadeOf",
+      "end": "ceramic",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mug",
+      "relation": "SubclassOf",
+      "end": "cup",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "mug",
+      "relation": "UsedFor",
+      "end": "drinking",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "nail": [
+    {
+      "start": "nail",
+      "relation": "MadeOf",
+      "end": "iron",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "nail",
+      "relation": "MadeOf",
+      "end": "wire",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "nail",
+      "relation": "SubclassOf",
+      "end": "fastener",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "nail",
+      "relation": "UsedFor",
+      "end": "assembly",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "nail",
+      "relation": "UsedFor",
+      "end": "construction",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "needle": [
+    {
+      "start": "needle",
+      "relation": "SubclassOf",
+      "end": "leaf",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "net": [
+    {
+      "start": "net",
+      "relation": "UsedFor",
+      "end": "fishing",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "net",
+      "relation": "SubclassOf",
+      "end": "textile",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "net",
+      "relation": "MadeOf",
+      "end": "textile",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "net",
+      "relation": "SubclassOf",
+      "end": "filter",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "net",
+      "relation": "SubclassOf",
+      "end": "polytope",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "net",
+      "relation": "IsA",
+      "end": "command",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "net",
+      "relation": "UsedFor",
+      "end": "traction",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "net",
+      "relation": "IsA",
+      "end": "subordinary",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "night": [
+    {
+      "start": "night",
+      "relation": "PartOf",
+      "end": "day",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "night",
+      "relation": "MadeOf",
+      "end": "canvas",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "ninja": [
+    {
+      "start": "ninja",
+      "relation": "IsA",
+      "end": "profession",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "ninja",
+      "relation": "SubclassOf",
+      "end": "mercenary",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ninja",
+      "relation": "SubclassOf",
+      "end": "rogue",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "note": [
+    {
+      "start": "note",
+      "relation": "PartOf",
+      "end": "communication",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "note",
+      "relation": "SubclassOf",
+      "end": "information",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "note",
+      "relation": "IsA",
+      "end": "website",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "note",
+      "relation": "PartOf",
+      "end": "document",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "note",
+      "relation": "PartOf",
+      "end": "learning",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "note",
+      "relation": "IsA",
+      "end": "application",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "note",
+      "relation": "SubclassOf",
+      "end": "text",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "note",
+      "relation": "SubclassOf",
+      "end": "work",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "note",
+      "relation": "SubclassOf",
+      "end": "odor",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "note",
+      "relation": "SubclassOf",
+      "end": "annotation",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "note",
+      "relation": "UsedFor",
+      "end": "perfumery",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "novel": [
+    {
+      "start": "novel",
+      "relation": "SubclassOf",
+      "end": "prose",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "novel",
+      "relation": "SubclassOf",
+      "end": "narration",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "nurse": [
+    {
+      "start": "nurse",
+      "relation": "IsA",
+      "end": "occupation",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "nut": [
+    {
+      "start": "nut",
+      "relation": "SubclassOf",
+      "end": "food",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "nut",
+      "relation": "SubclassOf",
+      "end": "fruit",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "octopus": [
+    {
+      "start": "octopus",
+      "relation": "UsedFor",
+      "end": "science",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "oil": [
+    {
+      "start": "oil",
+      "relation": "SubclassOf",
+      "end": "liquid",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "oil",
+      "relation": "IsA",
+      "end": "commodity",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "oil",
+      "relation": "IsA",
+      "end": "product",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "olive": [
+    {
+      "start": "olive",
+      "relation": "SubclassOf",
+      "end": "green",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "olive",
+      "relation": "IsA",
+      "end": "color",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "olive",
+      "relation": "SubclassOf",
+      "end": "fruit",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "olive",
+      "relation": "IsA",
+      "end": "fastener",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "olive",
+      "relation": "PartOf",
+      "end": "myrtle",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "orange": [
+    {
+      "start": "orange",
+      "relation": "SubclassOf",
+      "end": "yellow",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "orange",
+      "relation": "SubclassOf",
+      "end": "red",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "orange",
+      "relation": "SubclassOf",
+      "end": "light",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "orange",
+      "relation": "SubclassOf",
+      "end": "hesperidium",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "orange",
+      "relation": "IsA",
+      "end": "fruit",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "orange",
+      "relation": "IsA",
+      "end": "stain",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "palm": [
+    {
+      "start": "palm",
+      "relation": "PartOf",
+      "end": "hand",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "pan": [
+    {
+      "start": "pan",
+      "relation": "UsedFor",
+      "end": "cooking",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "pan",
+      "relation": "SubclassOf",
+      "end": "depression",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pan",
+      "relation": "HasOccupation",
+      "end": "illustrator",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "pan",
+      "relation": "HasOccupation",
+      "end": "draftsperson",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "paper": [
+    {
+      "start": "paper",
+      "relation": "IsA",
+      "end": "material",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "paper",
+      "relation": "MadeOf",
+      "end": "dye",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "paper",
+      "relation": "MadeOf",
+      "end": "bleach",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "paper",
+      "relation": "UsedFor",
+      "end": "substrate",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "paper",
+      "relation": "IsA",
+      "end": "move",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "paper",
+      "relation": "MadeOf",
+      "end": "flax",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "parachute": [
+    {
+      "start": "parachute",
+      "relation": "UsedFor",
+      "end": "deceleration",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "parachute",
+      "relation": "MadeOf",
+      "end": "textile",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "parachute",
+      "relation": "MadeOf",
+      "end": "cable",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "park": [
+    {
+      "start": "park",
+      "relation": "SubclassOf",
+      "end": "facility",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "park",
+      "relation": "IsA",
+      "end": "gear",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "part": [
+    {
+      "start": "part",
+      "relation": "SubclassOf",
+      "end": "line",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "part",
+      "relation": "PartOf",
+      "end": "whole",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "pass": [
+    {
+      "start": "pass",
+      "relation": "SubclassOf",
+      "end": "license",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pass",
+      "relation": "SubclassOf",
+      "end": "motion",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pass",
+      "relation": "PartOf",
+      "end": "bullfighting",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "paste": [
+    {
+      "start": "paste",
+      "relation": "SubclassOf",
+      "end": "substance",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "penguin": [
+    {
+      "start": "penguin",
+      "relation": "SubclassOf",
+      "end": "seabird",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "penguin",
+      "relation": "SubclassOf",
+      "end": "piscivore",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "phoenix": [
+    {
+      "start": "phoenix",
+      "relation": "IsA",
+      "end": "mythology",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "phoenix",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "phoenix",
+      "relation": "IsA",
+      "end": "motif",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "phoenix",
+      "relation": "SubclassOf",
+      "end": "elemental",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "phoenix",
+      "relation": "SubclassOf",
+      "end": "zoomorph",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "pie": [
+    {
+      "start": "pie",
+      "relation": "SubclassOf",
+      "end": "torta",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pie",
+      "relation": "SubclassOf",
+      "end": "b\u00e1nh",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "pilot": [
+    {
+      "start": "pilot",
+      "relation": "IsA",
+      "end": "profession",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "pilot",
+      "relation": "MadeOf",
+      "end": "canvas",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "pin": [
+    {
+      "start": "pin",
+      "relation": "IsA",
+      "end": "technique",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "pin",
+      "relation": "SubclassOf",
+      "end": "jewelry",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pin",
+      "relation": "SubclassOf",
+      "end": "fastener",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pin",
+      "relation": "IsA",
+      "end": "theme",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "pipe": [
+    {
+      "start": "pipe",
+      "relation": "SubclassOf",
+      "end": "flute",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pipe",
+      "relation": "SubclassOf",
+      "end": "aerophone",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pipe",
+      "relation": "SubclassOf",
+      "end": "tube",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pipe",
+      "relation": "SubclassOf",
+      "end": "channel",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pipe",
+      "relation": "UsedFor",
+      "end": "plumbing",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "pipe",
+      "relation": "IsA",
+      "end": "widget",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "pipe",
+      "relation": "PartOf",
+      "end": "piping",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "pirate": [
+    {
+      "start": "pirate",
+      "relation": "LocatedIn",
+      "end": "ocean",
+      "weight": 2.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "pirate",
+      "relation": "IsA",
+      "end": "proposition",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "pirate",
+      "relation": "SubclassOf",
+      "end": "hijacker",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pirate",
+      "relation": "IsA",
+      "end": "occupation",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "pirate",
+      "relation": "SubclassOf",
+      "end": "delinquent",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "pistol": [
+    {
+      "start": "pistol",
+      "relation": "SubclassOf",
+      "end": "firearm",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pistol",
+      "relation": "IsA",
+      "end": "game",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "pistol",
+      "relation": "SubclassOf",
+      "end": "handgun",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "pit": [
+    {
+      "start": "pit",
+      "relation": "PartOf",
+      "end": "dvd",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "pit",
+      "relation": "PartOf",
+      "end": "auditorium",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "pit",
+      "relation": "SubclassOf",
+      "end": "workshop",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pit",
+      "relation": "SubclassOf",
+      "end": "earthworks",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pit",
+      "relation": "SubclassOf",
+      "end": "hole",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pit",
+      "relation": "IsA",
+      "end": "hole",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "pitch": [
+    {
+      "start": "pitch",
+      "relation": "MadeOf",
+      "end": "concrete",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pitch",
+      "relation": "MadeOf",
+      "end": "sand",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pitch",
+      "relation": "PartOf",
+      "end": "wave",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "pitch",
+      "relation": "UsedFor",
+      "end": "sport",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "pitch",
+      "relation": "MadeOf",
+      "end": "ice",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pitch",
+      "relation": "MadeOf",
+      "end": "clay",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pitch",
+      "relation": "SubclassOf",
+      "end": "region",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pitch",
+      "relation": "SubclassOf",
+      "end": "soil",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pitch",
+      "relation": "SubclassOf",
+      "end": "rotation",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pitch",
+      "relation": "SubclassOf",
+      "end": "throwing",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pitch",
+      "relation": "MadeOf",
+      "end": "gravel",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pitch",
+      "relation": "MadeOf",
+      "end": "grass",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "plane": [
+    {
+      "start": "plane",
+      "relation": "SubclassOf",
+      "end": "reality",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "plane",
+      "relation": "SubclassOf",
+      "end": "religion",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "plane",
+      "relation": "SubclassOf",
+      "end": "belief",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "plane",
+      "relation": "SubclassOf",
+      "end": "superstition",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "plane",
+      "relation": "SubclassOf",
+      "end": "esotericism",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "plane",
+      "relation": "SubclassOf",
+      "end": "locus",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "plane",
+      "relation": "SubclassOf",
+      "end": "surface",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "plastic": [
+    {
+      "start": "plastic",
+      "relation": "MadeOf",
+      "end": "polymer",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "plastic",
+      "relation": "SubclassOf",
+      "end": "material",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "plate": [
+    {
+      "start": "plate",
+      "relation": "MadeOf",
+      "end": "silver",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "plate",
+      "relation": "MadeOf",
+      "end": "gold",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "plate",
+      "relation": "PartOf",
+      "end": "astrolabe",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "plate",
+      "relation": "MadeOf",
+      "end": "porcelain",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "plate",
+      "relation": "SubclassOf",
+      "end": "illustration",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "plate",
+      "relation": "IsA",
+      "end": "illustration",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "plate",
+      "relation": "IsA",
+      "end": "shape",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "plate",
+      "relation": "SubclassOf",
+      "end": "dish",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "plate",
+      "relation": "IsA",
+      "end": "bezant",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "plate",
+      "relation": "SubclassOf",
+      "end": "page",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "plate",
+      "relation": "MadeOf",
+      "end": "terracotta",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "plate",
+      "relation": "MadeOf",
+      "end": "faience",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "play": [
+    {
+      "start": "play",
+      "relation": "SubclassOf",
+      "end": "move",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "play",
+      "relation": "SubclassOf",
+      "end": "plan",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "play",
+      "relation": "HasGenre",
+      "end": "drama",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "play",
+      "relation": "MadeOf",
+      "end": "panel",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "plot": [
+    {
+      "start": "plot",
+      "relation": "UsedFor",
+      "end": "experiment",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "plot",
+      "relation": "SubclassOf",
+      "end": "chart",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "plot",
+      "relation": "SubclassOf",
+      "end": "facility",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "plot",
+      "relation": "IsA",
+      "end": "show",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "point": [
+    {
+      "start": "point",
+      "relation": "SubclassOf",
+      "end": "promontory",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "point",
+      "relation": "MadeOf",
+      "end": "leather",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "point",
+      "relation": "SubclassOf",
+      "end": "landform",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "point",
+      "relation": "MadeOf",
+      "end": "silk",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "point",
+      "relation": "SubclassOf",
+      "end": "locus",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "point",
+      "relation": "PartOf",
+      "end": "score",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "point",
+      "relation": "PartOf",
+      "end": "line",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "point",
+      "relation": "SubclassOf",
+      "end": "lacing",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "point",
+      "relation": "PartOf",
+      "end": "pica",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "point",
+      "relation": "MadeOf",
+      "end": "ribbon",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "poison": [
+    {
+      "start": "poison",
+      "relation": "UsedFor",
+      "end": "weapon",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "poison",
+      "relation": "SubclassOf",
+      "end": "noxa",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "pole": [
+    {
+      "start": "pole",
+      "relation": "UsedFor",
+      "end": "sailing",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "pole",
+      "relation": "UsedFor",
+      "end": "surveying",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "pole",
+      "relation": "SubclassOf",
+      "end": "stick",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "police": [
+    {
+      "start": "police",
+      "relation": "PartOf",
+      "end": "state",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "pool": [
+    {
+      "start": "pool",
+      "relation": "SubclassOf",
+      "end": "container",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "port": [
+    {
+      "start": "port",
+      "relation": "SubclassOf",
+      "end": "software",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "port",
+      "relation": "SubclassOf",
+      "end": "thoroughfare",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "port",
+      "relation": "SubclassOf",
+      "end": "connection",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "port",
+      "relation": "SubclassOf",
+      "end": "harbor",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "port",
+      "relation": "SubclassOf",
+      "end": "catheter",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "port",
+      "relation": "SubclassOf",
+      "end": "left",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "port",
+      "relation": "SubclassOf",
+      "end": "station",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "port",
+      "relation": "SubclassOf",
+      "end": "address",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "post": [
+    {
+      "start": "post",
+      "relation": "MadeOf",
+      "end": "wood",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "post",
+      "relation": "SubclassOf",
+      "end": "column",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "post",
+      "relation": "SubclassOf",
+      "end": "article",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "post",
+      "relation": "IsA",
+      "end": "genre",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "post",
+      "relation": "SubclassOf",
+      "end": "message",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "post",
+      "relation": "PartOf",
+      "end": "thread",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "post",
+      "relation": "IsA",
+      "end": "route",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "pound": [
+    {
+      "start": "pound",
+      "relation": "SubclassOf",
+      "end": "currency",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "press": [
+    {
+      "start": "press",
+      "relation": "SubclassOf",
+      "end": "periodical",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "princess": [
+    {
+      "start": "princess",
+      "relation": "SubclassOf",
+      "end": "woman",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "princess",
+      "relation": "SubclassOf",
+      "end": "daughter",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "princess",
+      "relation": "SubclassOf",
+      "end": "aristocrat",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "princess",
+      "relation": "MadeOf",
+      "end": "canvas",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "princess",
+      "relation": "SubclassOf",
+      "end": "noble",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "pumpkin": [
+    {
+      "start": "pumpkin",
+      "relation": "IsA",
+      "end": "color",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "pumpkin",
+      "relation": "SubclassOf",
+      "end": "berry",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "pupil": [
+    {
+      "start": "pupil",
+      "relation": "PartOf",
+      "end": "eye",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "pyramid": [
+    {
+      "start": "pyramid",
+      "relation": "MadeOf",
+      "end": "steel",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pyramid",
+      "relation": "SubclassOf",
+      "end": "building",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pyramid",
+      "relation": "SubclassOf",
+      "end": "projectile",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pyramid",
+      "relation": "LocatedIn",
+      "end": "charlottenburg",
+      "weight": 2.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "pyramid",
+      "relation": "SubclassOf",
+      "end": "representation",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pyramid",
+      "relation": "SubclassOf",
+      "end": "prismatoid",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "pyramid",
+      "relation": "IsA",
+      "end": "buildings",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "queen": [
+    {
+      "start": "queen",
+      "relation": "SubclassOf",
+      "end": "monarch",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "queen",
+      "relation": "SubclassOf",
+      "end": "sovereign",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "queen",
+      "relation": "SubclassOf",
+      "end": "aristocrat",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "queen",
+      "relation": "SubclassOf",
+      "end": "noble",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "rabbit": [
+    {
+      "start": "rabbit",
+      "relation": "SubclassOf",
+      "end": "equipment",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "rabbit",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "racket": [
+    {
+      "start": "racket",
+      "relation": "SubclassOf",
+      "end": "crime",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "racket",
+      "relation": "SubclassOf",
+      "end": "business",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "racket",
+      "relation": "SubclassOf",
+      "end": "bat",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "ray": [
+    {
+      "start": "ray",
+      "relation": "IsA",
+      "end": "light",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "ray",
+      "relation": "PartOf",
+      "end": "optics",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "ray",
+      "relation": "PartOf",
+      "end": "line",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "ray",
+      "relation": "SubclassOf",
+      "end": "curve",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ray",
+      "relation": "SubclassOf",
+      "end": "locus",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ray",
+      "relation": "SubclassOf",
+      "end": "seafood",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "revolution": [
+    {
+      "start": "revolution",
+      "relation": "SubclassOf",
+      "end": "rotation",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "revolution",
+      "relation": "SubclassOf",
+      "end": "conflict",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "revolution",
+      "relation": "MadeOf",
+      "end": "canvas",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "ring": [
+    {
+      "start": "ring",
+      "relation": "SubclassOf",
+      "end": "moiety",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ring",
+      "relation": "SubclassOf",
+      "end": "jewelry",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ring",
+      "relation": "SubclassOf",
+      "end": "rng",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "robin": [
+    {
+      "start": "robin",
+      "relation": "SubclassOf",
+      "end": "bird",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "robin",
+      "relation": "SubclassOf",
+      "end": "toxalbumin",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "robot": [
+    {
+      "start": "robot",
+      "relation": "SubclassOf",
+      "end": "machine",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "rock": [
+    {
+      "start": "rock",
+      "relation": "MadeOf",
+      "end": "sugar",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "rock",
+      "relation": "MadeOf",
+      "end": "mineral",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "rock",
+      "relation": "SubclassOf",
+      "end": "landform",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "rock",
+      "relation": "IsA",
+      "end": "earth",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "rock",
+      "relation": "UsedFor",
+      "end": "aggregate",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "rock",
+      "relation": "IsA",
+      "end": "move",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "root": [
+    {
+      "start": "root",
+      "relation": "PartOf",
+      "end": "plant",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "root",
+      "relation": "PartOf",
+      "end": "tree",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "root",
+      "relation": "SubclassOf",
+      "end": "morpheme",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "rose": [
+    {
+      "start": "rose",
+      "relation": "IsA",
+      "end": "color",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "rose",
+      "relation": "SubclassOf",
+      "end": "red",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "rose",
+      "relation": "SubclassOf",
+      "end": "gemstone",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "rose",
+      "relation": "SubclassOf",
+      "end": "flower",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "roulette": [
+    {
+      "start": "roulette",
+      "relation": "SubclassOf",
+      "end": "curve",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "roulette",
+      "relation": "IsA",
+      "end": "curve",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "round": [
+    {
+      "start": "round",
+      "relation": "SubclassOf",
+      "end": "canon",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "round",
+      "relation": "SubclassOf",
+      "end": "shape",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "round",
+      "relation": "SubclassOf",
+      "end": "competition",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "round",
+      "relation": "PartOf",
+      "end": "tournament",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "round",
+      "relation": "PartOf",
+      "end": "competition",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "round",
+      "relation": "SubclassOf",
+      "end": "racing",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "row": [
+    {
+      "start": "row",
+      "relation": "SubclassOf",
+      "end": "information",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "row",
+      "relation": "SubclassOf",
+      "end": "sequence",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "row",
+      "relation": "PartOf",
+      "end": "grid",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "row",
+      "relation": "SubclassOf",
+      "end": "record",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "ruler": [
+    {
+      "start": "ruler",
+      "relation": "SubclassOf",
+      "end": "leader",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ruler",
+      "relation": "SubclassOf",
+      "end": "straightedge",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ruler",
+      "relation": "SubclassOf",
+      "end": "stationery",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "scale": [
+    {
+      "start": "scale",
+      "relation": "IsA",
+      "end": "method",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "scale",
+      "relation": "PartOf",
+      "end": "music",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "scale",
+      "relation": "UsedFor",
+      "end": "map",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "scale",
+      "relation": "PartOf",
+      "end": "cartography",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "scale",
+      "relation": "SubclassOf",
+      "end": "seta",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "scale",
+      "relation": "SubclassOf",
+      "end": "number",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "scale",
+      "relation": "SubclassOf",
+      "end": "sequence",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "scale",
+      "relation": "UsedFor",
+      "end": "globe",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "scale",
+      "relation": "SubclassOf",
+      "end": "ratio",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "scientist": [
+    {
+      "start": "scientist",
+      "relation": "IsA",
+      "end": "profession",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "scientist",
+      "relation": "SubclassOf",
+      "end": "researcher",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "scientist",
+      "relation": "SubclassOf",
+      "end": "scholar",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "scorpion": [
+    {
+      "start": "scorpion",
+      "relation": "IsA",
+      "end": "insect",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "scorpion",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "screen": [
+    {
+      "start": "screen",
+      "relation": "SubclassOf",
+      "end": "furniture",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "scuba diver": [
+    {
+      "start": "scuba diver",
+      "relation": "IsA",
+      "end": "occupation",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "seal": [
+    {
+      "start": "seal",
+      "relation": "SubclassOf",
+      "end": "carnivore",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "seal",
+      "relation": "SubclassOf",
+      "end": "certificate",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "seal",
+      "relation": "SubclassOf",
+      "end": "emblem",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "seal",
+      "relation": "SubclassOf",
+      "end": "insignia",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "seal",
+      "relation": "SubclassOf",
+      "end": "appliance",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "seal",
+      "relation": "UsedFor",
+      "end": "prevention",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "seal",
+      "relation": "IsA",
+      "end": "mold",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "seal",
+      "relation": "SubclassOf",
+      "end": "equipment",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "server": [
+    {
+      "start": "server",
+      "relation": "PartOf",
+      "end": "internet",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "server",
+      "relation": "PartOf",
+      "end": "intranet",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "shadow": [
+    {
+      "start": "shadow",
+      "relation": "SubclassOf",
+      "end": "zone",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "shadow",
+      "relation": "SubclassOf",
+      "end": "undead",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "shadow",
+      "relation": "UsedFor",
+      "end": "cooling",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "shadow",
+      "relation": "SubclassOf",
+      "end": "absence",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "shadow",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "shark": [
+    {
+      "start": "shark",
+      "relation": "SubclassOf",
+      "end": "fish",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "shark",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "shark",
+      "relation": "SubclassOf",
+      "end": "beast",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "ship": [
+    {
+      "start": "ship",
+      "relation": "UsedFor",
+      "end": "transport",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "ship",
+      "relation": "SubclassOf",
+      "end": "watercraft",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "ship",
+      "relation": "SubclassOf",
+      "end": "vessel",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "shoe": [
+    {
+      "start": "shoe",
+      "relation": "UsedFor",
+      "end": "dealing",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "shoe",
+      "relation": "SubclassOf",
+      "end": "container",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "shoe",
+      "relation": "SubclassOf",
+      "end": "stirrup",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "shoe",
+      "relation": "SubclassOf",
+      "end": "footwear",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "shop": [
+    {
+      "start": "shop",
+      "relation": "UsedFor",
+      "end": "retail",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "shop",
+      "relation": "SubclassOf",
+      "end": "workplace",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "shop",
+      "relation": "UsedFor",
+      "end": "storage",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "shot": [
+    {
+      "start": "shot",
+      "relation": "MadeOf",
+      "end": "lead",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "shot",
+      "relation": "MadeOf",
+      "end": "metal",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "shot",
+      "relation": "MadeOf",
+      "end": "steel",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "shot",
+      "relation": "SubclassOf",
+      "end": "ball",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "shot",
+      "relation": "SubclassOf",
+      "end": "ammunition",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "shot",
+      "relation": "PartOf",
+      "end": "cinematography",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "shot",
+      "relation": "SubclassOf",
+      "end": "product",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "shot",
+      "relation": "SubclassOf",
+      "end": "record",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "shot",
+      "relation": "SubclassOf",
+      "end": "pellet",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "sink": [
+    {
+      "start": "sink",
+      "relation": "PartOf",
+      "end": "hygiene",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "sink",
+      "relation": "UsedFor",
+      "end": "washing",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "sink",
+      "relation": "SubclassOf",
+      "end": "node",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "sink",
+      "relation": "SubclassOf",
+      "end": "depression",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "sink",
+      "relation": "LocatedIn",
+      "end": "bathroom",
+      "weight": 2.0,
+      "source": "wikidata"
+    }
+  ],
+  "slip": [
+    {
+      "start": "slip",
+      "relation": "SubclassOf",
+      "end": "sliding",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "slip",
+      "relation": "SubclassOf",
+      "end": "difference",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "slip",
+      "relation": "SubclassOf",
+      "end": "mixture",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "slip",
+      "relation": "SubclassOf",
+      "end": "undergarment",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "slip",
+      "relation": "SubclassOf",
+      "end": "appliqu\u00e9",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "slip",
+      "relation": "SubclassOf",
+      "end": "deformation",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "slip",
+      "relation": "IsA",
+      "end": "measurand",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "slug": [
+    {
+      "start": "slug",
+      "relation": "SubclassOf",
+      "end": "string",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "slug",
+      "relation": "PartOf",
+      "end": "path",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "slug",
+      "relation": "IsA",
+      "end": "segment",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "slug",
+      "relation": "SubclassOf",
+      "end": "simulacrum",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "slug",
+      "relation": "SubclassOf",
+      "end": "gastropoda",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "smuggler": [
+    {
+      "start": "smuggler",
+      "relation": "SubclassOf",
+      "end": "criminal",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "smuggler",
+      "relation": "IsA",
+      "end": "occupation",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "snow": [
+    {
+      "start": "snow",
+      "relation": "SubclassOf",
+      "end": "white",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "snow",
+      "relation": "SubclassOf",
+      "end": "precipitation",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "snow",
+      "relation": "SubclassOf",
+      "end": "brig",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "snow",
+      "relation": "SubclassOf",
+      "end": "material",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "snow",
+      "relation": "IsA",
+      "end": "rigging",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "snow",
+      "relation": "MadeOf",
+      "end": "air",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "snowman": [
+    {
+      "start": "snowman",
+      "relation": "UsedFor",
+      "end": "game",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "sock": [
+    {
+      "start": "sock",
+      "relation": "SubclassOf",
+      "end": "footwear",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "sock",
+      "relation": "SubclassOf",
+      "end": "hosiery",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "soldier": [
+    {
+      "start": "soldier",
+      "relation": "SubclassOf",
+      "end": "warrior",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "soldier",
+      "relation": "SubclassOf",
+      "end": "brickwork",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "soldier",
+      "relation": "MadeOf",
+      "end": "canvas",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "soul": [
+    {
+      "start": "soul",
+      "relation": "IsA",
+      "end": "submanifold",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "soul",
+      "relation": "SubclassOf",
+      "end": "mind",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "sound": [
+    {
+      "start": "sound",
+      "relation": "UsedFor",
+      "end": "music",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "sound",
+      "relation": "UsedFor",
+      "end": "communication",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "sound",
+      "relation": "SubclassOf",
+      "end": "strait",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "sound",
+      "relation": "SubclassOf",
+      "end": "appliance",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "sound",
+      "relation": "UsedFor",
+      "end": "dilation",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "space": [
+    {
+      "start": "space",
+      "relation": "IsA",
+      "end": "character",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "spell": [
+    {
+      "start": "spell",
+      "relation": "SubclassOf",
+      "end": "superstition",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "spell",
+      "relation": "IsA",
+      "end": "command",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "spider": [
+    {
+      "start": "spider",
+      "relation": "SubclassOf",
+      "end": "arthropod",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "spider",
+      "relation": "SubclassOf",
+      "end": "skimmer",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "spider",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "spider",
+      "relation": "SubclassOf",
+      "end": "beast",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "spike": [
+    {
+      "start": "spike",
+      "relation": "IsA",
+      "end": "inflorescence",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "spike",
+      "relation": "UsedFor",
+      "end": "fastener",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "spike",
+      "relation": "SubclassOf",
+      "end": "smash",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "spike",
+      "relation": "PartOf",
+      "end": "pin",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "spine": [
+    {
+      "start": "spine",
+      "relation": "PartOf",
+      "end": "book",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "spine",
+      "relation": "MadeOf",
+      "end": "stone",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "spot": [
+    {
+      "start": "spot",
+      "relation": "LocatedIn",
+      "end": "tate",
+      "weight": 2.0,
+      "source": "wikidata"
+    }
+  ],
+  "spring": [
+    {
+      "start": "spring",
+      "relation": "SubclassOf",
+      "end": "season",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "spring",
+      "relation": "IsA",
+      "end": "metaphor",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "spring",
+      "relation": "PartOf",
+      "end": "aquifer",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "spring",
+      "relation": "IsA",
+      "end": "fountain",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "spring",
+      "relation": "SubclassOf",
+      "end": "cable",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "spring",
+      "relation": "MadeOf",
+      "end": "canvas",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "spring",
+      "relation": "IsA",
+      "end": "rope",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "spy": [
+    {
+      "start": "spy",
+      "relation": "IsA",
+      "end": "profession",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "square": [
+    {
+      "start": "square",
+      "relation": "SubclassOf",
+      "end": "rectangle",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "square",
+      "relation": "SubclassOf",
+      "end": "number",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "square",
+      "relation": "SubclassOf",
+      "end": "rhombus",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "square",
+      "relation": "PartOf",
+      "end": "chessboard",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "square",
+      "relation": "SubclassOf",
+      "end": "hypercube",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "square",
+      "relation": "SubclassOf",
+      "end": "thoroughfare",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "staff": [
+    {
+      "start": "staff",
+      "relation": "HasGenre",
+      "end": "dance",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "staff",
+      "relation": "SubclassOf",
+      "end": "stick",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "staff",
+      "relation": "IsA",
+      "end": "show",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "star": [
+    {
+      "start": "star",
+      "relation": "IsA",
+      "end": "collectible",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "star",
+      "relation": "SubclassOf",
+      "end": "award",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "star",
+      "relation": "LocatedIn",
+      "end": "universe",
+      "weight": 2.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "star",
+      "relation": "MadeOf",
+      "end": "plasma",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "star",
+      "relation": "SubclassOf",
+      "end": "celebrity",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "star",
+      "relation": "IsA",
+      "end": "brand",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "star",
+      "relation": "SubclassOf",
+      "end": "fusor",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "star",
+      "relation": "PartOf",
+      "end": "orlen",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "star",
+      "relation": "SubclassOf",
+      "end": "motif",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "star",
+      "relation": "IsA",
+      "end": "occupation",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "star",
+      "relation": "UsedFor",
+      "end": "note",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "star",
+      "relation": "SubclassOf",
+      "end": "air",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "star",
+      "relation": "UsedFor",
+      "end": "emphasis",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "state": [
+    {
+      "start": "state",
+      "relation": "IsA",
+      "end": "market",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "state",
+      "relation": "SubclassOf",
+      "end": "condition",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "state",
+      "relation": "SubclassOf",
+      "end": "being",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "state",
+      "relation": "UsedFor",
+      "end": "classification",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "state",
+      "relation": "SubclassOf",
+      "end": "phenomenon",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "stick": [
+    {
+      "start": "stick",
+      "relation": "MadeOf",
+      "end": "wood",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "stick",
+      "relation": "PartOf",
+      "end": "spear",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "stick",
+      "relation": "PartOf",
+      "end": "bow",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "stick",
+      "relation": "PartOf",
+      "end": "arrow",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "stock": [
+    {
+      "start": "stock",
+      "relation": "PartOf",
+      "end": "rifle",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "stock",
+      "relation": "PartOf",
+      "end": "firearm",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "stock",
+      "relation": "SubclassOf",
+      "end": "security",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "stock",
+      "relation": "SubclassOf",
+      "end": "broth",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "stock",
+      "relation": "SubclassOf",
+      "end": "act",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "stock",
+      "relation": "PartOf",
+      "end": "shotgun",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "stock",
+      "relation": "IsA",
+      "end": "dish",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "stock",
+      "relation": "SubclassOf",
+      "end": "component",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "stock",
+      "relation": "PartOf",
+      "end": "pistol",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "stock",
+      "relation": "SubclassOf",
+      "end": "neckcloth",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "straw": [
+    {
+      "start": "straw",
+      "relation": "SubclassOf",
+      "end": "yellow",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "straw",
+      "relation": "IsA",
+      "end": "color",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "straw",
+      "relation": "UsedFor",
+      "end": "gardening",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "straw",
+      "relation": "UsedFor",
+      "end": "fodder",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "straw",
+      "relation": "UsedFor",
+      "end": "combustion",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "straw",
+      "relation": "UsedFor",
+      "end": "mulch",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "straw",
+      "relation": "UsedFor",
+      "end": "handicraft",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "stream": [
+    {
+      "start": "stream",
+      "relation": "SubclassOf",
+      "end": "watercourse",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "stream",
+      "relation": "SubclassOf",
+      "end": "grade",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "strike": [
+    {
+      "start": "strike",
+      "relation": "SubclassOf",
+      "end": "angle",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "strike",
+      "relation": "SubclassOf",
+      "end": "collision",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "strike",
+      "relation": "SubclassOf",
+      "end": "protest",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "strike",
+      "relation": "SubclassOf",
+      "end": "pitch",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "strike",
+      "relation": "UsedFor",
+      "end": "attack",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "strike",
+      "relation": "SubclassOf",
+      "end": "result",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "strike",
+      "relation": "IsA",
+      "end": "result",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "strike",
+      "relation": "UsedFor",
+      "end": "offense",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "strike",
+      "relation": "SubclassOf",
+      "end": "pause",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "string": [
+    {
+      "start": "string",
+      "relation": "SubclassOf",
+      "end": "sequence",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "string",
+      "relation": "SubclassOf",
+      "end": "resonator",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "string",
+      "relation": "SubclassOf",
+      "end": "mechanism",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "string",
+      "relation": "UsedFor",
+      "end": "decoration",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "string",
+      "relation": "SubclassOf",
+      "end": "cord",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "string",
+      "relation": "SubclassOf",
+      "end": "product",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "string",
+      "relation": "IsA",
+      "end": "product",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "string",
+      "relation": "UsedFor",
+      "end": "connector",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "suit": [
+    {
+      "start": "suit",
+      "relation": "SubclassOf",
+      "end": "clothing",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "superhero": [
+    {
+      "start": "superhero",
+      "relation": "SubclassOf",
+      "end": "superhuman",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "swing": [
+    {
+      "start": "swing",
+      "relation": "SubclassOf",
+      "end": "pendulum",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "swing",
+      "relation": "IsA",
+      "end": "statistic",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "swing",
+      "relation": "SubclassOf",
+      "end": "motion",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "swing",
+      "relation": "SubclassOf",
+      "end": "jazz",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "swing",
+      "relation": "SubclassOf",
+      "end": "punch",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "swing",
+      "relation": "SubclassOf",
+      "end": "stroke",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "switch": [
+    {
+      "start": "switch",
+      "relation": "SubclassOf",
+      "end": "rod",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "switch",
+      "relation": "SubclassOf",
+      "end": "interface",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "switch",
+      "relation": "SubclassOf",
+      "end": "means",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "switch",
+      "relation": "SubclassOf",
+      "end": "trade",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "table": [
+    {
+      "start": "table",
+      "relation": "IsA",
+      "end": "verb",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "table",
+      "relation": "SubclassOf",
+      "end": "furniture",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "table",
+      "relation": "SubclassOf",
+      "end": "landform",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "table",
+      "relation": "UsedFor",
+      "end": "infographics",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "table",
+      "relation": "SubclassOf",
+      "end": "list",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "tablet": [
+    {
+      "start": "tablet",
+      "relation": "SubclassOf",
+      "end": "confection",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "tablet",
+      "relation": "SubclassOf",
+      "end": "product",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "tag": [
+    {
+      "start": "tag",
+      "relation": "IsA",
+      "end": "game",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "tag",
+      "relation": "SubclassOf",
+      "end": "graffiti",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "tag",
+      "relation": "SubclassOf",
+      "end": "metadata",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "tag",
+      "relation": "SubclassOf",
+      "end": "signature",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "tag",
+      "relation": "SubclassOf",
+      "end": "conclusion",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "tail": [
+    {
+      "start": "tail",
+      "relation": "PartOf",
+      "end": "list",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "tail",
+      "relation": "PartOf",
+      "end": "tank",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "tail",
+      "relation": "SubclassOf",
+      "end": "node",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "tail",
+      "relation": "UsedFor",
+      "end": "movement",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "tail",
+      "relation": "SubclassOf",
+      "end": "appendage",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "tap": [
+    {
+      "start": "tap",
+      "relation": "MadeOf",
+      "end": "metal",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "tap",
+      "relation": "SubclassOf",
+      "end": "plumbing",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "teacher": [
+    {
+      "start": "teacher",
+      "relation": "IsA",
+      "end": "profession",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "teacher",
+      "relation": "SubclassOf",
+      "end": "educator",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "teacher",
+      "relation": "SubclassOf",
+      "end": "academic",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "teacher",
+      "relation": "IsA",
+      "end": "occupation",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "temple": [
+    {
+      "start": "temple",
+      "relation": "UsedFor",
+      "end": "weaving",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "temple",
+      "relation": "SubclassOf",
+      "end": "appliance",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "temple",
+      "relation": "SubclassOf",
+      "end": "shrine",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "theater": [
+    {
+      "start": "theater",
+      "relation": "MadeOf",
+      "end": "paper",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "thief": [
+    {
+      "start": "thief",
+      "relation": "SubclassOf",
+      "end": "criminal",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "thief",
+      "relation": "IsA",
+      "end": "occupation",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "thumb": [
+    {
+      "start": "thumb",
+      "relation": "PartOf",
+      "end": "hand",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "thumb",
+      "relation": "SubclassOf",
+      "end": "finger",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "tick": [
+    {
+      "start": "tick",
+      "relation": "SubclassOf",
+      "end": "sound",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "tick",
+      "relation": "IsA",
+      "end": "reappropriation",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "tick",
+      "relation": "SubclassOf",
+      "end": "covering",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "tie": [
+    {
+      "start": "tie",
+      "relation": "SubclassOf",
+      "end": "square",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "time": [
+    {
+      "start": "time",
+      "relation": "SubclassOf",
+      "end": "sequence",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "time",
+      "relation": "IsA",
+      "end": "command",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "tooth": [
+    {
+      "start": "tooth",
+      "relation": "UsedFor",
+      "end": "cutting",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "tooth",
+      "relation": "PartOf",
+      "end": "cogwheel",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "tooth",
+      "relation": "PartOf",
+      "end": "crusher",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "tooth",
+      "relation": "PartOf",
+      "end": "serration",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "torch": [
+    {
+      "start": "torch",
+      "relation": "UsedFor",
+      "end": "lighting",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "torch",
+      "relation": "UsedFor",
+      "end": "fire",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "torch",
+      "relation": "SubclassOf",
+      "end": "product",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "tower": [
+    {
+      "start": "tower",
+      "relation": "SubclassOf",
+      "end": "building",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "tower",
+      "relation": "SubclassOf",
+      "end": "sequence",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "tower",
+      "relation": "SubclassOf",
+      "end": "buildings",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "tower",
+      "relation": "PartOf",
+      "end": "buildings",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "track": [
+    {
+      "start": "track",
+      "relation": "SubclassOf",
+      "end": "data",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "triangle": [
+    {
+      "start": "triangle",
+      "relation": "SubclassOf",
+      "end": "simplex",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "triangle",
+      "relation": "SubclassOf",
+      "end": "polygon",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "triangle",
+      "relation": "SubclassOf",
+      "end": "tritope",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "trip": [
+    {
+      "start": "trip",
+      "relation": "SubclassOf",
+      "end": "travel",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "trip",
+      "relation": "SubclassOf",
+      "end": "leisure",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "trip",
+      "relation": "UsedFor",
+      "end": "leisure",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "trip",
+      "relation": "HasGenre",
+      "end": "techno",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "trip",
+      "relation": "UsedFor",
+      "end": "recreation",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "trunk": [
+    {
+      "start": "trunk",
+      "relation": "PartOf",
+      "end": "tree",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "trunk",
+      "relation": "SubclassOf",
+      "end": "baggage",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "unicorn": [
+    {
+      "start": "unicorn",
+      "relation": "OwnedBy",
+      "end": "bern",
+      "weight": 2.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "unicorn",
+      "relation": "MadeOf",
+      "end": "concrete",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "unicorn",
+      "relation": "IsA",
+      "end": "coin",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "unicorn",
+      "relation": "MadeOf",
+      "end": "oakwood",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "unicorn",
+      "relation": "SubclassOf",
+      "end": "celestial",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "unicorn",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "vacuum": [
+    {
+      "start": "vacuum",
+      "relation": "PartOf",
+      "end": "physics",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "vacuum",
+      "relation": "IsA",
+      "end": "software",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "van": [
+    {
+      "start": "van",
+      "relation": "LocatedIn",
+      "end": "copenhagen",
+      "weight": 2.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "van",
+      "relation": "SubclassOf",
+      "end": "prefix",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "van",
+      "relation": "IsA",
+      "end": "preposition",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "van",
+      "relation": "IsA",
+      "end": "tussenvoegsel",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "wake": [
+    {
+      "start": "wake",
+      "relation": "SubclassOf",
+      "end": "zone",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "wall": [
+    {
+      "start": "wall",
+      "relation": "PartOf",
+      "end": "house",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "wall",
+      "relation": "PartOf",
+      "end": "building",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "wall",
+      "relation": "SubclassOf",
+      "end": "fence",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "wall",
+      "relation": "PartOf",
+      "end": "fortification",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "wall",
+      "relation": "SubclassOf",
+      "end": "buildings",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "war": [
+    {
+      "start": "war",
+      "relation": "SubclassOf",
+      "end": "era",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "washer": [
+    {
+      "start": "washer",
+      "relation": "UsedFor",
+      "end": "spring",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "washer",
+      "relation": "UsedFor",
+      "end": "reduction",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "washer",
+      "relation": "SubclassOf",
+      "end": "spacer",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "washer",
+      "relation": "UsedFor",
+      "end": "spacer",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "washer",
+      "relation": "UsedFor",
+      "end": "prevention",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "watch": [
+    {
+      "start": "watch",
+      "relation": "SubclassOf",
+      "end": "timepiece",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "watch",
+      "relation": "SubclassOf",
+      "end": "antibiotic",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "water": [
+    {
+      "start": "water",
+      "relation": "OwnedBy",
+      "end": "bern",
+      "weight": 2.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "water",
+      "relation": "PartOf",
+      "end": "food",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "water",
+      "relation": "PartOf",
+      "end": "river",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "water",
+      "relation": "MadeOf",
+      "end": "brick",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "water",
+      "relation": "SubclassOf",
+      "end": "oxide",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "water",
+      "relation": "IsA",
+      "end": "mural",
+      "weight": 4.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "water",
+      "relation": "UsedFor",
+      "end": "hydroponics",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "water",
+      "relation": "UsedFor",
+      "end": "refrigerant",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "water",
+      "relation": "MadeOf",
+      "end": "colourant",
+      "weight": 2.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "water",
+      "relation": "PartOf",
+      "end": "hydrolysis",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "wave": [
+    {
+      "start": "wave",
+      "relation": "UsedFor",
+      "end": "greeting",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "wave",
+      "relation": "SubclassOf",
+      "end": "oscillation",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "wave",
+      "relation": "SubclassOf",
+      "end": "gesture",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "web": [
+    {
+      "start": "web",
+      "relation": "SubclassOf",
+      "end": "material",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "web",
+      "relation": "SubclassOf",
+      "end": "component",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "web",
+      "relation": "PartOf",
+      "end": "beam",
+      "weight": 3.0,
+      "source": "wikidata"
+    }
+  ],
+  "well": [
+    {
+      "start": "well",
+      "relation": "LocatedIn",
+      "end": "granges",
+      "weight": 2.0,
+      "source": "wikidata"
+    }
+  ],
+  "whale": [
+    {
+      "start": "whale",
+      "relation": "SubclassOf",
+      "end": "monster",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "whip": [
+    {
+      "start": "whip",
+      "relation": "SubclassOf",
+      "end": "tack",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ],
+  "witch": [
+    {
+      "start": "witch",
+      "relation": "SubclassOf",
+      "end": "magician",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "witch",
+      "relation": "IsA",
+      "end": "occupation",
+      "weight": 4.0,
+      "source": "wikidata"
+    }
+  ],
+  "worm": [
+    {
+      "start": "worm",
+      "relation": "MadeOf",
+      "end": "bronze",
+      "weight": 2.5,
+      "source": "wikidata"
+    }
+  ],
+  "yard": [
+    {
+      "start": "yard",
+      "relation": "UsedFor",
+      "end": "rigging",
+      "weight": 3.0,
+      "source": "wikidata"
+    },
+    {
+      "start": "yard",
+      "relation": "SubclassOf",
+      "end": "spar",
+      "weight": 3.5,
+      "source": "wikidata"
+    },
+    {
+      "start": "yard",
+      "relation": "SubclassOf",
+      "end": "terrain",
+      "weight": 3.5,
+      "source": "wikidata"
+    }
+  ]
+}
