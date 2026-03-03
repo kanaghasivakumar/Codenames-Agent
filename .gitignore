@@ -12,3 +12,5 @@ game play/env
 # Logs
 game play/logs/*.json
 game play/logs/*.jsonl
+
+.DS_Store

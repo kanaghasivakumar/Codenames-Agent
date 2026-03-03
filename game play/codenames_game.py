@@ -15,6 +15,8 @@ import random
 import itertools
 import datetime
 import json
+from pathlib import Path
+
 
 # ── Path setup ────────────────────────────────────────────────────────────────
 GAMEPLAY_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -24,6 +26,7 @@ sys.path.insert(0, PROJECT_DIR)
 sys.path.insert(0, os.path.join(PROJECT_DIR, 'src'))
 
 from src.reasoning_engine import ReasoningEngine
+from src.user_profile import UserProfile
 
 # ── Config ────────────────────────────────────────────────────────────────────
 WORD_LIST_PATH = os.path.join(PROJECT_DIR, 'data', 'codenames_words.txt')
@@ -57,7 +60,7 @@ def divider(char='─', w=72):
 # ══════════════════════════════════════════════════════════════════════════════
 
 def print_board(board, red_words, blue_words, assassin, revealed):
-    """5×5 board. Unrevealed words are plain. Revealed are struck-through + coloured."""
+    """5x5 board. Unrevealed words are plain. Revealed are struck-through + coloured."""
     W = 11  # fits longest Codenames words; border chars kept plain to avoid ANSI width bugs
 
     def cell(word):
@@ -173,11 +176,12 @@ class AISpymaster:
     Tracks used clues to avoid repetition.
     """
 
-    def __init__(self, engine: ReasoningEngine):
+    def __init__(self, engine: ReasoningEngine, profile=None):
         self.engine     = engine
         self.used_clues = []
+        self.profile = profile
 
-    def get_clue(self, team_words, bad_words):
+    def get_clue(self, team_words, opponent_words, assassin_word, neutral_words):
         """
         team_words : list of remaining words for this team
         bad_words  : list of opponent words + assassin + neutral
@@ -188,7 +192,7 @@ class AISpymaster:
             random.shuffle(combos)
             for subset in combos[:40]:
                 results = self.engine.find_clues(
-                    list(subset), bad_words,
+                    list(subset), opponent_words, assassin_word, neutral_words,
                     used_clues=self.used_clues, top_n=1
                 )
                 if results:
@@ -198,7 +202,8 @@ class AISpymaster:
                         'clue':    best['clue'].upper(),
                         'count':   len(best['targets']),
                         'targets': [t.upper() for t in best['targets']],
-                        'score':   best['score']
+                        'score':   best['score'],
+                        'logic':   best.get('logic', [])
                     }
         return None
 
@@ -215,11 +220,10 @@ class CodenamesGame:
         print(BOLD('  Initialising V2 Codenames — loading knowledge graph...'))
         divider('═')
 
-        engine = ReasoningEngine()
-
-        # Two independent spymasters — separate used_clues history
-        self.red_spy  = AISpymaster(engine)
-        self.blue_spy = AISpymaster(engine)
+        # Reasoning engines/spymasters will be created per-game once player names
+        # are entered at the start of each play() invocation.
+        self.red_spy = None
+        self.blue_spy = None
 
         # Load word list
         with open(WORD_LIST_PATH, 'r') as f:
@@ -250,22 +254,28 @@ class CodenamesGame:
                         assassin, neutral, revealed, logger):
         spy       = self.red_spy if team == 'RED' else self.blue_spy
         remaining = self._rem(list(team_words), revealed)
-        bad       = self._rem(list(opp_words), revealed) + [assassin] + self._rem(list(neutral), revealed)
+        opp       = self._rem(list(opp_words), revealed)
+        ass       =  assassin
+        neut   = self._rem(list(neutral), revealed)
 
         print()
         divider('═')
         print(team_color(team, f'  🕵  {team} SPYMASTER is thinking...'))
         divider('═')
 
-        result = spy.get_clue(remaining, bad)
+        if spy.profile:
+            spy.engine.update_relation_weights(spy.profile.give_weights())
+
+        result = spy.get_clue(remaining, opp, ass, neut)
 
         if result is None:
             print(team_color(team, f'  {team} Spymaster has no clue — passing.'))
             logger.clue(team, 'PASS', 0, [], 0.0)
-            return 'PASS', 0
+            return 'PASS', 0, None
 
         clue  = result['clue']
         count = result['count']
+        logic = result.get('logic', [])
 
         print()
         divider()
@@ -274,7 +284,7 @@ class CodenamesGame:
         print()
 
         logger.clue(team, clue, count, result['targets'], result['score'])
-        return clue, count
+        return clue, count, logic
 
     # ── Operative turn ────────────────────────────────────────────────────────
 
@@ -284,6 +294,7 @@ class CodenamesGame:
         opp   = 'BLUE' if team == 'RED' else 'RED'
         max_g = count + 1 if bonus else count
         guesses = 0
+        guessed_words = []
 
         print()
         print(team_color(team, BOLD(f'  ══  {team} OPERATIVE — YOUR TURN  ══')))
@@ -294,12 +305,12 @@ class CodenamesGame:
         while True:
             # Win check
             if not self._rem(list(team_words), revealed):
-                return 'win'
+                return 'win', guessed_words
 
             # Exhausted guesses
             if guesses >= max_g:
                 logger.turn_end(team, 'max guesses reached')
-                return 'continue'
+                return 'continue', guessed_words
 
             # Show board once per guess opportunity
             print_board(board, red_w, blue_w, assassin, revealed)
@@ -314,7 +325,7 @@ class CodenamesGame:
             if raw == 'PASS':
                 logger.turn_end(team, 'player passed')
                 print(f'  {YELLOW("⏭")}  Turn passed.')
-                return 'continue'
+                return 'continue', guessed_words
 
             # Validation — loop back without consuming a guess
             if raw not in board:
@@ -327,6 +338,7 @@ class CodenamesGame:
             # Valid guess — reveal and count
             revealed.add(raw)
             guesses += 1
+            guessed_words.append(raw)
 
             if raw == assassin:
                 print()
@@ -334,37 +346,37 @@ class CodenamesGame:
                 print(RED(BOLD(f'      {team} TEAM LOSES!')))
                 logger.guess(team, raw, 'assassin')
                 logger.turn_end(team, 'hit assassin')
-                return 'assassin'
+                return 'assassin', guessed_words
 
             elif raw in team_words:
                 print(f'  {GREEN("✓")}  {BOLD(raw)} — {team_color(team, "YOUR WORD!")}')
                 logger.guess(team, raw, 'correct')
                 # Immediate win check
                 if not self._rem(list(team_words), revealed):
-                    return 'win'
+                    return 'win', guessed_words
                 # More guesses available?
                 if guesses < max_g:
                     again = input(f'  Keep guessing? ({max_g - guesses} left) [Y/n]: ').strip().lower()
                     if again == 'n':
                         logger.turn_end(team, 'player stopped')
-                        return 'continue'
+                        return 'continue', guessed_words
                     # answered Y — loop back to show board and take next guess
                 else:
                     print(f'  {YELLOW("⏭")}  Max guesses used. Turn ends.')
                     logger.turn_end(team, 'max guesses reached')
-                    return 'continue'
+                    return 'continue', guessed_words
 
             elif raw in opp_words:
                 print(f'  {YELLOW("✗")}  {BOLD(raw)} — {team_color(opp, "OPPONENT")} word! Turn ends.')
                 logger.guess(team, raw, 'opponent')
                 logger.turn_end(team, 'hit opponent word')
-                return 'continue'
+                return 'continue', guessed_words
 
             else:
                 print(f'  {YELLOW("~")}  {BOLD(raw)} — {GRAY("NEUTRAL")}. Turn ends.')
                 logger.guess(team, raw, 'neutral')
                 logger.turn_end(team, 'hit neutral word')
-                return 'continue'
+                return 'continue', guessed_words
 
     # ── Main game loop ────────────────────────────────────────────────────────
 
@@ -379,6 +391,27 @@ class CodenamesGame:
         print(BOLD('║') + DIM(f'{"  Powered by ConceptNet Knowledge Graph":^68}') + BOLD('║'))
         print(BOLD('╚' + '═' * 68 + '╝'))
         print()
+
+        # Prompt for player names at the start of each game
+        red_player = input('  Enter RED player name (leave blank for DEFAULT): ').strip()
+        if not red_player:
+            red_player = None
+            print()
+        blue_player = input('  Enter BLUE player name (leave blank for DEFAULT): ').strip()
+        if not blue_player:
+            blue_player = None
+
+        # Load profiles
+        red_profile = UserProfile(red_player) if red_player else None
+        blue_profile = UserProfile(blue_player) if blue_player else None
+
+        # Create ReasoningEngine instances with profile names and spymasters
+        engine_red = ReasoningEngine(relation_weights=red_profile.give_weights() if red_profile else None)
+        engine_blue = ReasoningEngine(relation_weights=blue_profile.give_weights() if blue_profile else None)
+
+        self.red_spy = AISpymaster(engine_red, profile=red_profile)
+        self.blue_spy = AISpymaster(engine_blue, profile=blue_profile)
+
         input('  Press ENTER to generate a new board...')
 
         # Board
@@ -408,12 +441,14 @@ class CodenamesGame:
                 break
 
             # Spymaster
-            clue, count = self._spymaster_turn(
+            clue, count, logic = self._spymaster_turn(
                 turn, t_w, o_w, assassin, neutral, revealed, logger
             )
             if clue == 'PASS':
                 turn = opp
                 continue
+
+            # print(logic)
 
             input(f'  Press ENTER to guess as {team_color(turn, turn)} operative...')
 
@@ -421,11 +456,19 @@ class CodenamesGame:
             turn_count[turn] += 1
             bonus = turn_count[turn] > 1
 
-            outcome = self._operative_turn(
+            outcome, guessed_words = self._operative_turn(
                 turn, clue, count,
                 t_w, o_w, assassin, neutral,
                 board, revealed, logger, red_w, blue_w, bonus=bonus
             )
+
+            # Persist spymaster logic and guessed words to the player's profile,
+            # then call update_weights() (implemented by user) between rounds.
+            profile = red_profile if turn == 'RED' else blue_profile
+            if profile is not None:
+                profile.get_target_relations(logic)
+                profile.get_guessed_words(guessed_words)
+                profile.update_weights()
 
             if outcome == 'assassin':
                 winner = opp
@@ -449,6 +492,22 @@ class CodenamesGame:
         print(team_color(winner, BOLD(f'  🏆   {winner} TEAM WINS!')))
         print(BOLD('=' * 72))
         print()
+
+        # Update and save player profiles at end of game
+        try:
+            if red_profile is not None:
+                # increment games played and persist updated weights
+                red_profile.increment_games_played()
+                red_profile.save_profile_to_json()
+        except Exception:
+            pass
+
+        try:
+            if blue_profile is not None:
+                blue_profile.increment_games_played()
+                blue_profile.save_profile_to_json()
+        except Exception:
+            pass
 
 
 # ══════════════════════════════════════════════════════════════════════════════

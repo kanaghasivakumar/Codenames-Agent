@@ -1,0 +1,22 @@
+{
+  "name": "katie",
+  "games_played": 4,
+  "relation_weights": {
+    "IsA": 0.45125,
+    "AtLocation": 0.3716889313531249,
+    "PartOf": 0.97,
+    "Antonym": 0.75,
+    "UsedFor": 0.95,
+    "DistinctFrom": 1.0,
+    "HasProperty": 0.75,
+    "SimilarTo": 1.0,
+    "CapableOf": 1.0,
+    "Causes": 0.95,
+    "MadeOf": 1.0,
+    "ReceivesAction": 0.75,
+    "HasPrerequisite": 0.75,
+    "HasSubevent": 1.0,
+    "CreatedBy": 1.0,
+    "LocatedNear": 1.0
+  }
+}

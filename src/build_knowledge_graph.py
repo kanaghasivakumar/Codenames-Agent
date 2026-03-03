@@ -16,15 +16,21 @@ OUTPUT_FILE = Path("data/conceptnet_graph.json")
 # The Logical Relations we care about (ConceptNet uses specific IDs)
 RELEVANT_RELATIONS = {
     "/r/IsA",
-    "/r/UsedFor",
     "/r/AtLocation",
-    "/r/HasProperty",
     "/r/PartOf",
-    "/r/RelatedTo",
-    "/r/Causes",
-    "/r/CapableOf",
     "/r/Antonym",
-    "/r/DistinctFrom"
+    "/r/UsedFor",
+    "/r/DistinctFrom",
+    "/r/HasProperty",
+    "/r/SimilarTo",
+    "/r/CapableOf",
+    "/r/Causes",
+    "/r/MadeOf",
+    "/r/ReceivesAction",
+    "/r/HasPrerequisite",
+    "/r/HasSubevent"    
+    "/r/CreatedBy",
+    "/r/LocatedNear",
 }
 
 def load_word_set(filepath):
@@ -131,13 +137,33 @@ def build_graph():
                 # We normalize the relation string (remove "/r/")
                 clean_rel = rel.replace("/r/", "")
 
+                # Apply normalization to weights
+                
+                if clean_rel in ('IsA', 'AtLocation'):
+                    # no normalization
+                    alpha = 0.0
+                
+                elif clean_rel in ('PartOf', 'UsedFor',
+                                 'HasProperty', 'SimilarTo', 'CapableOf', 'Causes', 
+                                 'MadeOf', 'HasSubevent', 'CreatedBy', 'LocatedNear'):
+                    # all are about the same
+                    alpha = 0.8
+                
+                elif clean_rel in ('Antonym', 'DistinctFrom', 'ReceivesAction', 'HasPrerequisite'):
+                    # they get better
+                    alpha = 0.5
+
+                normalized_weight = weight + alpha*(1-weight)
+
+
                 # If Start is the game word, store outgoing edge
                 if start_is_game:
                     knowledge_graph[start_word].append({
                         "start": start_word,
                         "relation": clean_rel,
                         "end": end_word,
-                        "weight": weight
+                        "weight": weight,
+                        "normalized_weight": normalized_weight
                     })
 
                 # If End is the game word, store incoming edge (reversed perspective)
@@ -146,7 +172,8 @@ def build_graph():
                         "start": start_word,
                         "relation": clean_rel,
                         "end": end_word,
-                        "weight": weight
+                        "weight": weight,
+                        "normalized_weight": normalized_weight
                     })
                 
                 edges_kept += 1
