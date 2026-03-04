@@ -1,8 +1,10 @@
-DEFAULT_RELATION_WEIGHTS = {
-    # ConceptNet relations
+{
+  "name": "ishita",
+  "games_played": 1,
+  "relation_weights": {
     "IsA": 0.5,
     "AtLocation": 0.5,
-    "PartOf": 1.0,
+    "PartOf": 0.95,
     "Antonym": 0.75,
     "UsedFor": 1.0,
     "DistinctFrom": 1.0,
@@ -16,13 +18,13 @@ DEFAULT_RELATION_WEIGHTS = {
     "HasSubevent": 1.0,
     "CreatedBy": 1.0,
     "LocatedNear": 1.0,
-    "RelatedTo": 0.3,
-    # Wikidata relations
-    "InstanceOf": 1.0,
-    "SubclassOf": 0.9,
+    "RelatedTo": 0.22052756718749994,
+    "InstanceOf": 0.95,
+    "SubclassOf": 0.855,
     "LocatedIn": 0.8,
     "Continent": 0.7,
     "Occupation": 0.9,
     "Genre": 0.8,
-    "HasPart": 0.8,
+    "HasPart": 0.8
+  }
 }

@@ -3,7 +3,9 @@ from pathlib import Path
 from collections import defaultdict
 import utils.constants as constants
 
-GRAPH_PATH = Path("data/conceptnet_graph.json")
+# Use absolute path based on this file's location
+PROJECT_ROOT = Path(__file__).parent.parent
+GRAPH_PATH = PROJECT_ROOT / "data" / "unified_graph.json"
 DEFAULT_RELATION_WEIGHTS = constants.DEFAULT_RELATION_WEIGHTS
 
 
@@ -55,7 +57,7 @@ class ReasoningEngine:
             for edge in edges:                                  # iterate through each edge
                 concept = edge['end']                           # word that is somehow related to target
                 rel = edge['relation']                          # relation between concept and target
-                weight = edge['normalized_weight']                         # weight of relation
+                weight = edge.get('normalized_weight', edge.get('weight', 1.0))  # weight of relation
                 
                 if concept.lower() == word.lower(): continue    # skip if concept is same as target
                 
@@ -64,7 +66,8 @@ class ReasoningEngine:
                     logic_chains[concept].append(f"{word} ({rel})") # adds relation to logic chains if concept already related to target
 
                 else:
-                    score = weight * self.relation_weights.get(rel) # score for concept -> target
+                    rel_weight = self.relation_weights.get(rel, 0.5)  # default weight for unknown relations
+                    score = weight * rel_weight  # score for concept -> target
                     candidates[concept] += score                    # aggregates score for concept for all related targets
                     concept_coverage[concept].add(word)             # keeps track of all targets related to concept
                     logic_chains[concept].append(f"{word} ({rel})") # keeps track of relations related to concept
@@ -76,19 +79,30 @@ class ReasoningEngine:
             valid, _ = self.is_valid_clue(concept, targets, used_clues)
             if not valid: continue
 
-            # Safety check
+            # Safety check - use substring matching to catch plurals/variants
             is_unsafe = False
+            concept_lower = concept.lower()
 
-            if any(e['end'].lower() == concept.lower() for e in self.get_neighbors(assassin_word)):  # marks unsafe if related to assassin
-                is_unsafe = True; break
+            # Check assassin - STRICT: any substring match is dangerous
+            for e in self.get_neighbors(assassin_word):
+                end = e['end'].lower()
+                if concept_lower in end or end in concept_lower or concept_lower == end:
+                    is_unsafe = True
+                    break
 
-            for opp in opponent_words:
-                if any(e['end'].lower() == concept.lower() for e in self.get_neighbors(opp)):   # marks unsafe if related to any bad words
-                    is_unsafe = True; break
+            if not is_unsafe:
+                for opp in opponent_words:
+                    for e in self.get_neighbors(opp):
+                        end = e['end'].lower()
+                        if concept_lower in end or end in concept_lower:
+                            is_unsafe = True
+                            break
+                    if is_unsafe:
+                        break
             
             for neut in neutral_words:
                 # marks unsafe if strongly related to any neutral words
-                if any(e['end'].lower() == concept.lower() and float(e.get('normalized_weight', 0)) > 0.9 for e in self.get_neighbors(neut)):
+                if any(e['end'].lower() == concept.lower() and float(e.get('normalized_weight', e.get('weight', 0))) > 0.9 for e in self.get_neighbors(neut)):
                     is_unsafe = True; break
             
             if not is_unsafe:
