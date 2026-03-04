@@ -264,7 +264,15 @@ class CodenamesGame:
         divider('═')
 
         if spy.profile:
-            spy.engine.update_relation_weights(spy.profile.give_weights())
+            raw_weights = spy.profile.give_weights()
+            # Clamp each weight to a minimum of 0.05 so over-decayed profiles
+            # don't silently return None and starve the engine of all candidates
+            from utils.constants import DEFAULT_RELATION_WEIGHTS
+            clamped = {
+                k: max(0.05, float(v)) if v is not None else DEFAULT_RELATION_WEIGHTS.get(k, 1.0)
+                for k, v in raw_weights.items()
+            }
+            spy.engine.update_relation_weights(clamped)
 
         result = spy.get_clue(remaining, opp, ass, neut)
 
@@ -425,9 +433,21 @@ class CodenamesGame:
 
         input('  Press ENTER to begin...')
 
-        turn       = 'RED'
-        winner     = None
-        turn_count = {'RED': 0, 'BLUE': 0}
+        turn              = 'RED'
+        winner            = None
+        turn_count        = {'RED': 0, 'BLUE': 0}
+        consecutive_passes = 0   # break infinite loop if both teams pass repeatedly
+
+        # Per-game relation hit/miss accumulator for end-of-game summary
+        # Structure: { 'RED': { 'RelationName': {'hits': int, 'misses': int, 'examples': [...]} } }
+        relation_stats = {
+            'RED':  {},
+            'BLUE': {}
+        }
+        # Decision tree: one entry per turn per player
+        # Each entry: { turn_num, clue, relations_used, words: [{word, relation, result}],
+        #               weights_before, weights_after, pivoted }
+        decision_tree = {'RED': [], 'BLUE': []}
 
         while True:
             opp = 'BLUE' if turn == 'RED' else 'RED'
@@ -441,12 +461,25 @@ class CodenamesGame:
                 break
 
             # Spymaster
+            # Snapshot weights before this turn for the decision tree
+            _active_profile = red_profile if turn == 'RED' else blue_profile
+            _weights_before = dict(_active_profile.give_weights()) if _active_profile else {}
+
             clue, count, logic = self._spymaster_turn(
                 turn, t_w, o_w, assassin, neutral, revealed, logger
             )
             if clue == 'PASS':
+                consecutive_passes += 1
+                if consecutive_passes >= 2:
+                    # Both teams have passed — no valid clues exist, call it a draw
+                    winner = 'NONE'
+                    logger.game_over('NONE', 'both teams passed — no valid clues')
+                    print()
+                    print(YELLOW(BOLD('  ⚠   Both spymasters are out of clues — game ends in a draw.')))
+                    break
                 turn = opp
                 continue
+            consecutive_passes = 0  # reset on any successful clue
 
             # print(logic)
 
@@ -470,6 +503,84 @@ class CodenamesGame:
                 profile.get_guessed_words(guessed_words)
                 profile.update_weights()
 
+            # Record decision tree node for this turn
+            if logic and clue != 'PASS':
+                _weights_after  = dict(profile.give_weights()) if profile else {}
+                guessed_set_dt  = {w.strip().upper() for w in guessed_words}
+
+                # Which relation types did the AI use this turn?
+                rels_used = {}
+                word_results = []
+                for entry in logic:
+                    if not isinstance(entry, str) or '(' not in entry:
+                        continue
+                    i = entry.rfind('(')
+                    w   = entry[:i].strip().upper()
+                    rel = entry[i+1:-1].strip()
+                    if not rel or not w:
+                        continue
+                    rels_used[rel] = rels_used.get(rel, 0) + 1
+                    word_results.append({
+                        'word':     w,
+                        'relation': rel,
+                        'result':   'hit' if w in guessed_set_dt else 'miss'
+                    })
+
+                # Mark as pivoted only when:
+                # 1. The previous turn had at least one miss (something went wrong)
+                # 2. The previous turn's dominant relation is completely absent now
+                prev_turns = decision_tree[turn]
+                pivoted = False
+                if prev_turns:
+                    prev_node = prev_turns[-1]
+                    prev_rels = prev_node.get('relations_used', {})
+                    prev_top  = max(prev_rels, key=prev_rels.get) if prev_rels else None
+                    prev_had_miss = any(
+                        w['result'] == 'miss' for w in prev_node.get('words', [])
+                    )
+                    pivoted = (
+                        prev_had_miss and
+                        prev_top is not None and
+                        prev_top not in rels_used
+                    )
+
+                decision_tree[turn].append({
+                    'turn_num':       turn_count[turn],
+                    'clue':           clue,
+                    'relations_used': rels_used,
+                    'words':          word_results,
+                    'weights_before': _weights_before,
+                    'weights_after':  _weights_after,
+                    'pivoted':        pivoted
+                })
+
+            # Accumulate relation hit/miss stats for end-of-game summary
+            if logic:
+                guessed_set = {w.strip().upper() for w in guessed_words}
+                stats = relation_stats[turn]
+                for entry in logic:
+                    if not isinstance(entry, str) or '(' not in entry:
+                        continue
+                    i = entry.rfind('(')
+                    word = entry[:i].strip().upper()
+                    rel  = entry[i+1:-1].strip()
+                    if not rel or not word:
+                        continue
+                    if rel not in stats:
+                        stats[rel] = {'hits': 0, 'misses': 0, 'examples': []}
+                    if word in guessed_set:
+                        stats[rel]['hits'] += 1
+                        if len(stats[rel]['examples']) < 3:
+                            stats[rel]['examples'].append(
+                                {'word': word, 'clue': clue, 'result': 'hit'}
+                            )
+                    else:
+                        stats[rel]['misses'] += 1
+                        if len(stats[rel]['examples']) < 3:
+                            stats[rel]['examples'].append(
+                                {'word': word, 'clue': clue, 'result': 'miss'}
+                            )
+
             if outcome == 'assassin':
                 winner = opp
                 logger.game_over(winner, f'{turn} hit the assassin')
@@ -489,9 +600,22 @@ class CodenamesGame:
         print_board(board, red_w, blue_w, assassin, revealed)
         print()
         print(BOLD('=' * 72))
-        print(team_color(winner, BOLD(f'  🏆   {winner} TEAM WINS!')))
+        if winner and winner != 'NONE':
+            print(team_color(winner, BOLD(f'  🏆   {winner} TEAM WINS!')))
         print(BOLD('=' * 72))
         print()
+
+        # Print decision trees
+        if red_player and decision_tree['RED']:
+            print_decision_tree(red_player, decision_tree['RED'], 'RED')
+        if blue_player and decision_tree['BLUE']:
+            print_decision_tree(blue_player, decision_tree['BLUE'], 'BLUE')
+
+        # Print end-of-game player summaries
+        if red_player and relation_stats['RED']:
+            print_player_summary(red_player, relation_stats['RED'], 'RED')
+        if blue_player and relation_stats['BLUE']:
+            print_player_summary(blue_player, relation_stats['BLUE'], 'BLUE')
 
         # Update and save player profiles at end of game
         try:
@@ -508,6 +632,141 @@ class CodenamesGame:
                 blue_profile.save_profile_to_json()
         except Exception:
             pass
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# DECISION TREE
+# ══════════════════════════════════════════════════════════════════════════════
+
+def print_decision_tree(player_name, turns, team):
+    """Print a full per-player decision tree for the game."""
+    color = RED if team == 'RED' else BLUE
+
+    print()
+    divider('═')
+    print(color(BOLD(f'  🌳  {player_name.upper()} — DECISION TREE')))
+    divider('═')
+
+    if not turns:
+        print(DIM('  No turns recorded.'))
+        divider()
+        return
+
+    for node in turns:
+        turn_num   = node['turn_num']
+        clue       = node['clue']
+        rels_used  = node['relations_used']
+        words      = node['words']
+        w_before   = node['weights_before']
+        w_after    = node['weights_after']
+        pivoted    = node['pivoted']
+
+        # ── Turn header ──────────────────────────────────────────────────
+        pivot_tag = f'  {YELLOW("↩  pivoted relation")}' if pivoted else ''
+        rels_str  = ', '.join(f'{r}×{c}' for r, c in rels_used.items())
+        print()
+        print(color(BOLD(f'  TURN {turn_num}')) +
+              f'  clue {BOLD(clue)}  ({rels_str}){pivot_tag}')
+
+        # ── Word results as tree branches ────────────────────────────────
+        for idx, wr in enumerate(words):
+            is_last  = (idx == len(words) - 1)
+            branch   = '└──' if is_last else '├──'
+            rel      = wr['relation']
+            word     = wr['word']
+            result   = wr['result']
+
+            hit_icon = GREEN('●') if result == 'hit' else YELLOW('○')
+            outcome  = GREEN('guessed ✓') if result == 'hit' else YELLOW('missed  ✗')
+
+            # Weight delta for this relation
+            wb = w_before.get(rel)
+            wa = w_after.get(rel)
+            if wb is not None and wa is not None:
+                wb_f, wa_f = float(wb), float(wa)
+                if wa_f < wb_f:
+                    delta = RED(f'[{rel}  {wb_f:.3f} → {wa_f:.3f} ↓ decayed]')
+                else:
+                    delta = GREEN(f'[{rel}  {wb_f:.3f} → {wa_f:.3f} — unchanged]')
+            else:
+                delta = DIM(f'[{rel}]')
+
+            print(f'  {DIM(branch)} {hit_icon} {BOLD(word):20s} {outcome}   {delta}')
+
+    print()
+    divider()
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# END-OF-GAME SUMMARY
+# ══════════════════════════════════════════════════════════════════════════════
+
+def print_player_summary(player_name, stats, team):
+    """Print a readable per-player relation summary after the game."""
+    color = RED if team == 'RED' else BLUE
+
+    print()
+    divider('═')
+    print(color(BOLD(f'  📊  {player_name.upper()} — YOUR CLUE PROFILE')))
+    divider('═')
+
+    if not stats:
+        print(DIM('  Not enough data this game to build a profile.'))
+        divider()
+        return
+
+    # Sort relations by total appearances
+    sorted_rels = sorted(stats.items(), key=lambda x: x[1]['hits'] + x[1]['misses'], reverse=True)
+
+    strong   = []  # hit rate >= 0.6
+    weak     = []  # hit rate < 0.4
+    moderate = []  # in between
+
+    for rel, data in sorted_rels:
+        total = data['hits'] + data['misses']
+        if total == 0:
+            continue
+        rate = data['hits'] / total
+        entry = (rel, data, rate, total)
+        if rate >= 0.6:
+            strong.append(entry)
+        elif rate < 0.4:
+            weak.append(entry)
+        else:
+            moderate.append(entry)
+
+    if strong:
+        print(f'  {GREEN("✓")} {BOLD("You respond well to:")}')
+        for rel, data, rate, total in strong[:3]:
+            pct = int(rate * 100)
+            print(f'    {GREEN("█")} {BOLD(rel):20s}  {pct}% hit rate  ({data["hits"]}/{total} words guessed)')
+            # Show best example
+            hits = [e for e in data['examples'] if e['result'] == 'hit']
+            if hits:
+                ex = hits[0]
+                print(DIM(f'       e.g. clue "{ex["clue"]}" → you found {ex["word"]}'))
+        print()
+
+    if weak:
+        print(f'  {YELLOW("✗")} {BOLD("You struggle with:")}')
+        for rel, data, rate, total in weak[:3]:
+            pct = int(rate * 100)
+            print(f'    {YELLOW("░")} {BOLD(rel):20s}  {pct}% hit rate  ({data["hits"]}/{total} words guessed)')
+            # Show a miss example
+            misses = [e for e in data['examples'] if e['result'] == 'miss']
+            if misses:
+                ex = misses[0]
+                print(DIM(f'       e.g. clue "{ex["clue"]}" → missed {ex["word"]}'))
+        print()
+
+    if moderate:
+        print(f'  {DIM("~")} {BOLD("Mixed results with:")}')
+        for rel, data, rate, total in moderate[:2]:
+            pct = int(rate * 100)
+            print(f'    {DIM("▒")} {BOLD(rel):20s}  {pct}% hit rate  ({data["hits"]}/{total} words guessed)')
+        print()
+
+    divider()
 
 
 # ══════════════════════════════════════════════════════════════════════════════

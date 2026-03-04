@@ -1,0 +1,22 @@
+{
+  "name": "k-blue",
+  "games_played": 14,
+  "relation_weights": {
+    "IsA": 0.15367843386251173,
+    "AtLocation": 0.24383748955776471,
+    "PartOf": 0.7737809374999999,
+    "Antonym": 0.6108796874999998,
+    "UsedFor": 0.6983372960937497,
+    "DistinctFrom": 0.95,
+    "HasProperty": 0.5803357031249997,
+    "SimilarTo": 0.8573749999999999,
+    "CapableOf": 0.95,
+    "Causes": 1.0,
+    "MadeOf": 0.95,
+    "ReceivesAction": 0.75,
+    "HasPrerequisite": 0.75,
+    "HasSubevent": 1.0,
+    "CreatedBy": 1.0,
+    "LocatedNear": 1.0
+  }
+}
