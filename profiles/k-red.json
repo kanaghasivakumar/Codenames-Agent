@@ -1,9 +1,9 @@
 {
   "name": "k-red",
-  "games_played": 15,
+  "games_played": 16,
   "relation_weights": {
     "IsA": 0.12517204487122743,
-    "AtLocation": 0.31512470486230454,
+    "AtLocation": 0.2993684696191893,
     "PartOf": 0.5987369392383786,
     "Antonym": 0.4975653234667965,
     "UsedFor": 0.9025,
