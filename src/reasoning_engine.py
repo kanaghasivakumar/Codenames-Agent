@@ -1,9 +1,13 @@
 import json
+import os
 from pathlib import Path
 from collections import defaultdict
 import utils.constants as constants
 
-GRAPH_PATH = Path("data/conceptnet_graph.json")
+# Use absolute path based on this file's location
+_SRC_DIR = Path(os.path.dirname(os.path.abspath(__file__)))
+_PROJECT_DIR = _SRC_DIR.parent
+GRAPH_PATH = _PROJECT_DIR / "data" / "conceptnet_graph.json"
 DEFAULT_RELATION_WEIGHTS = constants.DEFAULT_RELATION_WEIGHTS
 
 
@@ -64,7 +68,7 @@ class ReasoningEngine:
                     logic_chains[concept].append(f"{word} ({rel})") # adds relation to logic chains if concept already related to target
 
                 else:
-                    score = weight * self.relation_weights.get(rel) # score for concept -> target
+                    score = weight * self.relation_weights.get(rel, 0.5) # score for concept -> target
                     candidates[concept] += score                    # aggregates score for concept for all related targets
                     concept_coverage[concept].add(word)             # keeps track of all targets related to concept
                     logic_chains[concept].append(f"{word} ({rel})") # keeps track of relations related to concept
