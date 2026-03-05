@@ -7,6 +7,7 @@ codenames_env/
 __pycache__/
 *.pyc
 *.pkl
+game play/env
 
 # Logs
 game play/logs/*.json
