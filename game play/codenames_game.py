@@ -130,10 +130,14 @@ class GameLogger:
         }
         self._ev('BOARD_SETUP', self.meta['board'])
 
-    def clue(self, team, clue, count, targets, score):
+    def clue(self, team, clue, count, targets, score, logic=None):
         self._ev('SPYMASTER_CLUE', {
-            'team': team, 'clue': clue, 'count': count,
-            'targets': targets, 'score': round(float(score), 4)
+            'team':      team,
+            'clue':      clue,
+            'count':     count,
+            'targets':   targets,
+            'score':     round(float(score), 4),
+            'relations': logic or []
         })
 
     def guess(self, team, word, result):
@@ -291,7 +295,7 @@ class CodenamesGame:
         divider()
         print()
 
-        logger.clue(team, clue, count, result['targets'], result['score'])
+        logger.clue(team, clue, count, result['targets'], result['score'], logic)
         return clue, count, logic
 
     # ── Operative turn ────────────────────────────────────────────────────────

@@ -1,0 +1,22 @@
+{
+  "name": "ned",
+  "games_played": 1,
+  "relation_weights": {
+    "IsA": 0.42868749999999994,
+    "AtLocation": 0.5,
+    "PartOf": 0.95,
+    "Antonym": 0.75,
+    "UsedFor": 1.0,
+    "DistinctFrom": 1.0,
+    "HasProperty": 0.6768749999999999,
+    "SimilarTo": 1.0,
+    "CapableOf": 0.95,
+    "Causes": 1.0,
+    "MadeOf": 0.95,
+    "ReceivesAction": 0.75,
+    "HasPrerequisite": 0.75,
+    "HasSubevent": 1.0,
+    "CreatedBy": 1.0,
+    "LocatedNear": 1.0
+  }
+}

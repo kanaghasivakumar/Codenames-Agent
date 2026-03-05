@@ -1,0 +1,22 @@
+{
+  "name": "theo",
+  "games_played": 1,
+  "relation_weights": {
+    "IsA": 0.3675459453124999,
+    "AtLocation": 0.45125,
+    "PartOf": 1.0,
+    "Antonym": 0.6768749999999999,
+    "UsedFor": 0.95,
+    "DistinctFrom": 1.0,
+    "HasProperty": 0.75,
+    "SimilarTo": 1.0,
+    "CapableOf": 1.0,
+    "Causes": 1.0,
+    "MadeOf": 1.0,
+    "ReceivesAction": 0.75,
+    "HasPrerequisite": 0.75,
+    "HasSubevent": 1.0,
+    "CreatedBy": 1.0,
+    "LocatedNear": 1.0
+  }
+}
