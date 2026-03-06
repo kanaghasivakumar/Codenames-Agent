@@ -15,4 +15,14 @@ DEFAULT_RELATION_WEIGHTS = {
     "HasSubevent": 1.0,    
     "CreatedBy": 1.0,
     "LocatedNear": 1.0,
+    "HasA":             1.0,  
 }
+
+ASSASSIN_PENALTY_WEIGHT   = 10.0
+
+OPPONENT_PENALTY_WEIGHT   = 4.0
+
+NEUTRAL_PENALTY_WEIGHT    = 0.5
+NEUTRAL_PENALTY_THRESHOLD = 0.6   
+
+COVERAGE_BONUS_PER_EXTRA_TARGET = 2.0

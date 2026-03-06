@@ -1,0 +1,561 @@
+{
+  "game_id": "20260302_202348",
+  "started": "2026-03-02T20:23:54.042172",
+  "board": {
+    "red": [
+      "BOMB",
+      "SNOWMAN",
+      "LITTER",
+      "HOLE",
+      "THUMB",
+      "FILM",
+      "PALM",
+      "WIND",
+      "KID"
+    ],
+    "blue": [
+      "LEPRECHAUN",
+      "SOUND",
+      "MEXICO",
+      "PUMPKIN",
+      "STOCK",
+      "SHIP",
+      "LIMOUSINE",
+      "BRUSH"
+    ],
+    "assassin": "HOSPITAL",
+    "neutral": [
+      "AZTEC",
+      "SKYSCRAPER",
+      "PIANO",
+      "BLOCK",
+      "ROUND",
+      "GREECE",
+      "OCTOPUS"
+    ]
+  },
+  "ended": "2026-03-02T20:33:37.914820",
+  "winner": "BLUE",
+  "reason": "BLUE found all words",
+  "events": [
+    {
+      "time": "2026-03-02T20:23:54.042172",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "BOMB",
+          "SNOWMAN",
+          "LITTER",
+          "HOLE",
+          "THUMB",
+          "FILM",
+          "PALM",
+          "WIND",
+          "KID"
+        ],
+        "blue": [
+          "LEPRECHAUN",
+          "SOUND",
+          "MEXICO",
+          "PUMPKIN",
+          "STOCK",
+          "SHIP",
+          "LIMOUSINE",
+          "BRUSH"
+        ],
+        "assassin": "HOSPITAL",
+        "neutral": [
+          "AZTEC",
+          "SKYSCRAPER",
+          "PIANO",
+          "BLOCK",
+          "ROUND",
+          "GREECE",
+          "OCTOPUS"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-02T20:23:54.275624",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "OBJECT",
+        "count": 2,
+        "targets": [
+          "BOMB",
+          "FILM"
+        ],
+        "score": 20.0
+      }
+    },
+    {
+      "time": "2026-03-02T20:24:58.439873",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "BRUSH",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-02T20:24:58.439873",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-02T20:24:58.455712",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "FLOWER",
+        "count": 2,
+        "targets": [
+          "PUMPKIN",
+          "STOCK"
+        ],
+        "score": 10.6
+      }
+    },
+    {
+      "time": "2026-03-02T20:25:44.063097",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "PUMPKIN",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:26:18.181989",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-02T20:26:18.198910",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "DESTROY",
+        "count": 2,
+        "targets": [
+          "BOMB",
+          "HOLE"
+        ],
+        "score": 2.3
+      }
+    },
+    {
+      "time": "2026-03-02T20:26:32.582186",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "BOMB",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:26:58.462994",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-02T20:26:58.475755",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "GOOD",
+        "count": 2,
+        "targets": [
+          "SOUND",
+          "STOCK"
+        ],
+        "score": 0.6
+      }
+    },
+    {
+      "time": "2026-03-02T20:27:21.102317",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "KID",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-02T20:27:21.102317",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-02T20:27:21.110138",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "FINGER",
+        "count": 2,
+        "targets": [
+          "PALM",
+          "THUMB"
+        ],
+        "score": 30.9799
+      }
+    },
+    {
+      "time": "2026-03-02T20:27:30.594255",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "THUMB",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:27:32.634030",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-02T20:27:32.650055",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "HAVE",
+        "count": 2,
+        "targets": [
+          "SOUND",
+          "STOCK"
+        ],
+        "score": 0.33
+      }
+    },
+    {
+      "time": "2026-03-02T20:27:54.943549",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "LEPRECHAUN",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:28:06.013190",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-02T20:28:06.036420",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "FIGURE",
+        "count": 1,
+        "targets": [
+          "SNOWMAN"
+        ],
+        "score": 10.0
+      }
+    },
+    {
+      "time": "2026-03-02T20:28:22.546060",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "ROUND",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-02T20:28:22.546060",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-02T20:28:22.579914",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "VESSEL",
+        "count": 1,
+        "targets": [
+          "SHIP"
+        ],
+        "score": 10.3
+      }
+    },
+    {
+      "time": "2026-03-02T20:28:28.953300",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SHIP",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:29:42.435792",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "LITTER",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-02T20:29:42.435792",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-02T20:29:42.457287",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "OPENING",
+        "count": 1,
+        "targets": [
+          "HOLE"
+        ],
+        "score": 20.0309
+      }
+    },
+    {
+      "time": "2026-03-02T20:29:57.817562",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "HOLE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:29:59.730224",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-02T20:29:59.730224",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "MESOAMERICA",
+        "count": 1,
+        "targets": [
+          "MEXICO"
+        ],
+        "score": 6.0
+      }
+    },
+    {
+      "time": "2026-03-02T20:30:04.159790",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "AZTEC",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-02T20:30:04.159790",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-02T20:30:04.172836",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "TREE",
+        "count": 1,
+        "targets": [
+          "PALM"
+        ],
+        "score": 15.5535
+      }
+    },
+    {
+      "time": "2026-03-02T20:30:16.527866",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PALM",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:30:19.728387",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-02T20:30:19.773512",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "HANDLE",
+        "count": 1,
+        "targets": [
+          "STOCK"
+        ],
+        "score": 10.3
+      }
+    },
+    {
+      "time": "2026-03-02T20:30:35.970712",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "LIMOUSINE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:30:44.034714",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "MEXICO",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:30:44.034714",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-02T20:30:44.041702",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "ICEMAN",
+        "count": 1,
+        "targets": [
+          "SNOWMAN"
+        ],
+        "score": 0.3
+      }
+    },
+    {
+      "time": "2026-03-02T20:31:02.266905",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SNOWMAN",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:32:04.464552",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-02T20:32:04.491735",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "CAPITAL",
+        "count": 1,
+        "targets": [
+          "STOCK"
+        ],
+        "score": 10.3
+      }
+    },
+    {
+      "time": "2026-03-02T20:32:24.635373",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "STOCK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:33:17.882317",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-02T20:33:17.882317",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "RECORD",
+        "count": 1,
+        "targets": [
+          "FILM"
+        ],
+        "score": 12.0
+      }
+    },
+    {
+      "time": "2026-03-02T20:33:37.909252",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SOUND",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-02T20:33:37.909252",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-02T20:33:37.914820",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "BLUE",
+        "reason": "BLUE found all words"
+      }
+    }
+  ]
+}

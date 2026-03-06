@@ -1,0 +1,607 @@
+{
+  "game_id": "20260224_194805",
+  "started": "2026-02-24T19:48:06.282143",
+  "board": {
+    "red": [
+      "CODE",
+      "DANCE",
+      "COLD",
+      "MINT",
+      "STADIUM",
+      "MARCH",
+      "MAMMOTH",
+      "KNIGHT",
+      "POINT"
+    ],
+    "blue": [
+      "NOTE",
+      "MATCH",
+      "CARROT",
+      "GLASS",
+      "PARACHUTE",
+      "LIMOUSINE",
+      "FOREST",
+      "MOUSE"
+    ],
+    "assassin": "CARD",
+    "neutral": [
+      "RING",
+      "DICE",
+      "INDIA",
+      "SCALE",
+      "MAPLE",
+      "TEMPLE",
+      "DRESS"
+    ]
+  },
+  "ended": "2026-02-24T19:51:37.571004",
+  "winner": "BLUE",
+  "reason": "BLUE found all words",
+  "events": [
+    {
+      "time": "2026-02-24T19:48:06.282143",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "CODE",
+          "DANCE",
+          "COLD",
+          "MINT",
+          "STADIUM",
+          "MARCH",
+          "MAMMOTH",
+          "KNIGHT",
+          "POINT"
+        ],
+        "blue": [
+          "NOTE",
+          "MATCH",
+          "CARROT",
+          "GLASS",
+          "PARACHUTE",
+          "LIMOUSINE",
+          "FOREST",
+          "MOUSE"
+        ],
+        "assassin": "CARD",
+        "neutral": [
+          "RING",
+          "DICE",
+          "INDIA",
+          "SCALE",
+          "MAPLE",
+          "TEMPLE",
+          "DRESS"
+        ]
+      }
+    },
+    {
+      "time": "2026-02-24T19:48:06.836492",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "MOVEMENT",
+        "count": 3,
+        "targets": [
+          "MARCH",
+          "POINT",
+          "DANCE"
+        ],
+        "score": 3.8631
+      }
+    },
+    {
+      "time": "2026-02-24T19:48:13.968898",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "MARCH",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T19:48:20.528097",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "DANCE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T19:48:35.146080",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-02-24T19:48:35.170878",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "MAMMAL",
+        "count": 2,
+        "targets": [
+          "MOUSE",
+          "PARACHUTE"
+        ],
+        "score": 27.295
+      }
+    },
+    {
+      "time": "2026-02-24T19:48:41.171256",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "MAMMOTH",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-02-24T19:48:41.171256",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-02-24T19:48:41.188680",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "SWORD",
+        "count": 2,
+        "targets": [
+          "KNIGHT",
+          "POINT"
+        ],
+        "score": 6.0936
+      }
+    },
+    {
+      "time": "2026-02-24T19:48:53.411656",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "KNIGHT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T19:49:07.714004",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "MATCH",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-02-24T19:49:07.714004",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-02-24T19:49:07.732792",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "DOOR",
+        "count": 2,
+        "targets": [
+          "GLASS",
+          "NOTE"
+        ],
+        "score": 3.0103
+      }
+    },
+    {
+      "time": "2026-02-24T19:49:14.720856",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "LIMOUSINE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T19:49:27.980350",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "GLASS",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T19:49:30.103625",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-02-24T19:49:30.111091",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "EVENT",
+        "count": 2,
+        "targets": [
+          "STADIUM",
+          "POINT"
+        ],
+        "score": 0.6
+      }
+    },
+    {
+      "time": "2026-02-24T19:49:35.411237",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "DRESS",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-02-24T19:49:35.411237",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-02-24T19:49:35.422416",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "WOODS",
+        "count": 2,
+        "targets": [
+          "MOUSE",
+          "FOREST"
+        ],
+        "score": 4.2927
+      }
+    },
+    {
+      "time": "2026-02-24T19:49:39.645998",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "FOREST",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T19:49:49.755523",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-02-24T19:49:49.763740",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "ZERO",
+        "count": 2,
+        "targets": [
+          "COLD",
+          "POINT"
+        ],
+        "score": 0.231
+      }
+    },
+    {
+      "time": "2026-02-24T19:49:56.195805",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SCALE",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-02-24T19:49:56.195805",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-02-24T19:49:56.202887",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "DESK",
+        "count": 2,
+        "targets": [
+          "MOUSE",
+          "NOTE"
+        ],
+        "score": 19.416
+      }
+    },
+    {
+      "time": "2026-02-24T19:50:16.311135",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "COLD",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-02-24T19:50:16.311135",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-02-24T19:50:16.322134",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "AIM",
+        "count": 2,
+        "targets": [
+          "MINT",
+          "POINT"
+        ],
+        "score": 10.3969
+      }
+    },
+    {
+      "time": "2026-02-24T19:50:26.106160",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "RING",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-02-24T19:50:26.106160",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-02-24T19:50:26.112765",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "SHELF",
+        "count": 2,
+        "targets": [
+          "MOUSE",
+          "NOTE"
+        ],
+        "score": 6.0
+      }
+    },
+    {
+      "time": "2026-02-24T19:50:42.001009",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "NOTE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T19:50:48.250430",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "MAPLE",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-02-24T19:50:48.250430",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-02-24T19:50:48.250961",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "PURPOSE",
+        "count": 2,
+        "targets": [
+          "MINT",
+          "POINT"
+        ],
+        "score": 0.9
+      }
+    },
+    {
+      "time": "2026-02-24T19:50:55.245026",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "POINT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T19:51:01.196305",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-02-24T19:51:01.213272",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PARASAIL",
+        "count": 1,
+        "targets": [
+          "PARACHUTE"
+        ],
+        "score": 0.3
+      }
+    },
+    {
+      "time": "2026-02-24T19:51:06.753084",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "PARACHUTE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T19:51:09.050855",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-02-24T19:51:09.067130",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "EMERGENCY",
+        "count": 1,
+        "targets": [
+          "CODE"
+        ],
+        "score": 0.6
+      }
+    },
+    {
+      "time": "2026-02-24T19:51:20.671088",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CODE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T19:51:21.731869",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-02-24T19:51:21.735561",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "ROOT",
+        "count": 1,
+        "targets": [
+          "CARROT"
+        ],
+        "score": 15.3
+      }
+    },
+    {
+      "time": "2026-02-24T19:51:27.996182",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "CARROT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T19:51:29.291009",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-02-24T19:51:29.300161",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "STRUCTURE",
+        "count": 1,
+        "targets": [
+          "STADIUM"
+        ],
+        "score": 10.0
+      }
+    },
+    {
+      "time": "2026-02-24T19:51:33.860857",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "STADIUM",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T19:51:35.411191",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-02-24T19:51:35.443049",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "RODENT",
+        "count": 1,
+        "targets": [
+          "MOUSE"
+        ],
+        "score": 25.6822
+      }
+    },
+    {
+      "time": "2026-02-24T19:51:37.571004",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "MOUSE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T19:51:37.571004",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "BLUE",
+        "reason": "BLUE found all words"
+      }
+    }
+  ]
+}

@@ -1,0 +1,442 @@
+{
+  "game_id": "20260224_214751",
+  "started": "2026-02-24T21:47:59.763865",
+  "board": {
+    "red": [
+      "ICE CREAM",
+      "SATELLITE",
+      "OCTOPUS",
+      "UNDERTAKER",
+      "PLANE",
+      "PISTOL",
+      "TAG",
+      "STADIUM",
+      "SPRING"
+    ],
+    "blue": [
+      "STATE",
+      "JUPITER",
+      "PILOT",
+      "PASS",
+      "GAS",
+      "DANCE",
+      "DEATH",
+      "BUGLE"
+    ],
+    "assassin": "MOUSE",
+    "neutral": [
+      "GRASS",
+      "STAFF",
+      "CHANGE",
+      "BOARD",
+      "PLAY",
+      "PARACHUTE",
+      "ENGINE"
+    ]
+  },
+  "ended": "2026-02-24T22:00:19.956856",
+  "winner": "RED",
+  "reason": "RED found all words",
+  "events": [
+    {
+      "time": "2026-02-24T21:47:59.763865",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "ICE CREAM",
+          "SATELLITE",
+          "OCTOPUS",
+          "UNDERTAKER",
+          "PLANE",
+          "PISTOL",
+          "TAG",
+          "STADIUM",
+          "SPRING"
+        ],
+        "blue": [
+          "STATE",
+          "JUPITER",
+          "PILOT",
+          "PASS",
+          "GAS",
+          "DANCE",
+          "DEATH",
+          "BUGLE"
+        ],
+        "assassin": "MOUSE",
+        "neutral": [
+          "GRASS",
+          "STAFF",
+          "CHANGE",
+          "BOARD",
+          "PLAY",
+          "PARACHUTE",
+          "ENGINE"
+        ]
+      }
+    },
+    {
+      "time": "2026-02-24T21:48:01.080378",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "RIVER",
+        "count": 2,
+        "targets": [
+          "PLANE",
+          "SPRING"
+        ],
+        "score": 5.0
+      }
+    },
+    {
+      "time": "2026-02-24T21:51:16.754684",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SPRING",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T21:51:34.652601",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CHANGE",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-02-24T21:51:34.652601",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-02-24T21:51:34.677092",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "MAKE",
+        "count": 2,
+        "targets": [
+          "GAS",
+          "PASS"
+        ],
+        "score": 0.0696
+      }
+    },
+    {
+      "time": "2026-02-24T21:51:47.016673",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "ICE CREAM",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-02-24T21:51:47.016673",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-02-24T21:51:47.063613",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "GUN",
+        "count": 1,
+        "targets": [
+          "PISTOL"
+        ],
+        "score": 38.73
+      }
+    },
+    {
+      "time": "2026-02-24T21:52:33.717281",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PISTOL",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T21:54:10.716214",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player passed"
+      }
+    },
+    {
+      "time": "2026-02-24T21:54:10.752340",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "MOVING",
+        "count": 2,
+        "targets": [
+          "PASS",
+          "DANCE"
+        ],
+        "score": 1.7831
+      }
+    },
+    {
+      "time": "2026-02-24T21:55:08.323912",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "DANCE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T21:55:16.564286",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "ENGINE",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-02-24T21:55:16.564286",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-02-24T21:55:16.617189",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "MACHINE",
+        "count": 1,
+        "targets": [
+          "PLANE"
+        ],
+        "score": 14.2018
+      }
+    },
+    {
+      "time": "2026-02-24T21:56:03.782610",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PLANE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T21:56:09.571611",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-02-24T21:56:09.596496",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "INSTRUMENT",
+        "count": 2,
+        "targets": [
+          "PILOT",
+          "BUGLE"
+        ],
+        "score": 0.6
+      }
+    },
+    {
+      "time": "2026-02-24T21:56:41.231642",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SATELLITE",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-02-24T21:56:41.231642",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-02-24T21:56:41.252402",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "CEPHALOPOD",
+        "count": 1,
+        "targets": [
+          "OCTOPUS"
+        ],
+        "score": 10.0
+      }
+    },
+    {
+      "time": "2026-02-24T21:57:12.511537",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "OCTOPUS",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T21:57:15.344055",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-02-24T21:57:15.360873",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "DEGREE",
+        "count": 2,
+        "targets": [
+          "STATE",
+          "DEATH"
+        ],
+        "score": 0.6
+      }
+    },
+    {
+      "time": "2026-02-24T21:57:34.289536",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player passed"
+      }
+    },
+    {
+      "time": "2026-02-24T21:57:34.300006",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "WRESTLER",
+        "count": 1,
+        "targets": [
+          "UNDERTAKER"
+        ],
+        "score": 2.5
+      }
+    },
+    {
+      "time": "2026-02-24T21:57:53.077099",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "UNDERTAKER",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T21:57:53.940855",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-02-24T21:57:53.954601",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "STATE",
+        "count": 2,
+        "targets": [
+          "GAS",
+          "DEATH"
+        ],
+        "score": 10.2682
+      }
+    },
+    {
+      "time": "2026-02-24T21:57:59.809797",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "STATE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T21:58:07.676339",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "GAS",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T21:58:29.969942",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "STADIUM",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-02-24T21:58:29.969942",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-02-24T21:58:29.987668",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "LABEL",
+        "count": 1,
+        "targets": [
+          "TAG"
+        ],
+        "score": 20.6
+      }
+    },
+    {
+      "time": "2026-02-24T22:00:19.956856",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "TAG",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T22:00:19.956856",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "RED",
+        "reason": "RED found all words"
+      }
+    }
+  ]
+}

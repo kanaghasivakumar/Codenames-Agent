@@ -16,19 +16,20 @@ OUTPUT_FILE = Path("data/conceptnet_graph.json")
 # The Logical Relations we care about (ConceptNet uses specific IDs)
 RELEVANT_RELATIONS = {
     "/r/IsA",
-    "/r/AtLocation",
-    "/r/PartOf",
-    "/r/Antonym",
+    "/r/HasA",
     "/r/UsedFor",
-    "/r/DistinctFrom",
+    "/r/AtLocation",
     "/r/HasProperty",
-    "/r/SimilarTo",
-    "/r/CapableOf",
+    "/r/PartOf",
     "/r/Causes",
+    "/r/CapableOf",
+    "/r/Antonym",
+    "/r/DistinctFrom",
+    "/r/SimilarTo",
     "/r/MadeOf",
     "/r/ReceivesAction",
     "/r/HasPrerequisite",
-    "/r/HasSubevent"    
+    "/r/HasSubevent",
     "/r/CreatedBy",
     "/r/LocatedNear",
 }
@@ -137,26 +138,12 @@ def build_graph():
                 # We normalize the relation string (remove "/r/")
                 clean_rel = rel.replace("/r/", "")
 
-                # Apply normalization to weights
-                
-                if clean_rel in ('IsA', 'AtLocation'):
-                    # no normalization
-                    alpha = 0.0
-                
-                elif clean_rel in ('PartOf', 'UsedFor',
-                                 'HasProperty', 'SimilarTo', 'CapableOf', 'Causes', 
-                                 'MadeOf', 'HasSubevent', 'CreatedBy', 'LocatedNear'):
-                    # all are about the same
-                    alpha = 0.8
-                
-                elif clean_rel in ('Antonym', 'DistinctFrom', 'ReceivesAction', 'HasPrerequisite'):
-                    # they get better
-                    alpha = 0.5
-
-                normalized_weight = weight + alpha*(1-weight)
-
-
                 # If Start is the game word, store outgoing edge
+                # Normalize weight: alpha smoothing so low-confidence edges
+                # aren't completely zeroed out. alpha=0.3 chosen empirically.
+                alpha = 0.3
+                normalized_weight = weight + alpha * (1 - weight)
+
                 if start_is_game:
                     knowledge_graph[start_word].append({
                         "start": start_word,

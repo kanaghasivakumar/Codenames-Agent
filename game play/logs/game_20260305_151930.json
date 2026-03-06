@@ -1,0 +1,166 @@
+{
+  "game_id": "20260305_151930",
+  "started": "2026-03-05T15:19:39.677177",
+  "board": {
+    "red": [
+      "CAST",
+      "KNIFE",
+      "CELL",
+      "BEAR",
+      "MOSCOW",
+      "BELT",
+      "WASHINGTON",
+      "LIGHT",
+      "CIRCLE"
+    ],
+    "blue": [
+      "CHANGE",
+      "LINE",
+      "THIEF",
+      "AZTEC",
+      "GIANT",
+      "PALM",
+      "PYRAMID",
+      "SLUG"
+    ],
+    "assassin": "SPACE",
+    "neutral": [
+      "MOUNT",
+      "MASS",
+      "SHIP",
+      "CAPITAL",
+      "BARK",
+      "REVOLUTION",
+      "HIMALAYAS"
+    ]
+  },
+  "ended": "2026-03-05T15:20:31.068255",
+  "winner": "RED",
+  "reason": "BLUE hit the assassin",
+  "events": [
+    {
+      "time": "2026-03-05T15:19:39.677177",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "CAST",
+          "KNIFE",
+          "CELL",
+          "BEAR",
+          "MOSCOW",
+          "BELT",
+          "WASHINGTON",
+          "LIGHT",
+          "CIRCLE"
+        ],
+        "blue": [
+          "CHANGE",
+          "LINE",
+          "THIEF",
+          "AZTEC",
+          "GIANT",
+          "PALM",
+          "PYRAMID",
+          "SLUG"
+        ],
+        "assassin": "SPACE",
+        "neutral": [
+          "MOUNT",
+          "MASS",
+          "SHIP",
+          "CAPITAL",
+          "BARK",
+          "REVOLUTION",
+          "HIMALAYAS"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T15:19:40.027953",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "CLOSET",
+        "count": 2,
+        "targets": [
+          "LIGHT",
+          "BELT"
+        ],
+        "score": 0.6302,
+        "relations": [
+          "LIGHT (AtLocation)",
+          "BELT (AtLocation)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T15:19:49.602082",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "BELT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T15:20:22.631885",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CHANGE",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-05T15:20:22.631885",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-05T15:20:22.631885",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "STORE",
+        "count": 2,
+        "targets": [
+          "THIEF",
+          "LINE"
+        ],
+        "score": 0.7315,
+        "relations": [
+          "THIEF (AtLocation)",
+          "LINE (AtLocation)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T15:20:31.068255",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SPACE",
+        "result": "assassin"
+      }
+    },
+    {
+      "time": "2026-03-05T15:20:31.068255",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit assassin"
+      }
+    },
+    {
+      "time": "2026-03-05T15:20:31.068255",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "RED",
+        "reason": "BLUE hit the assassin"
+      }
+    }
+  ]
+}

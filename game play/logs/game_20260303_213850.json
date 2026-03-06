@@ -1,0 +1,900 @@
+{
+  "game_id": "20260303_213850",
+  "started": "2026-03-03T21:41:23.611495",
+  "board": {
+    "red": [
+      "HOOD",
+      "TRACK",
+      "CRANE",
+      "ATLANTIS",
+      "BAT",
+      "PILOT",
+      "PIT",
+      "POLE",
+      "BOX"
+    ],
+    "blue": [
+      "DOG",
+      "INDIA",
+      "BEACH",
+      "LOG",
+      "HORSESHOE",
+      "ORANGE",
+      "RACKET",
+      "DROP"
+    ],
+    "assassin": "LION",
+    "neutral": [
+      "NINJA",
+      "STICK",
+      "ANGEL",
+      "FLY",
+      "THUMB",
+      "FORCE",
+      "COURT"
+    ]
+  },
+  "ended": "2026-03-03T21:50:38.543745",
+  "winner": "BLUE",
+  "reason": "BLUE found all words",
+  "events": [
+    {
+      "time": "2026-03-03T21:41:23.611495",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "HOOD",
+          "TRACK",
+          "CRANE",
+          "ATLANTIS",
+          "BAT",
+          "PILOT",
+          "PIT",
+          "POLE",
+          "BOX"
+        ],
+        "blue": [
+          "DOG",
+          "INDIA",
+          "BEACH",
+          "LOG",
+          "HORSESHOE",
+          "ORANGE",
+          "RACKET",
+          "DROP"
+        ],
+        "assassin": "LION",
+        "neutral": [
+          "NINJA",
+          "STICK",
+          "ANGEL",
+          "FLY",
+          "THUMB",
+          "FORCE",
+          "COURT"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:41:24.337986",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "BIRD",
+        "count": 2,
+        "targets": [
+          "BAT",
+          "CRANE"
+        ],
+        "score": 0.8061,
+        "relations": [
+          "CRANE (IsA)",
+          "BAT (DistinctFrom)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:42:10.002966",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "FLY",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-03T21:42:10.002966",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-03T21:42:10.009529",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "COLOR",
+        "count": 1,
+        "targets": [
+          "ORANGE"
+        ],
+        "score": 1.6211,
+        "relations": [
+          "ORANGE (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:42:16.059273",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "ORANGE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:42:16.059273",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-03T21:42:16.076159",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "FLY",
+        "count": 2,
+        "targets": [
+          "BAT",
+          "PILOT"
+        ],
+        "score": 2.0,
+        "relations": [
+          "PILOT (CapableOf)",
+          "BAT (CapableOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:42:23.348221",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "BAT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:42:26.176355",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "ANGEL",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-03T21:42:26.176355",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-03T21:42:26.191078",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "ASIA",
+        "count": 1,
+        "targets": [
+          "INDIA"
+        ],
+        "score": 1.2,
+        "relations": [
+          "INDIA (PartOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:42:30.510106",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "INDIA",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:42:31.635840",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-03T21:42:31.641926",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "AIRPLANE",
+        "count": 2,
+        "targets": [
+          "HOOD",
+          "PILOT"
+        ],
+        "score": 1.5731,
+        "relations": [
+          "HOOD (PartOf)",
+          "PILOT (AtLocation)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:42:41.508237",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CRANE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:42:47.349545",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PILOT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:43:01.203436",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PIT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:43:01.203436",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-03T21:43:01.216135",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "BARK",
+        "count": 1,
+        "targets": [
+          "DOG"
+        ],
+        "score": 3.8,
+        "relations": [
+          "DOG (CapableOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:43:11.103541",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "DOG",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:43:13.311125",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-03T21:43:13.317471",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "CIRCLE",
+        "count": 2,
+        "targets": [
+          "TRACK",
+          "BOX"
+        ],
+        "score": 1.344,
+        "relations": [
+          "TRACK (CapableOf)",
+          "BOX (Antonym)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:43:27.990658",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "TRACK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:43:42.801525",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "COURT",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-03T21:43:42.801525",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-03T21:43:42.812276",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "SHIP",
+        "count": 1,
+        "targets": [
+          "LOG"
+        ],
+        "score": 1.2,
+        "relations": [
+          "LOG (PartOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:44:31.096394",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "BEACH",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:44:33.380474",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-03T21:44:33.393445",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "PLANT",
+        "count": 1,
+        "targets": [
+          "HOOD"
+        ],
+        "score": 0.7961,
+        "relations": [
+          "HOOD (PartOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:45:34.614926",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "STICK",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-03T21:45:34.614926",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-03T21:45:34.616661",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PICK",
+        "count": 1,
+        "targets": [
+          "DROP"
+        ],
+        "score": 0.9761,
+        "relations": [
+          "DROP (Antonym)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:45:47.785695",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "DROP",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:45:49.265607",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-03T21:45:49.276630",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "MAGNET",
+        "count": 1,
+        "targets": [
+          "POLE"
+        ],
+        "score": 0.7563,
+        "relations": [
+          "POLE (PartOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:46:09.731378",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "HORSESHOE",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-03T21:46:09.731378",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-03T21:46:09.739015",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "BATH",
+        "count": 1,
+        "targets": [
+          "LOG"
+        ],
+        "score": 0.95,
+        "relations": [
+          "LOG (PartOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:48:33.368908",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player passed"
+      }
+    },
+    {
+      "time": "2026-03-03T21:48:33.374596",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "ZERO",
+        "count": 1,
+        "targets": [
+          "POLE"
+        ],
+        "score": 0.5803,
+        "relations": [
+          "POLE (Antonym)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:48:59.767502",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player passed"
+      }
+    },
+    {
+      "time": "2026-03-03T21:48:59.768738",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "CAB",
+        "count": 1,
+        "targets": [
+          "LOG"
+        ],
+        "score": 0.9025,
+        "relations": [
+          "LOG (PartOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:49:11.641722",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "HOOD",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-03T21:49:11.641722",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-03T21:49:11.641722",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "END",
+        "count": 1,
+        "targets": [
+          "POLE"
+        ],
+        "score": 0.5688,
+        "relations": [
+          "POLE (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:49:21.035801",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player passed"
+      }
+    },
+    {
+      "time": "2026-03-03T21:49:21.035801",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "COR",
+        "count": 1,
+        "targets": [
+          "LOG"
+        ],
+        "score": 0.8574,
+        "relations": [
+          "LOG (PartOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:49:23.338688",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player passed"
+      }
+    },
+    {
+      "time": "2026-03-03T21:49:23.345993",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "OPINION",
+        "count": 1,
+        "targets": [
+          "POLE"
+        ],
+        "score": 0.5404,
+        "relations": [
+          "POLE (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:49:33.206279",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player passed"
+      }
+    },
+    {
+      "time": "2026-03-03T21:49:33.214544",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "ENTERPRISE",
+        "count": 1,
+        "targets": [
+          "RACKET"
+        ],
+        "score": 0.5404,
+        "relations": [
+          "RACKET (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:49:45.526450",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player passed"
+      }
+    },
+    {
+      "time": "2026-03-03T21:49:45.533859",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "CONTAINER",
+        "count": 1,
+        "targets": [
+          "BOX"
+        ],
+        "score": 1.7025,
+        "relations": [
+          "BOX (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:49:48.343225",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "BOX",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:49:50.489609",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-03T21:49:50.500393",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "HIN",
+        "count": 1,
+        "targets": [
+          "LOG"
+        ],
+        "score": 0.8145,
+        "relations": [
+          "LOG (PartOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:49:52.495557",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player passed"
+      }
+    },
+    {
+      "time": "2026-03-03T21:49:52.504008",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "EUROPEAN",
+        "count": 1,
+        "targets": [
+          "POLE"
+        ],
+        "score": 0.5133,
+        "relations": [
+          "POLE (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:50:02.963092",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player passed"
+      }
+    },
+    {
+      "time": "2026-03-03T21:50:02.967003",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "DOCTOR",
+        "count": 1,
+        "targets": [
+          "LOG"
+        ],
+        "score": 0.3869,
+        "relations": [
+          "LOG (AtLocation)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:50:14.675261",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player passed"
+      }
+    },
+    {
+      "time": "2026-03-03T21:50:14.683448",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "HUMAN",
+        "count": 1,
+        "targets": [
+          "POLE"
+        ],
+        "score": 0.2438,
+        "relations": [
+          "POLE (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:50:19.617364",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "THUMB",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-03T21:50:19.617364",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-03T21:50:19.619630",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "NOISE",
+        "count": 1,
+        "targets": [
+          "RACKET"
+        ],
+        "score": 0.5133,
+        "relations": [
+          "RACKET (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:50:26.398385",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "RACKET",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:50:28.043463",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-03T21:50:28.043463",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "SLAV",
+        "count": 1,
+        "targets": [
+          "POLE"
+        ],
+        "score": 0.2316,
+        "relations": [
+          "POLE (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:50:32.651288",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "POLE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:50:34.189645",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-03T21:50:34.199008",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "DOCUMENT",
+        "count": 1,
+        "targets": [
+          "LOG"
+        ],
+        "score": 0.2567,
+        "relations": [
+          "LOG (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:50:38.543745",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "LOG",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:50:38.543745",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "BLUE",
+        "reason": "BLUE found all words"
+      }
+    }
+  ]
+}

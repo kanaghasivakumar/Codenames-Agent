@@ -1,0 +1,119 @@
+{
+  "game_id": "20260224_194733",
+  "started": "2026-02-24T19:47:36.859726",
+  "board": {
+    "red": [
+      "PHOENIX",
+      "SUPERHERO",
+      "TABLET",
+      "GOLD",
+      "POOL",
+      "GREEN",
+      "DRESS",
+      "COURT",
+      "TELESCOPE"
+    ],
+    "blue": [
+      "HIMALAYAS",
+      "SHOT",
+      "MERCURY",
+      "AUSTRALIA",
+      "COLD",
+      "MATCH",
+      "CHANGE",
+      "PIN"
+    ],
+    "assassin": "SCUBA DIVER",
+    "neutral": [
+      "TICK",
+      "PUMPKIN",
+      "ROCK",
+      "CRICKET",
+      "STREAM",
+      "CHICK",
+      "AIR"
+    ]
+  },
+  "ended": "2026-02-24T19:48:02.040980",
+  "winner": "BLUE",
+  "reason": "RED hit the assassin",
+  "events": [
+    {
+      "time": "2026-02-24T19:47:36.859726",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "PHOENIX",
+          "SUPERHERO",
+          "TABLET",
+          "GOLD",
+          "POOL",
+          "GREEN",
+          "DRESS",
+          "COURT",
+          "TELESCOPE"
+        ],
+        "blue": [
+          "HIMALAYAS",
+          "SHOT",
+          "MERCURY",
+          "AUSTRALIA",
+          "COLD",
+          "MATCH",
+          "CHANGE",
+          "PIN"
+        ],
+        "assassin": "SCUBA DIVER",
+        "neutral": [
+          "TICK",
+          "PUMPKIN",
+          "ROCK",
+          "CRICKET",
+          "STREAM",
+          "CHICK",
+          "AIR"
+        ]
+      }
+    },
+    {
+      "time": "2026-02-24T19:47:37.715977",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "BODY",
+        "count": 3,
+        "targets": [
+          "COURT",
+          "DRESS",
+          "POOL"
+        ],
+        "score": 0.2454
+      }
+    },
+    {
+      "time": "2026-02-24T19:48:02.040980",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SCUBA DIVER",
+        "result": "assassin"
+      }
+    },
+    {
+      "time": "2026-02-24T19:48:02.040980",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit assassin"
+      }
+    },
+    {
+      "time": "2026-02-24T19:48:02.040980",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "BLUE",
+        "reason": "RED hit the assassin"
+      }
+    }
+  ]
+}

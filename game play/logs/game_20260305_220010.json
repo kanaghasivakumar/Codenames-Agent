@@ -1,0 +1,600 @@
+{
+  "game_id": "20260305_220010",
+  "started": "2026-03-05T22:00:17.318124",
+  "board": {
+    "red": [
+      "LION",
+      "ROCK",
+      "UNICORN",
+      "OIL",
+      "SNOWMAN",
+      "GENIUS",
+      "CONTRACT",
+      "GHOST",
+      "MOLE"
+    ],
+    "blue": [
+      "LEPRECHAUN",
+      "CAP",
+      "BANK",
+      "GREEN",
+      "SWITCH",
+      "WIND",
+      "SCORPION",
+      "TAP"
+    ],
+    "assassin": "MILLIONAIRE",
+    "neutral": [
+      "HAND",
+      "MISSILE",
+      "FENCE",
+      "TRACK",
+      "LAP",
+      "SUIT",
+      "WASHINGTON"
+    ]
+  },
+  "ended": "2026-03-05T22:11:18.550443",
+  "winner": "RED",
+  "reason": "RED found all words",
+  "events": [
+    {
+      "time": "2026-03-05T22:00:17.318124",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "LION",
+          "ROCK",
+          "UNICORN",
+          "OIL",
+          "SNOWMAN",
+          "GENIUS",
+          "CONTRACT",
+          "GHOST",
+          "MOLE"
+        ],
+        "blue": [
+          "LEPRECHAUN",
+          "CAP",
+          "BANK",
+          "GREEN",
+          "SWITCH",
+          "WIND",
+          "SCORPION",
+          "TAP"
+        ],
+        "assassin": "MILLIONAIRE",
+        "neutral": [
+          "HAND",
+          "MISSILE",
+          "FENCE",
+          "TRACK",
+          "LAP",
+          "SUIT",
+          "WASHINGTON"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T22:00:17.500208",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "ANIMAL",
+        "count": 3,
+        "targets": [
+          "UNICORN",
+          "LION",
+          "MOLE"
+        ],
+        "score": 3.3202,
+        "relations": [
+          "LION (IsA)",
+          "MOLE (RelatedTo)",
+          "MOLE (IsA)",
+          "UNICORN (IsA)",
+          "LION (RelatedTo)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T22:00:24.181738",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "UNICORN",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T22:03:15.679010",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SCORPION",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-05T22:03:15.679010",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-05T22:03:15.703468",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "LIGHT",
+        "count": 3,
+        "targets": [
+          "WIND",
+          "TAP",
+          "GREEN"
+        ],
+        "score": -1.1339,
+        "relations": [
+          "GREEN (RelatedTo)",
+          "WIND (RelatedTo)",
+          "TAP (RelatedTo)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T22:03:29.945747",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "WIND",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T22:03:45.919067",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "GHOST",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-05T22:03:45.919067",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-05T22:03:45.952023",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "BIG",
+        "count": 3,
+        "targets": [
+          "OIL",
+          "ROCK",
+          "LION"
+        ],
+        "score": -0.4577,
+        "relations": [
+          "OIL (RelatedTo)",
+          "ROCK (RelatedTo)",
+          "LION (RelatedTo)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T22:04:10.221646",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "WASHINGTON",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T22:04:10.221646",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T22:04:10.222404",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PLACE",
+        "count": 3,
+        "targets": [
+          "SWITCH",
+          "BANK",
+          "TAP"
+        ],
+        "score": -8.8055,
+        "relations": [
+          "SWITCH (RelatedTo)",
+          "BANK (RelatedTo)",
+          "TAP (RelatedTo)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T22:04:16.607662",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "BANK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T22:04:24.848077",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "FENCE",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T22:04:24.848077",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T22:04:24.887661",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "GROUND",
+        "count": 3,
+        "targets": [
+          "OIL",
+          "ROCK",
+          "MOLE"
+        ],
+        "score": 13.0651,
+        "relations": [
+          "OIL (AtLocation)",
+          "ROCK (RelatedTo)",
+          "ROCK (AtLocation)",
+          "MOLE (RelatedTo)",
+          "OIL (RelatedTo)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T22:04:32.506371",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "ROCK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T22:05:12.107902",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "OIL",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T22:05:20.245475",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "MOLE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T22:05:39.490908",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "LEPRECHAUN",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-05T22:05:39.490908",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-05T22:05:39.502482",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "DEVICE",
+        "count": 2,
+        "targets": [
+          "SWITCH",
+          "TAP"
+        ],
+        "score": 2.9404,
+        "relations": [
+          "SWITCH (RelatedTo)",
+          "TAP (RelatedTo)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T22:05:49.276418",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "MISSILE",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T22:05:49.276418",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T22:05:49.296071",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "ICEMAN",
+        "count": 1,
+        "targets": [
+          "SNOWMAN"
+        ],
+        "score": 0.6634,
+        "relations": [
+          "SNOWMAN (RelatedTo)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T22:05:53.753428",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SNOWMAN",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T22:05:55.008031",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-05T22:05:55.030952",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "HIT",
+        "count": 2,
+        "targets": [
+          "SWITCH",
+          "TAP"
+        ],
+        "score": 1.8196,
+        "relations": [
+          "SWITCH (RelatedTo)",
+          "TAP (RelatedTo)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T22:07:24.611174",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "TAP",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T22:09:31.330172",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "HAND",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T22:09:31.330172",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T22:09:31.346899",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "CONCRETE",
+        "count": 1,
+        "targets": [
+          "CONTRACT"
+        ],
+        "score": 0.6634,
+        "relations": [
+          "CONTRACT (RelatedTo)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T22:09:41.914649",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CONTRACT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T22:09:49.512768",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-05T22:09:49.529645",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "FUNGUS",
+        "count": 1,
+        "targets": [
+          "CAP"
+        ],
+        "score": 1.1872,
+        "relations": [
+          "CAP (PartOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T22:09:55.930656",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "GREEN",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T22:10:17.844661",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player passed"
+      }
+    },
+    {
+      "time": "2026-03-05T22:10:17.847292",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "SMART",
+        "count": 1,
+        "targets": [
+          "GENIUS"
+        ],
+        "score": 0.6769,
+        "relations": [
+          "GENIUS (RelatedTo)",
+          "GENIUS (HasProperty)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T22:10:20.711687",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "GENIUS",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T22:10:21.711927",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-05T22:10:21.727766",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "AVAILABILITY",
+        "count": 1,
+        "targets": [
+          "CAP"
+        ],
+        "score": 0.6302,
+        "relations": [
+          "CAP (RelatedTo)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T22:11:13.483696",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "TRACK",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T22:11:13.483696",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T22:11:13.495953",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "ROAR",
+        "count": 1,
+        "targets": [
+          "LION"
+        ],
+        "score": 2.7978,
+        "relations": [
+          "LION (CapableOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T22:11:18.550443",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "LION",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T22:11:18.550443",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "RED",
+        "reason": "RED found all words"
+      }
+    }
+  ]
+}

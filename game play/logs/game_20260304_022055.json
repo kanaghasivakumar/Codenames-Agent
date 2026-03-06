@@ -1,0 +1,539 @@
+{
+  "game_id": "20260304_022055",
+  "started": "2026-03-04T02:21:05.942655",
+  "board": {
+    "red": [
+      "STRIKE",
+      "COLD",
+      "IVORY",
+      "CARROT",
+      "RULER",
+      "MOSCOW",
+      "NUT",
+      "INDIA",
+      "ANTARCTICA"
+    ],
+    "blue": [
+      "LUCK",
+      "SCALE",
+      "EUROPE",
+      "HOTEL",
+      "BALL",
+      "PISTOL",
+      "LINE",
+      "HAND"
+    ],
+    "assassin": "BAT",
+    "neutral": [
+      "SPOT",
+      "CLIFF",
+      "HAWK",
+      "LEPRECHAUN",
+      "PLATE",
+      "COPPER",
+      "JAM"
+    ]
+  },
+  "ended": "2026-03-04T02:24:27.364050",
+  "winner": "RED",
+  "reason": "RED found all words",
+  "events": [
+    {
+      "time": "2026-03-04T02:21:05.942655",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "STRIKE",
+          "COLD",
+          "IVORY",
+          "CARROT",
+          "RULER",
+          "MOSCOW",
+          "NUT",
+          "INDIA",
+          "ANTARCTICA"
+        ],
+        "blue": [
+          "LUCK",
+          "SCALE",
+          "EUROPE",
+          "HOTEL",
+          "BALL",
+          "PISTOL",
+          "LINE",
+          "HAND"
+        ],
+        "assassin": "BAT",
+        "neutral": [
+          "SPOT",
+          "CLIFF",
+          "HAWK",
+          "LEPRECHAUN",
+          "PLATE",
+          "COPPER",
+          "JAM"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-04T02:21:06.162331",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "DENTINE",
+        "count": 1,
+        "targets": [
+          "IVORY"
+        ],
+        "score": 0.4181
+      }
+    },
+    {
+      "time": "2026-03-04T02:21:34.867371",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SCALE",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-04T02:21:34.867371",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-04T02:21:34.876460",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "COLLECTION",
+        "count": 2,
+        "targets": [
+          "EUROPE",
+          "HAND"
+        ],
+        "score": 0.8362
+      }
+    },
+    {
+      "time": "2026-03-04T02:21:58.573668",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "BALL",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T02:22:00.152203",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-04T02:22:00.162684",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "RUSSIA",
+        "count": 1,
+        "targets": [
+          "MOSCOW"
+        ],
+        "score": 0.7185
+      }
+    },
+    {
+      "time": "2026-03-04T02:22:03.716034",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "MOSCOW",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T02:22:15.754247",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "IVORY",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T02:22:15.754247",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-04T02:22:15.754247",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "OCCIDENT",
+        "count": 1,
+        "targets": [
+          "EUROPE"
+        ],
+        "score": 0.9285
+      }
+    },
+    {
+      "time": "2026-03-04T02:22:25.493824",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "EUROPE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T02:22:38.845767",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-04T02:22:38.858732",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "ATTACK",
+        "count": 1,
+        "targets": [
+          "STRIKE"
+        ],
+        "score": 0.3972
+      }
+    },
+    {
+      "time": "2026-03-04T02:22:45.516464",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "STRIKE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T02:22:47.536765",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-04T02:22:47.536765",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "SLEEPING",
+        "count": 1,
+        "targets": [
+          "HOTEL"
+        ],
+        "score": 1.6772
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:01.601321",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "COLD",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:01.601321",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:01.612903",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "DESK",
+        "count": 1,
+        "targets": [
+          "RULER"
+        ],
+        "score": 1.8006
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:10.836827",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "RULER",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:12.400523",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:12.402857",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "UNPREDICTABLE",
+        "count": 1,
+        "targets": [
+          "LUCK"
+        ],
+        "score": 0.7716
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:25.087621",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "CLIFF",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:25.087621",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:25.087621",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "EATEN",
+        "count": 1,
+        "targets": [
+          "CARROT"
+        ],
+        "score": 0.7125
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:30.871312",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CARROT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:32.022303",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:32.022303",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "REST",
+        "count": 1,
+        "targets": [
+          "HOTEL"
+        ],
+        "score": 1.1708
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:40.170259",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "HOTEL",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:41.921731",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:41.929284",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "ASIA",
+        "count": 1,
+        "targets": [
+          "INDIA"
+        ],
+        "score": 0.7185
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:45.621074",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "INDIA",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:46.682092",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:46.682092",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "POCKET",
+        "count": 1,
+        "targets": [
+          "HAND"
+        ],
+        "score": 1.6437
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:55.403477",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "HAND",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:56.987446",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-04T02:23:56.995131",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "SEED",
+        "count": 1,
+        "targets": [
+          "NUT"
+        ],
+        "score": 0.3972
+      }
+    },
+    {
+      "time": "2026-03-04T02:24:06.254190",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "NUT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T02:24:07.338004",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-04T02:24:07.338004",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PHENOMENON",
+        "count": 1,
+        "targets": [
+          "LUCK"
+        ],
+        "score": 0.3774
+      }
+    },
+    {
+      "time": "2026-03-04T02:24:21.801504",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SPOT",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-04T02:24:21.801504",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-04T02:24:21.801504",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "CONTINENT",
+        "count": 1,
+        "targets": [
+          "ANTARCTICA"
+        ],
+        "score": 0.5617
+      }
+    },
+    {
+      "time": "2026-03-04T02:24:27.364050",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "ANTARCTICA",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T02:24:27.364050",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "RED",
+        "reason": "RED found all words"
+      }
+    }
+  ]
+}

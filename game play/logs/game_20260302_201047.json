@@ -1,0 +1,503 @@
+{
+  "game_id": "20260302_201047",
+  "started": "2026-03-02T20:11:10.499290",
+  "board": {
+    "red": [
+      "CAR",
+      "CELL",
+      "BOND",
+      "NINJA",
+      "CRICKET",
+      "SCORPION",
+      "CLIFF",
+      "GRACE",
+      "FLY"
+    ],
+    "blue": [
+      "PARACHUTE",
+      "SNOW",
+      "NAIL",
+      "PALM",
+      "ENGINE",
+      "SUIT",
+      "UNDERTAKER",
+      "SOUL"
+    ],
+    "assassin": "PAN",
+    "neutral": [
+      "HEAD",
+      "LOG",
+      "COOK",
+      "IRON",
+      "SHOE",
+      "FISH",
+      "DRAFT"
+    ]
+  },
+  "ended": "2026-03-02T20:23:26.442870",
+  "winner": "BLUE",
+  "reason": "BLUE found all words",
+  "events": [
+    {
+      "time": "2026-03-02T20:11:10.499290",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "CAR",
+          "CELL",
+          "BOND",
+          "NINJA",
+          "CRICKET",
+          "SCORPION",
+          "CLIFF",
+          "GRACE",
+          "FLY"
+        ],
+        "blue": [
+          "PARACHUTE",
+          "SNOW",
+          "NAIL",
+          "PALM",
+          "ENGINE",
+          "SUIT",
+          "UNDERTAKER",
+          "SOUL"
+        ],
+        "assassin": "PAN",
+        "neutral": [
+          "HEAD",
+          "LOG",
+          "COOK",
+          "IRON",
+          "SHOE",
+          "FISH",
+          "DRAFT"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-02T20:11:11.137934",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "LAND",
+        "count": 3,
+        "targets": [
+          "CAR",
+          "CELL",
+          "FLY"
+        ],
+        "score": 3.0344
+      }
+    },
+    {
+      "time": "2026-03-02T20:12:14.061205",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CLIFF",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:12:40.867616",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CAR",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:12:53.564195",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "LOG",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-02T20:12:53.564195",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-02T20:12:53.564195",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "BUSINESS",
+        "count": 2,
+        "targets": [
+          "UNDERTAKER",
+          "SUIT"
+        ],
+        "score": 0.3306
+      }
+    },
+    {
+      "time": "2026-03-02T20:13:20.777106",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SUIT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:14:44.883306",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "BOND",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-02T20:14:44.883306",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-02T20:14:44.895910",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "LINE",
+        "count": 2,
+        "targets": [
+          "CELL",
+          "FLY"
+        ],
+        "score": 0.315
+      }
+    },
+    {
+      "time": "2026-03-02T20:15:17.363293",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "COOK",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-02T20:15:17.363293",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-02T20:15:17.363293",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "FINGER",
+        "count": 2,
+        "targets": [
+          "NAIL",
+          "PALM"
+        ],
+        "score": 12.3519
+      }
+    },
+    {
+      "time": "2026-03-02T20:15:48.694562",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "NAIL",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:16:58.793327",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player passed"
+      }
+    },
+    {
+      "time": "2026-03-02T20:16:58.813935",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "AROUND",
+        "count": 2,
+        "targets": [
+          "CELL",
+          "FLY"
+        ],
+        "score": 0.0885
+      }
+    },
+    {
+      "time": "2026-03-02T20:17:22.015844",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "FLY",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:17:54.136588",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PARACHUTE",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-02T20:17:54.136588",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-02T20:17:54.148936",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "GAS",
+        "count": 2,
+        "targets": [
+          "ENGINE",
+          "SNOW"
+        ],
+        "score": 0.3306
+      }
+    },
+    {
+      "time": "2026-03-02T20:18:10.941908",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "ENGINE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:18:31.546148",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-02T20:18:31.563773",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "POWER",
+        "count": 2,
+        "targets": [
+          "CELL",
+          "NINJA"
+        ],
+        "score": 0.3561
+      }
+    },
+    {
+      "time": "2026-03-02T20:19:10.229754",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "UNDERTAKER",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-02T20:19:10.229754",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-02T20:19:10.252617",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "SPIRIT",
+        "count": 1,
+        "targets": [
+          "SOUL"
+        ],
+        "score": 15.8148
+      }
+    },
+    {
+      "time": "2026-03-02T20:19:23.560197",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SOUL",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:20:25.969598",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "FISH",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-02T20:20:25.969598",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-02T20:20:25.975101",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "GAME",
+        "count": 2,
+        "targets": [
+          "CRICKET",
+          "NINJA"
+        ],
+        "score": 10.6
+      }
+    },
+    {
+      "time": "2026-03-02T20:20:34.252264",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CRICKET",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:21:58.204722",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "DRAFT",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-02T20:21:58.204722",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-02T20:21:58.204722",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "TREE",
+        "count": 1,
+        "targets": [
+          "PALM"
+        ],
+        "score": 15.5535
+      }
+    },
+    {
+      "time": "2026-03-02T20:22:11.628950",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "PALM",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:22:16.037269",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-02T20:22:16.053275",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "MOVE",
+        "count": 2,
+        "targets": [
+          "SCORPION",
+          "NINJA"
+        ],
+        "score": 0.6
+      }
+    },
+    {
+      "time": "2026-03-02T20:23:16.896749",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "IRON",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-02T20:23:16.896749",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-02T20:23:16.945794",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PRECIPITATION",
+        "count": 1,
+        "targets": [
+          "SNOW"
+        ],
+        "score": 17.0475
+      }
+    },
+    {
+      "time": "2026-03-02T20:23:26.442870",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SNOW",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T20:23:26.442870",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "BLUE",
+        "reason": "BLUE found all words"
+      }
+    }
+  ]
+}

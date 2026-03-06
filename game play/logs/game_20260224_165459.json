@@ -1,0 +1,385 @@
+{
+  "game_id": "20260224_165459",
+  "started": "2026-02-24T16:55:03.129466",
+  "board": {
+    "red": [
+      "PANTS",
+      "CHEST",
+      "TIE",
+      "WAVE",
+      "GAS",
+      "EMBASSY",
+      "GREECE",
+      "LIMOUSINE",
+      "PUMPKIN"
+    ],
+    "blue": [
+      "FILE",
+      "EAGLE",
+      "SUB",
+      "FILM",
+      "BANK",
+      "BED",
+      "LASER",
+      "BOOM"
+    ],
+    "assassin": "MARCH",
+    "neutral": [
+      "POOL",
+      "COVER",
+      "COURT",
+      "OIL",
+      "BRUSH",
+      "SQUARE",
+      "TORCH"
+    ]
+  },
+  "ended": "2026-02-24T17:10:35.993839",
+  "winner": "BLUE",
+  "reason": "RED hit the assassin",
+  "events": [
+    {
+      "time": "2026-02-24T16:55:03.129466",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "PANTS",
+          "CHEST",
+          "TIE",
+          "WAVE",
+          "GAS",
+          "EMBASSY",
+          "GREECE",
+          "LIMOUSINE",
+          "PUMPKIN"
+        ],
+        "blue": [
+          "FILE",
+          "EAGLE",
+          "SUB",
+          "FILM",
+          "BANK",
+          "BED",
+          "LASER",
+          "BOOM"
+        ],
+        "assassin": "MARCH",
+        "neutral": [
+          "POOL",
+          "COVER",
+          "COURT",
+          "OIL",
+          "BRUSH",
+          "SQUARE",
+          "TORCH"
+        ]
+      }
+    },
+    {
+      "time": "2026-02-24T16:55:04.071977",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "CLOTHING",
+        "count": 2,
+        "targets": [
+          "PANTS",
+          "TIE"
+        ],
+        "score": 5.8613
+      }
+    },
+    {
+      "time": "2026-02-24T16:55:17.801310",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PANTS",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T16:55:29.941870",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "COVER",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-02-24T16:55:29.941870",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-02-24T16:55:29.944866",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "UNDER",
+        "count": 3,
+        "targets": [
+          "BANK",
+          "SUB",
+          "BED"
+        ],
+        "score": 0.6536
+      }
+    },
+    {
+      "time": "2026-02-24T16:55:48.685611",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SUB",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:01:04.560857",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "BED",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:01:29.788428",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "GAS",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-02-24T17:01:29.788428",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-02-24T17:01:29.796135",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "TOP",
+        "count": 2,
+        "targets": [
+          "WAVE",
+          "LIMOUSINE"
+        ],
+        "score": 0.345
+      }
+    },
+    {
+      "time": "2026-02-24T17:06:09.725269",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CHEST",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:06:38.637481",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "BRUSH",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-02-24T17:06:38.637481",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-02-24T17:06:38.652402",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "BIRD",
+        "count": 2,
+        "targets": [
+          "EAGLE",
+          "BOOM"
+        ],
+        "score": 10.9933
+      }
+    },
+    {
+      "time": "2026-02-24T17:09:03.263049",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "EAGLE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:09:46.462430",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "OIL",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-02-24T17:09:46.462430",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-02-24T17:09:46.473984",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "HAIR",
+        "count": 2,
+        "targets": [
+          "WAVE",
+          "TIE"
+        ],
+        "score": 0.6381
+      }
+    },
+    {
+      "time": "2026-02-24T17:09:57.093423",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "TIE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:10:03.371382",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "LASER",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-02-24T17:10:03.371382",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-02-24T17:10:03.371382",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "CAMERA",
+        "count": 2,
+        "targets": [
+          "BOOM",
+          "FILM"
+        ],
+        "score": 0.6
+      }
+    },
+    {
+      "time": "2026-02-24T17:10:08.326026",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "FILM",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:10:18.261872",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "BOOM",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:10:26.519458",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "PUMPKIN",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-02-24T17:10:26.519458",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-02-24T17:10:26.530613",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "EUROPE",
+        "count": 1,
+        "targets": [
+          "GREECE"
+        ],
+        "score": 9.3
+      }
+    },
+    {
+      "time": "2026-02-24T17:10:31.411029",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "GREECE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:10:35.993839",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "MARCH",
+        "result": "assassin"
+      }
+    },
+    {
+      "time": "2026-02-24T17:10:35.993839",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit assassin"
+      }
+    },
+    {
+      "time": "2026-02-24T17:10:35.993839",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "BLUE",
+        "reason": "RED hit the assassin"
+      }
+    }
+  ]
+}

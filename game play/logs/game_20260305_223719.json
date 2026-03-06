@@ -1,0 +1,179 @@
+{
+  "game_id": "20260305_223719",
+  "started": "2026-03-05T22:37:27.989440",
+  "board": {
+    "red": [
+      "DWARF",
+      "REVOLUTION",
+      "LAB",
+      "EYE",
+      "BUCK",
+      "KNIFE",
+      "WATCH",
+      "CIRCLE",
+      "SPACE"
+    ],
+    "blue": [
+      "SLIP",
+      "PLATYPUS",
+      "UNDERTAKER",
+      "MAIL",
+      "HORSESHOE",
+      "THEATER",
+      "SUPERHERO",
+      "FIRE"
+    ],
+    "assassin": "AMBULANCE",
+    "neutral": [
+      "STREAM",
+      "PAPER",
+      "CONDUCTOR",
+      "DROP",
+      "IVORY",
+      "SUB",
+      "SINK"
+    ]
+  },
+  "ended": "2026-03-05T22:37:58.166321",
+  "winner": "BLUE",
+  "reason": "RED hit the assassin",
+  "events": [
+    {
+      "time": "2026-03-05T22:37:27.989440",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "DWARF",
+          "REVOLUTION",
+          "LAB",
+          "EYE",
+          "BUCK",
+          "KNIFE",
+          "WATCH",
+          "CIRCLE",
+          "SPACE"
+        ],
+        "blue": [
+          "SLIP",
+          "PLATYPUS",
+          "UNDERTAKER",
+          "MAIL",
+          "HORSESHOE",
+          "THEATER",
+          "SUPERHERO",
+          "FIRE"
+        ],
+        "assassin": "AMBULANCE",
+        "neutral": [
+          "STREAM",
+          "PAPER",
+          "CONDUCTOR",
+          "DROP",
+          "IVORY",
+          "SUB",
+          "SINK"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T22:37:28.339148",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "TABLE",
+        "count": 2,
+        "targets": [
+          "KNIFE",
+          "SPACE"
+        ],
+        "score": -17.2615
+      }
+    },
+    {
+      "time": "2026-03-05T22:37:41.163611",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SINK",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T22:37:41.163611",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T22:37:41.189610",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "HOUSE",
+        "count": 2,
+        "targets": [
+          "MAIL",
+          "FIRE"
+        ],
+        "score": 0.9097
+      }
+    },
+    {
+      "time": "2026-03-05T22:37:51.210545",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SPACE",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-05T22:37:51.210545",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-05T22:37:51.239544",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "DEER",
+        "count": 1,
+        "targets": [
+          "BUCK"
+        ],
+        "score": 0.2324
+      }
+    },
+    {
+      "time": "2026-03-05T22:37:58.166321",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "AMBULANCE",
+        "result": "assassin"
+      }
+    },
+    {
+      "time": "2026-03-05T22:37:58.166321",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit assassin"
+      }
+    },
+    {
+      "time": "2026-03-05T22:37:58.166321",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "BLUE",
+        "reason": "RED hit the assassin"
+      }
+    }
+  ]
+}

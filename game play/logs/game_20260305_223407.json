@@ -1,0 +1,276 @@
+{
+  "game_id": "20260305_223407",
+  "started": "2026-03-05T22:34:13.530810",
+  "board": {
+    "red": [
+      "SHOP",
+      "HONEY",
+      "NINJA",
+      "CELL",
+      "PIT",
+      "NURSE",
+      "DRILL",
+      "ROW",
+      "COMPOUND"
+    ],
+    "blue": [
+      "SOUL",
+      "PART",
+      "TABLET",
+      "LIMOUSINE",
+      "PALM",
+      "ATLANTIS",
+      "TRIP",
+      "SCREEN"
+    ],
+    "assassin": "NAIL",
+    "neutral": [
+      "ANTARCTICA",
+      "OCTOPUS",
+      "TRACK",
+      "PIN",
+      "TEACHER",
+      "AFRICA",
+      "ENGLAND"
+    ]
+  },
+  "ended": "2026-03-05T22:35:35.158886",
+  "winner": "BLUE",
+  "reason": "RED hit the assassin",
+  "events": [
+    {
+      "time": "2026-03-05T22:34:13.530810",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "SHOP",
+          "HONEY",
+          "NINJA",
+          "CELL",
+          "PIT",
+          "NURSE",
+          "DRILL",
+          "ROW",
+          "COMPOUND"
+        ],
+        "blue": [
+          "SOUL",
+          "PART",
+          "TABLET",
+          "LIMOUSINE",
+          "PALM",
+          "ATLANTIS",
+          "TRIP",
+          "SCREEN"
+        ],
+        "assassin": "NAIL",
+        "neutral": [
+          "ANTARCTICA",
+          "OCTOPUS",
+          "TRACK",
+          "PIN",
+          "TEACHER",
+          "AFRICA",
+          "ENGLAND"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T22:34:13.868129",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "LINE",
+        "count": 2,
+        "targets": [
+          "CELL",
+          "ROW"
+        ],
+        "score": -12.8705
+      }
+    },
+    {
+      "time": "2026-03-05T22:34:18.966073",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "ROW",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T22:34:24.683896",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "TEACHER",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T22:34:24.683896",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T22:34:24.711100",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "AUTOMOBILE",
+        "count": 1,
+        "targets": [
+          "LIMOUSINE"
+        ],
+        "score": 0.2482
+      }
+    },
+    {
+      "time": "2026-03-05T22:34:30.613919",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "LIMOUSINE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T22:34:30.614920",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-05T22:34:30.636222",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "BASEMENT",
+        "count": 2,
+        "targets": [
+          "SHOP",
+          "DRILL"
+        ],
+        "score": 1.0807
+      }
+    },
+    {
+      "time": "2026-03-05T22:34:43.907939",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CELL",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T22:34:58.052873",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "TRACK",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T22:34:58.052873",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T22:34:58.078873",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "MOVIES",
+        "count": 1,
+        "targets": [
+          "SCREEN"
+        ],
+        "score": 0.3779
+      }
+    },
+    {
+      "time": "2026-03-05T22:35:05.406108",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SCREEN",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T22:35:06.225797",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-05T22:35:06.245796",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "HOLE",
+        "count": 2,
+        "targets": [
+          "DRILL",
+          "PIT"
+        ],
+        "score": 3.4151
+      }
+    },
+    {
+      "time": "2026-03-05T22:35:11.231282",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PIT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T22:35:18.547506",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "DRILL",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T22:35:35.158886",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "NAIL",
+        "result": "assassin"
+      }
+    },
+    {
+      "time": "2026-03-05T22:35:35.158886",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit assassin"
+      }
+    },
+    {
+      "time": "2026-03-05T22:35:35.158886",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "BLUE",
+        "reason": "RED hit the assassin"
+      }
+    }
+  ]
+}

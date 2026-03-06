@@ -1,0 +1,345 @@
+{
+  "game_id": "20260305_215527",
+  "started": "2026-03-05T21:55:41.048525",
+  "board": {
+    "red": [
+      "COLD",
+      "PIRATE",
+      "UNICORN",
+      "PENGUIN",
+      "MISSILE",
+      "POISON",
+      "GLOVE",
+      "FORK",
+      "DRESS"
+    ],
+    "blue": [
+      "CAST",
+      "SHADOW",
+      "LITTER",
+      "DRAFT",
+      "BEIJING",
+      "AMAZON",
+      "PLAY",
+      "NURSE"
+    ],
+    "assassin": "BALL",
+    "neutral": [
+      "ROW",
+      "BOOT",
+      "BAND",
+      "HOSPITAL",
+      "MODEL",
+      "FIELD",
+      "FACE"
+    ]
+  },
+  "ended": "2026-03-05T21:57:59.152591",
+  "winner": "RED",
+  "reason": "BLUE hit the assassin",
+  "events": [
+    {
+      "time": "2026-03-05T21:55:41.048525",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "COLD",
+          "PIRATE",
+          "UNICORN",
+          "PENGUIN",
+          "MISSILE",
+          "POISON",
+          "GLOVE",
+          "FORK",
+          "DRESS"
+        ],
+        "blue": [
+          "CAST",
+          "SHADOW",
+          "LITTER",
+          "DRAFT",
+          "BEIJING",
+          "AMAZON",
+          "PLAY",
+          "NURSE"
+        ],
+        "assassin": "BALL",
+        "neutral": [
+          "ROW",
+          "BOOT",
+          "BAND",
+          "HOSPITAL",
+          "MODEL",
+          "FIELD",
+          "FACE"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T21:55:41.452202",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "WEAPON",
+        "count": 2,
+        "targets": [
+          "MISSILE",
+          "PENGUIN"
+        ],
+        "score": 0.5589,
+        "relations": [
+          "MISSILE (RelatedTo)",
+          "MISSILE (IsA)",
+          "PENGUIN (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T21:55:48.603730",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "MISSILE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T21:55:59.450756",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PIRATE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T21:55:59.450756",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-05T21:55:59.568230",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "GROUND",
+        "count": 3,
+        "targets": [
+          "PLAY",
+          "LITTER",
+          "SHADOW"
+        ],
+        "score": 2.5776,
+        "relations": [
+          "PLAY (RelatedTo)",
+          "LITTER (AtLocation)",
+          "SHADOW (AtLocation)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T21:56:31.613294",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "FIELD",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T21:56:31.613294",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T21:56:31.704879",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "COVERING",
+        "count": 2,
+        "targets": [
+          "GLOVE",
+          "DRESS"
+        ],
+        "score": 2.4376,
+        "relations": [
+          "DRESS (RelatedTo)",
+          "GLOVE (RelatedTo)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T21:56:40.836568",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CAST",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-05T21:56:40.836568",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-05T21:56:40.922147",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PROFESSIONAL",
+        "count": 2,
+        "targets": [
+          "SHADOW",
+          "NURSE"
+        ],
+        "score": 2.6123,
+        "relations": [
+          "SHADOW (RelatedTo)",
+          "NURSE (RelatedTo)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T21:56:48.617495",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "NURSE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T21:56:54.727649",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "DRAFT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T21:57:09.110525",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "BOOT",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T21:57:09.110525",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T21:57:09.198184",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "WARMTH",
+        "count": 2,
+        "targets": [
+          "COLD",
+          "GLOVE"
+        ],
+        "score": 1.7868,
+        "relations": [
+          "COLD (Antonym)",
+          "GLOVE (RelatedTo)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T21:57:45.037995",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "COLD",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T21:57:48.328140",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SHADOW",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-05T21:57:48.328140",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-05T21:57:48.348327",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PARK",
+        "count": 2,
+        "targets": [
+          "PLAY",
+          "LITTER"
+        ],
+        "score": 1.7503,
+        "relations": [
+          "PLAY (RelatedTo)",
+          "LITTER (AtLocation)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T21:57:53.367550",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "PLAY",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T21:57:59.152591",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "BALL",
+        "result": "assassin"
+      }
+    },
+    {
+      "time": "2026-03-05T21:57:59.152591",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit assassin"
+      }
+    },
+    {
+      "time": "2026-03-05T21:57:59.152591",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "RED",
+        "reason": "BLUE hit the assassin"
+      }
+    }
+  ]
+}
