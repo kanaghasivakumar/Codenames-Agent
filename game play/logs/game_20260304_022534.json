@@ -1,0 +1,188 @@
+{
+  "game_id": "20260304_022534",
+  "started": "2026-03-04T02:25:41.716347",
+  "board": {
+    "red": [
+      "HOTEL",
+      "SUIT",
+      "SUPERHERO",
+      "AZTEC",
+      "DATE",
+      "BAR",
+      "POLE",
+      "BAT",
+      "LEMON"
+    ],
+    "blue": [
+      "UNICORN",
+      "MUG",
+      "CELL",
+      "CONDUCTOR",
+      "DRAFT",
+      "PUPIL",
+      "MERCURY",
+      "SPY"
+    ],
+    "assassin": "SMUGGLER",
+    "neutral": [
+      "PIN",
+      "ROULETTE",
+      "BED",
+      "HEART",
+      "COURT",
+      "ORANGE",
+      "FACE"
+    ]
+  },
+  "ended": "2026-03-04T02:26:23.066830",
+  "winner": "BLUE",
+  "reason": "RED hit the assassin",
+  "events": [
+    {
+      "time": "2026-03-04T02:25:41.716347",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "HOTEL",
+          "SUIT",
+          "SUPERHERO",
+          "AZTEC",
+          "DATE",
+          "BAR",
+          "POLE",
+          "BAT",
+          "LEMON"
+        ],
+        "blue": [
+          "UNICORN",
+          "MUG",
+          "CELL",
+          "CONDUCTOR",
+          "DRAFT",
+          "PUPIL",
+          "MERCURY",
+          "SPY"
+        ],
+        "assassin": "SMUGGLER",
+        "neutral": [
+          "PIN",
+          "ROULETTE",
+          "BED",
+          "HEART",
+          "COURT",
+          "ORANGE",
+          "FACE"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-04T02:25:42.186934",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "CLUB",
+        "count": 2,
+        "targets": [
+          "BAT",
+          "BAR"
+        ],
+        "score": 0.7648
+      }
+    },
+    {
+      "time": "2026-03-04T02:25:48.543744",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "BAR",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T02:25:59.529293",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "HEART",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-04T02:25:59.529293",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-04T02:25:59.540367",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PLANET",
+        "count": 1,
+        "targets": [
+          "MERCURY"
+        ],
+        "score": 1.0755
+      }
+    },
+    {
+      "time": "2026-03-04T02:26:15.156308",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "MERCURY",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T02:26:15.156308",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-04T02:26:15.170660",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "HUMAN",
+        "count": 2,
+        "targets": [
+          "AZTEC",
+          "POLE"
+        ],
+        "score": 0.3774
+      }
+    },
+    {
+      "time": "2026-03-04T02:26:23.066830",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SMUGGLER",
+        "result": "assassin"
+      }
+    },
+    {
+      "time": "2026-03-04T02:26:23.066830",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit assassin"
+      }
+    },
+    {
+      "time": "2026-03-04T02:26:23.066830",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "BLUE",
+        "reason": "RED hit the assassin"
+      }
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "game_id": "20260226_165705",
+  "started": "2026-02-26T16:57:08.682594",
+  "board": {
+    "red": [
+      "CHEST",
+      "NINJA",
+      "SINK",
+      "NURSE",
+      "SNOWMAN",
+      "PUPIL",
+      "FILE",
+      "FILM",
+      "ENGLAND"
+    ],
+    "blue": [
+      "PIE",
+      "FAIR",
+      "NET",
+      "SUPERHERO",
+      "CHINA",
+      "GREECE",
+      "STRING",
+      "CANADA"
+    ],
+    "assassin": "RULER",
+    "neutral": [
+      "DISEASE",
+      "BARK",
+      "WAKE",
+      "BLOCK",
+      "SQUARE",
+      "PLATE",
+      "BEIJING"
+    ]
+  },
+  "ended": "2026-02-26T17:00:39.154485",
+  "winner": "BLUE",
+  "reason": "RED hit the assassin",
+  "events": [
+    {
+      "time": "2026-02-26T16:57:08.682594",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "CHEST",
+          "NINJA",
+          "SINK",
+          "NURSE",
+          "SNOWMAN",
+          "PUPIL",
+          "FILE",
+          "FILM",
+          "ENGLAND"
+        ],
+        "blue": [
+          "PIE",
+          "FAIR",
+          "NET",
+          "SUPERHERO",
+          "CHINA",
+          "GREECE",
+          "STRING",
+          "CANADA"
+        ],
+        "assassin": "RULER",
+        "neutral": [
+          "DISEASE",
+          "BARK",
+          "WAKE",
+          "BLOCK",
+          "SQUARE",
+          "PLATE",
+          "BEIJING"
+        ]
+      }
+    },
+    {
+      "time": "2026-02-26T16:57:09.687767",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "STORAGE",
+        "count": 2,
+        "targets": [
+          "CHEST",
+          "FILE"
+        ],
+        "score": 6.4737
+      }
+    },
+    {
+      "time": "2026-02-26T16:57:39.279561",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CHEST",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-26T16:58:17.736436",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "FILE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-26T16:58:17.736436",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-02-26T16:58:17.755902",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "STATE",
+        "count": 2,
+        "targets": [
+          "CHINA",
+          "CANADA"
+        ],
+        "score": 5.3
+      }
+    },
+    {
+      "time": "2026-02-26T16:59:30.861633",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "FAIR",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-26T16:59:49.143746",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "WAKE",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-02-26T16:59:49.143746",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-02-26T16:59:49.162296",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "CLASS",
+        "count": 2,
+        "targets": [
+          "NINJA",
+          "PUPIL"
+        ],
+        "score": 16.0
+      }
+    },
+    {
+      "time": "2026-02-26T17:00:10.759836",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PUPIL",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-26T17:00:39.154485",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "RULER",
+        "result": "assassin"
+      }
+    },
+    {
+      "time": "2026-02-26T17:00:39.154485",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit assassin"
+      }
+    },
+    {
+      "time": "2026-02-26T17:00:39.154485",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "BLUE",
+        "reason": "RED hit the assassin"
+      }
+    }
+  ]
+}

@@ -1,0 +1,427 @@
+{
+  "game_id": "20260305_142630",
+  "started": "2026-03-05T14:26:51.140896",
+  "board": {
+    "red": [
+      "SERVER",
+      "CLOAK",
+      "PHOENIX",
+      "PUMPKIN",
+      "RING",
+      "PLATYPUS",
+      "WELL",
+      "NOVEL",
+      "MOON"
+    ],
+    "blue": [
+      "SUIT",
+      "CASINO",
+      "BANK",
+      "DOCTOR",
+      "FOOT",
+      "ROBOT",
+      "TICK",
+      "HEAD"
+    ],
+    "assassin": "LIFE",
+    "neutral": [
+      "TABLE",
+      "GLOVE",
+      "VET",
+      "STRING",
+      "TUBE",
+      "DINOSAUR",
+      "CAR"
+    ]
+  },
+  "ended": "2026-03-05T14:35:52.811743",
+  "winner": "BLUE",
+  "reason": "RED hit the assassin",
+  "events": [
+    {
+      "time": "2026-03-05T14:26:51.140896",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "SERVER",
+          "CLOAK",
+          "PHOENIX",
+          "PUMPKIN",
+          "RING",
+          "PLATYPUS",
+          "WELL",
+          "NOVEL",
+          "MOON"
+        ],
+        "blue": [
+          "SUIT",
+          "CASINO",
+          "BANK",
+          "DOCTOR",
+          "FOOT",
+          "ROBOT",
+          "TICK",
+          "HEAD"
+        ],
+        "assassin": "LIFE",
+        "neutral": [
+          "TABLE",
+          "GLOVE",
+          "VET",
+          "STRING",
+          "TUBE",
+          "DINOSAUR",
+          "CAR"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T14:26:51.540852",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "PLACE",
+        "count": 2,
+        "targets": [
+          "WELL",
+          "MOON"
+        ],
+        "score": 2.232,
+        "relations": [
+          "WELL (IsA)",
+          "MOON (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T14:27:20.243795",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PHOENIX",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T14:27:52.645769",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player passed"
+      }
+    },
+    {
+      "time": "2026-03-05T14:27:52.645769",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "MATTRESS",
+        "count": 2,
+        "targets": [
+          "TICK",
+          "BANK"
+        ],
+        "score": 1.3255,
+        "relations": [
+          "BANK (Antonym)",
+          "TICK (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T14:28:19.027012",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "HEAD",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T14:28:30.240740",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "TABLE",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T14:28:30.240740",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T14:28:30.248637",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "AUSTRALIA",
+        "count": 1,
+        "targets": [
+          "PLATYPUS"
+        ],
+        "score": 0.5,
+        "relations": [
+          "PLATYPUS (AtLocation)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T14:28:43.226986",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PLATYPUS",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T14:30:04.240063",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CASINO",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-05T14:30:04.240063",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-05T14:30:04.243750",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "WORKER",
+        "count": 2,
+        "targets": [
+          "DOCTOR",
+          "ROBOT"
+        ],
+        "score": 1.2861,
+        "relations": [
+          "DOCTOR (IsA)",
+          "ROBOT (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T14:30:13.298780",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "DOCTOR",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T14:30:16.432562",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "VET",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T14:30:16.432562",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T14:30:16.434856",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "BADLY",
+        "count": 1,
+        "targets": [
+          "WELL"
+        ],
+        "score": 0.7125,
+        "relations": [
+          "WELL (Antonym)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T14:31:22.595009",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "NOVEL",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T14:32:05.596890",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "BANK",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-05T14:32:05.596890",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-05T14:32:05.599126",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "MEADOW",
+        "count": 1,
+        "targets": [
+          "TICK"
+        ],
+        "score": 1.0,
+        "relations": [
+          "TICK (AtLocation)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T14:32:30.869753",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "PUMPKIN",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-05T14:32:30.869753",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-05T14:32:30.869753",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "FINGER",
+        "count": 1,
+        "targets": [
+          "RING"
+        ],
+        "score": 3.0044,
+        "relations": [
+          "RING (AtLocation)",
+          "RING (UsedFor)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T14:32:47.233286",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "GLOVE",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T14:32:47.233286",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T14:32:47.239659",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "GARMENT",
+        "count": 1,
+        "targets": [
+          "SUIT"
+        ],
+        "score": 0.8145,
+        "relations": [
+          "SUIT (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T14:33:00.095369",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "STRING",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T14:33:00.095369",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T14:33:00.098466",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "PLAYER",
+        "count": 1,
+        "targets": [
+          "SERVER"
+        ],
+        "score": 0.7738,
+        "relations": [
+          "SERVER (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T14:35:52.811743",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "LIFE",
+        "result": "assassin"
+      }
+    },
+    {
+      "time": "2026-03-05T14:35:52.811743",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit assassin"
+      }
+    },
+    {
+      "time": "2026-03-05T14:35:52.811743",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "BLUE",
+        "reason": "RED hit the assassin"
+      }
+    }
+  ]
+}

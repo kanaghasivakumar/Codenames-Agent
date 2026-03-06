@@ -59,19 +59,41 @@ def divider(char='─', w=72):
 # BOARD DISPLAY
 # ══════════════════════════════════════════════════════════════════════════════
 
-def print_board(board, red_words, blue_words, assassin, revealed):
-    """5x5 board. Unrevealed words are plain. Revealed are struck-through + coloured."""
+def print_board(board, red_words, blue_words, assassin, revealed, reveal_all=False):
+    """5x5 board. Unrevealed words are plain. Revealed are struck-through + coloured.
+    reveal_all=True shows full team assignments for every word (end-of-game reveal)."""
     W = 11  # fits longest Codenames words; border chars kept plain to avoid ANSI width bugs
+
+    def BLACK(t): return f'\033[30;1m{t}\033[0m'
 
     def cell(word):
         w = word.upper()
+        is_assassin = (w == assassin.upper())
+        is_red      = (w in red_words)
+        is_blue     = (w in blue_words)
+        is_revealed = (w in revealed)
+
+        if reveal_all:
+            if is_assassin:
+                base = STRIKE(f'{w:^{W}}') if is_revealed else f'{w:^{W}}'
+                return BLACK(base)
+            if is_red:
+                base = STRIKE(f'{w:^{W}}') if is_revealed else BOLD(f'{w:^{W}}')
+                return RED(base)
+            if is_blue:
+                base = STRIKE(f'{w:^{W}}') if is_revealed else BOLD(f'{w:^{W}}')
+                return BLUE(base)
+            base = STRIKE(f'{w:^{W}}') if is_revealed else f'{w:^{W}}'
+            return GRAY(base)
+
+        # Normal gameplay view
         if w not in revealed:
             return BOLD(f'{w:^{W}}')
-        if w == assassin.upper():
+        if is_assassin:
             return RED(STRIKE(f'{w:^{W}}'))
-        if w in red_words:
+        if is_red:
             return RED(STRIKE(f'{w:^{W}}'))
-        if w in blue_words:
+        if is_blue:
             return BLUE(STRIKE(f'{w:^{W}}'))
         return GRAY(STRIKE(f'{w:^{W}}'))
 
@@ -130,14 +152,10 @@ class GameLogger:
         }
         self._ev('BOARD_SETUP', self.meta['board'])
 
-    def clue(self, team, clue, count, targets, score, logic=None):
+    def clue(self, team, clue, count, targets, score):
         self._ev('SPYMASTER_CLUE', {
-            'team':      team,
-            'clue':      clue,
-            'count':     count,
-            'targets':   targets,
-            'score':     round(float(score), 4),
-            'relations': logic or []
+            'team': team, 'clue': clue, 'count': count,
+            'targets': targets, 'score': round(float(score), 4)
         })
 
     def guess(self, team, word, result):
@@ -295,7 +313,7 @@ class CodenamesGame:
         divider()
         print()
 
-        logger.clue(team, clue, count, result['targets'], result['score'], logic)
+        logger.clue(team, clue, count, result['targets'], result['score'])
         return clue, count, logic
 
     # ── Operative turn ────────────────────────────────────────────────────────
@@ -601,7 +619,7 @@ class CodenamesGame:
             turn = opp
 
         # Final board reveal
-        print_board(board, red_w, blue_w, assassin, revealed)
+        print_board(board, red_w, blue_w, assassin, revealed, reveal_all=True)
         print()
         print(BOLD('=' * 72))
         if winner and winner != 'NONE':

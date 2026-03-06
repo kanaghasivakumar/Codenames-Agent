@@ -1,0 +1,368 @@
+{
+  "game_id": "20260303_210446",
+  "started": "2026-03-03T21:04:53.345138",
+  "board": {
+    "red": [
+      "CLOAK",
+      "DANCE",
+      "RULER",
+      "MOUSE",
+      "CROWN",
+      "WATER",
+      "FORCE",
+      "AIR",
+      "LOCK"
+    ],
+    "blue": [
+      "COURT",
+      "POINT",
+      "UNICORN",
+      "BLOCK",
+      "COLD",
+      "CAT",
+      "RAY",
+      "NURSE"
+    ],
+    "assassin": "SPRING",
+    "neutral": [
+      "TUBE",
+      "HAWK",
+      "PITCH",
+      "SWING",
+      "ORGAN",
+      "AZTEC",
+      "ROBIN"
+    ]
+  },
+  "ended": "2026-03-03T21:08:21.349494",
+  "winner": "RED",
+  "reason": "BLUE hit the assassin",
+  "events": [
+    {
+      "time": "2026-03-03T21:04:53.345138",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "CLOAK",
+          "DANCE",
+          "RULER",
+          "MOUSE",
+          "CROWN",
+          "WATER",
+          "FORCE",
+          "AIR",
+          "LOCK"
+        ],
+        "blue": [
+          "COURT",
+          "POINT",
+          "UNICORN",
+          "BLOCK",
+          "COLD",
+          "CAT",
+          "RAY",
+          "NURSE"
+        ],
+        "assassin": "SPRING",
+        "neutral": [
+          "TUBE",
+          "HAWK",
+          "PITCH",
+          "SWING",
+          "ORGAN",
+          "AZTEC",
+          "ROBIN"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-03T21:04:53.713580",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "SEWER",
+        "count": 2,
+        "targets": [
+          "WATER",
+          "MOUSE"
+        ],
+        "score": 3.236
+      }
+    },
+    {
+      "time": "2026-03-03T21:05:03.067526",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "WATER",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:05:09.823641",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "MOUSE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:05:09.823641",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-03T21:05:09.830071",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "FLAT",
+        "count": 2,
+        "targets": [
+          "CAT",
+          "POINT"
+        ],
+        "score": 0.9196
+      }
+    },
+    {
+      "time": "2026-03-03T21:05:37.115098",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "PITCH",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-03T21:05:37.115098",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-03T21:05:37.123879",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "DRAWER",
+        "count": 2,
+        "targets": [
+          "LOCK",
+          "RULER"
+        ],
+        "score": 1.675
+      }
+    },
+    {
+      "time": "2026-03-03T21:05:47.883810",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "LOCK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:05:57.046298",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CLOAK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:05:58.585484",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-03T21:05:58.607757",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "RESIDENCE",
+        "count": 2,
+        "targets": [
+          "COURT",
+          "CAT"
+        ],
+        "score": 1.4512
+      }
+    },
+    {
+      "time": "2026-03-03T21:07:00.769740",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "COURT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:07:05.675650",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-03T21:07:05.704647",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "REIGN",
+        "count": 1,
+        "targets": [
+          "CROWN"
+        ],
+        "score": 1.2
+      }
+    },
+    {
+      "time": "2026-03-03T21:07:12.203490",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CROWN",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:07:14.533774",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "RAY",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-03T21:07:14.533774",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-03T21:07:14.549381",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "HEAT",
+        "count": 2,
+        "targets": [
+          "COLD",
+          "CAT"
+        ],
+        "score": 1.2753
+      }
+    },
+    {
+      "time": "2026-03-03T21:07:38.885652",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "AIR",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-03T21:07:38.885652",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-03T21:07:38.893990",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "PARTY",
+        "count": 1,
+        "targets": [
+          "DANCE"
+        ],
+        "score": 1.0
+      }
+    },
+    {
+      "time": "2026-03-03T21:07:45.625458",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "DANCE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:07:51.355736",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-03T21:07:51.365405",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "CUBE",
+        "count": 1,
+        "targets": [
+          "BLOCK"
+        ],
+        "score": 1.0
+      }
+    },
+    {
+      "time": "2026-03-03T21:07:55.865544",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "BLOCK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-03T21:08:21.349494",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SPRING",
+        "result": "assassin"
+      }
+    },
+    {
+      "time": "2026-03-03T21:08:21.349494",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit assassin"
+      }
+    },
+    {
+      "time": "2026-03-03T21:08:21.349494",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "RED",
+        "reason": "BLUE hit the assassin"
+      }
+    }
+  ]
+}

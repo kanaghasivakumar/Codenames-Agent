@@ -1,0 +1,487 @@
+{
+  "game_id": "20260304_165804",
+  "started": "2026-03-04T16:58:14.660775",
+  "board": {
+    "red": [
+      "LEMON",
+      "BAR",
+      "PUMPKIN",
+      "WAR",
+      "CARD",
+      "LOCK",
+      "ORGAN",
+      "CONCERT",
+      "CRANE"
+    ],
+    "blue": [
+      "KNIGHT",
+      "REVOLUTION",
+      "DANCE",
+      "SHOE",
+      "SHADOW",
+      "TOKYO",
+      "SMUGGLER",
+      "ARM"
+    ],
+    "assassin": "BUTTON",
+    "neutral": [
+      "COPPER",
+      "BOX",
+      "BUCK",
+      "PALM",
+      "POUND",
+      "EUROPE",
+      "ROCK"
+    ]
+  },
+  "ended": "2026-03-04T17:01:02.907939",
+  "winner": "RED",
+  "reason": "RED found all words",
+  "events": [
+    {
+      "time": "2026-03-04T16:58:14.660775",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "LEMON",
+          "BAR",
+          "PUMPKIN",
+          "WAR",
+          "CARD",
+          "LOCK",
+          "ORGAN",
+          "CONCERT",
+          "CRANE"
+        ],
+        "blue": [
+          "KNIGHT",
+          "REVOLUTION",
+          "DANCE",
+          "SHOE",
+          "SHADOW",
+          "TOKYO",
+          "SMUGGLER",
+          "ARM"
+        ],
+        "assassin": "BUTTON",
+        "neutral": [
+          "COPPER",
+          "BOX",
+          "BUCK",
+          "PALM",
+          "POUND",
+          "EUROPE",
+          "ROCK"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-04T16:58:15.237245",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "ORANGE",
+        "count": 2,
+        "targets": [
+          "PUMPKIN",
+          "LEMON"
+        ],
+        "score": 0.446
+      }
+    },
+    {
+      "time": "2026-03-04T16:58:22.731799",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "LEMON",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T16:58:30.604687",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PUMPKIN",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T16:58:30.608840",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-04T16:58:30.631528",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "HOUSE",
+        "count": 2,
+        "targets": [
+          "ARM",
+          "SHOE"
+        ],
+        "score": 0.5404
+      }
+    },
+    {
+      "time": "2026-03-04T16:58:46.553535",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SMUGGLER",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T16:59:12.775727",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "DANCE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T16:59:12.775727",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-04T16:59:12.784200",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "MECHANISM",
+        "count": 2,
+        "targets": [
+          "LOCK",
+          "WAR"
+        ],
+        "score": 0.438
+      }
+    },
+    {
+      "time": "2026-03-04T16:59:29.675225",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "LOCK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T16:59:39.865801",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "ORGAN",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T16:59:42.554729",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-04T16:59:42.559096",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "JAPAN",
+        "count": 1,
+        "targets": [
+          "TOKYO"
+        ],
+        "score": 0.9285
+      }
+    },
+    {
+      "time": "2026-03-04T16:59:48.543254",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "TOKYO",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T16:59:49.608664",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-04T16:59:49.608664",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "CITY",
+        "count": 2,
+        "targets": [
+          "BAR",
+          "WAR"
+        ],
+        "score": 1.7458
+      }
+    },
+    {
+      "time": "2026-03-04T16:59:59.877726",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CONCERT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:10.120380",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "BAR",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:11.186543",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:11.186543",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "COOLING",
+        "count": 1,
+        "targets": [
+          "SHADOW"
+        ],
+        "score": 0.6983
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:18.689532",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SHADOW",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:19.509445",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:19.512517",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "BIRD",
+        "count": 1,
+        "targets": [
+          "CRANE"
+        ],
+        "score": 0.1387
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:23.158442",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CRANE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:23.810704",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:23.810704",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "WEARING",
+        "count": 1,
+        "targets": [
+          "SHOE"
+        ],
+        "score": 0.9536
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:35.162429",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SHOE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:39.185947",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player passed"
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:39.185947",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "DECK",
+        "count": 1,
+        "targets": [
+          "CARD"
+        ],
+        "score": 1.3268
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:46.532906",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "COPPER",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:46.532906",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:46.535115",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "LEG",
+        "count": 1,
+        "targets": [
+          "ARM"
+        ],
+        "score": 0.7859
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:50.842772",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "ARM",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:51.515338",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:51.515338",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "DEATH",
+        "count": 1,
+        "targets": [
+          "WAR"
+        ],
+        "score": 1.6
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:54.089070",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "WAR",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:54.715993",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-04T17:00:54.720168",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "FUN",
+        "count": 1,
+        "targets": [
+          "REVOLUTION"
+        ],
+        "score": 0.6109
+      }
+    },
+    {
+      "time": "2026-03-04T17:01:02.907939",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "CARD",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-04T17:01:02.907939",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-04T17:01:02.907939",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "RED",
+        "reason": "RED found all words"
+      }
+    }
+  ]
+}

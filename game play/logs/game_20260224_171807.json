@@ -1,0 +1,317 @@
+{
+  "game_id": "20260224_171807",
+  "started": "2026-02-24T17:18:14.416863",
+  "board": {
+    "red": [
+      "STICK",
+      "REVOLUTION",
+      "KIWI",
+      "NET",
+      "BEAR",
+      "TABLE",
+      "MAIL",
+      "SOUND",
+      "DWARF"
+    ],
+    "blue": [
+      "SHOE",
+      "DINOSAUR",
+      "TEMPLE",
+      "FORK",
+      "GHOST",
+      "CAR",
+      "ALIEN",
+      "GRACE"
+    ],
+    "assassin": "SOUL",
+    "neutral": [
+      "BERRY",
+      "POISON",
+      "SWITCH",
+      "CHANGE",
+      "STRAW",
+      "DOCTOR",
+      "CHINA"
+    ]
+  },
+  "ended": "2026-02-24T17:21:02.174802",
+  "winner": "RED",
+  "reason": "BLUE hit the assassin",
+  "events": [
+    {
+      "time": "2026-02-24T17:18:14.416863",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "STICK",
+          "REVOLUTION",
+          "KIWI",
+          "NET",
+          "BEAR",
+          "TABLE",
+          "MAIL",
+          "SOUND",
+          "DWARF"
+        ],
+        "blue": [
+          "SHOE",
+          "DINOSAUR",
+          "TEMPLE",
+          "FORK",
+          "GHOST",
+          "CAR",
+          "ALIEN",
+          "GRACE"
+        ],
+        "assassin": "SOUL",
+        "neutral": [
+          "BERRY",
+          "POISON",
+          "SWITCH",
+          "CHANGE",
+          "STRAW",
+          "DOCTOR",
+          "CHINA"
+        ]
+      }
+    },
+    {
+      "time": "2026-02-24T17:18:27.286143",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "FOREST",
+        "count": 2,
+        "targets": [
+          "BEAR",
+          "STICK"
+        ],
+        "score": 11.6202
+      }
+    },
+    {
+      "time": "2026-02-24T17:18:37.302795",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "BEAR",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:18:46.294029",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-02-24T17:18:46.306900",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "EXTRATERRESTRIAL",
+        "count": 2,
+        "targets": [
+          "ALIEN",
+          "GHOST"
+        ],
+        "score": 0.7575
+      }
+    },
+    {
+      "time": "2026-02-24T17:19:00.913828",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "GHOST",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:19:07.801821",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "DWARF",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-02-24T17:19:07.801821",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-02-24T17:19:07.819933",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "HOME",
+        "count": 2,
+        "targets": [
+          "TABLE",
+          "NET"
+        ],
+        "score": 0.0777
+      }
+    },
+    {
+      "time": "2026-02-24T17:19:24.400375",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "MAIL",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:19:32.678732",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "TABLE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:19:52.277773",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "STICK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:19:52.277773",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-02-24T17:19:52.289794",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "ROAD",
+        "count": 2,
+        "targets": [
+          "FORK",
+          "CAR"
+        ],
+        "score": 22.4214
+      }
+    },
+    {
+      "time": "2026-02-24T17:20:00.610194",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "ALIEN",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:20:10.926587",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "CAR",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:20:20.527353",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "FORK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:20:20.527353",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-02-24T17:20:20.532202",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "DECENT",
+        "count": 2,
+        "targets": [
+          "SOUND",
+          "NET"
+        ],
+        "score": 0.6
+      }
+    },
+    {
+      "time": "2026-02-24T17:20:53.779710",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "TEMPLE",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-02-24T17:20:53.779710",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-02-24T17:20:53.813722",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PRAYER",
+        "count": 1,
+        "targets": [
+          "GRACE"
+        ],
+        "score": 10.4707
+      }
+    },
+    {
+      "time": "2026-02-24T17:21:02.174802",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SOUL",
+        "result": "assassin"
+      }
+    },
+    {
+      "time": "2026-02-24T17:21:02.174802",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit assassin"
+      }
+    },
+    {
+      "time": "2026-02-24T17:21:02.174802",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "RED",
+        "reason": "BLUE hit the assassin"
+      }
+    }
+  ]
+}

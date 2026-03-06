@@ -1,15 +1,15 @@
 {
   "name": "k-red",
-  "games_played": 16,
+  "games_played": 23,
   "relation_weights": {
-    "IsA": 0.12517204487122743,
-    "AtLocation": 0.2993684696191893,
+    "IsA": 0.0968557422292504,
+    "AtLocation": 0.22006333432588263,
     "PartOf": 0.5987369392383786,
-    "Antonym": 0.4975653234667965,
+    "Antonym": 0.4490527044287838,
     "UsedFor": 0.9025,
     "DistinctFrom": 0.8145062499999999,
     "HasProperty": 0.6768749999999999,
-    "SimilarTo": 0.95,
+    "SimilarTo": 0.8573749999999999,
     "CapableOf": 0.9025,
     "Causes": 1.0,
     "MadeOf": 1.0,
@@ -17,6 +17,7 @@
     "HasPrerequisite": 0.6768749999999999,
     "HasSubevent": 1.0,
     "CreatedBy": 1.0,
-    "LocatedNear": 1.0
+    "LocatedNear": 1.0,
+    "RelatedTo": 0.6634204312890623
   }
 }

@@ -1,0 +1,289 @@
+{
+  "game_id": "20260224_174835",
+  "started": "2026-02-24T17:48:38.383553",
+  "board": {
+    "red": [
+      "EMBASSY",
+      "MOUNT",
+      "SOCK",
+      "WASHER",
+      "PHOENIX",
+      "HAM",
+      "CAPITAL",
+      "COOK",
+      "WAVE"
+    ],
+    "blue": [
+      "CHURCH",
+      "SLUG",
+      "YARD",
+      "CANADA",
+      "LUCK",
+      "ANTARCTICA",
+      "ROW",
+      "STREAM"
+    ],
+    "assassin": "CRASH",
+    "neutral": [
+      "STAR",
+      "MOUSE",
+      "DOG",
+      "MAIL",
+      "MERCURY",
+      "INDIA",
+      "CAT"
+    ]
+  },
+  "ended": "2026-02-24T17:50:59.551046",
+  "winner": "RED",
+  "reason": "BLUE hit the assassin",
+  "events": [
+    {
+      "time": "2026-02-24T17:48:38.383553",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "EMBASSY",
+          "MOUNT",
+          "SOCK",
+          "WASHER",
+          "PHOENIX",
+          "HAM",
+          "CAPITAL",
+          "COOK",
+          "WAVE"
+        ],
+        "blue": [
+          "CHURCH",
+          "SLUG",
+          "YARD",
+          "CANADA",
+          "LUCK",
+          "ANTARCTICA",
+          "ROW",
+          "STREAM"
+        ],
+        "assassin": "CRASH",
+        "neutral": [
+          "STAR",
+          "MOUSE",
+          "DOG",
+          "MAIL",
+          "MERCURY",
+          "INDIA",
+          "CAT"
+        ]
+      }
+    },
+    {
+      "time": "2026-02-24T17:48:39.758034",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "WHITE",
+        "count": 3,
+        "targets": [
+          "CAPITAL",
+          "SOCK",
+          "WAVE"
+        ],
+        "score": 0.5421
+      }
+    },
+    {
+      "time": "2026-02-24T17:49:02.104749",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "ANTARCTICA",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-02-24T17:49:02.104749",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-02-24T17:49:02.149399",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "GASTROPOD",
+        "count": 1,
+        "targets": [
+          "SLUG"
+        ],
+        "score": 15.3
+      }
+    },
+    {
+      "time": "2026-02-24T17:49:13.877407",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "HAM",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-02-24T17:49:13.877407",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-02-24T17:49:13.891427",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "ACTION",
+        "count": 2,
+        "targets": [
+          "COOK",
+          "WAVE"
+        ],
+        "score": 1.1058
+      }
+    },
+    {
+      "time": "2026-02-24T17:49:36.807362",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "COOK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:49:40.760348",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "ROW",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-02-24T17:49:40.760348",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-02-24T17:49:40.817561",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "TRACT",
+        "count": 1,
+        "targets": [
+          "YARD"
+        ],
+        "score": 20.0
+      }
+    },
+    {
+      "time": "2026-02-24T17:49:48.663501",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "STREAM",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:50:19.419387",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SLUG",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-24T17:50:19.419387",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-02-24T17:50:19.433435",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "SOMETIMES",
+        "count": 2,
+        "targets": [
+          "CAPITAL",
+          "SOCK"
+        ],
+        "score": 0.1737
+      }
+    },
+    {
+      "time": "2026-02-24T17:50:46.286580",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "LUCK",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-02-24T17:50:46.286580",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-02-24T17:50:46.333453",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "SPAR",
+        "count": 1,
+        "targets": [
+          "YARD"
+        ],
+        "score": 10.3
+      }
+    },
+    {
+      "time": "2026-02-24T17:50:59.551046",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "CRASH",
+        "result": "assassin"
+      }
+    },
+    {
+      "time": "2026-02-24T17:50:59.551046",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit assassin"
+      }
+    },
+    {
+      "time": "2026-02-24T17:50:59.551046",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "RED",
+        "reason": "BLUE hit the assassin"
+      }
+    }
+  ]
+}

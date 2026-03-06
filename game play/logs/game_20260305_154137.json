@@ -1,0 +1,496 @@
+{
+  "game_id": "20260305_154137",
+  "started": "2026-03-05T15:41:42.224757",
+  "board": {
+    "red": [
+      "HOLE",
+      "HONEY",
+      "WELL",
+      "DUCK",
+      "TOWER",
+      "PUMPKIN",
+      "SWITCH",
+      "APPLE",
+      "WEB"
+    ],
+    "blue": [
+      "AGENT",
+      "BOW",
+      "VAN",
+      "TEACHER",
+      "SNOWMAN",
+      "TAIL",
+      "ROCK",
+      "MAMMOTH"
+    ],
+    "assassin": "MOON",
+    "neutral": [
+      "EUROPE",
+      "HAM",
+      "HOLLYWOOD",
+      "KANGAROO",
+      "SPIKE",
+      "SCIENTIST",
+      "NAIL"
+    ]
+  },
+  "ended": "2026-03-05T15:44:00.249524",
+  "winner": "RED",
+  "reason": "RED found all words",
+  "events": [
+    {
+      "time": "2026-03-05T15:41:42.224757",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "HOLE",
+          "HONEY",
+          "WELL",
+          "DUCK",
+          "TOWER",
+          "PUMPKIN",
+          "SWITCH",
+          "APPLE",
+          "WEB"
+        ],
+        "blue": [
+          "AGENT",
+          "BOW",
+          "VAN",
+          "TEACHER",
+          "SNOWMAN",
+          "TAIL",
+          "ROCK",
+          "MAMMOTH"
+        ],
+        "assassin": "MOON",
+        "neutral": [
+          "EUROPE",
+          "HAM",
+          "HOLLYWOOD",
+          "KANGAROO",
+          "SPIKE",
+          "SCIENTIST",
+          "NAIL"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T15:41:42.558344",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "ORANGE",
+        "count": 2,
+        "targets": [
+          "PUMPKIN",
+          "APPLE"
+        ],
+        "score": 0.834,
+        "relations": [
+          "APPLE (Antonym)",
+          "APPLE (DistinctFrom)",
+          "PUMPKIN (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T15:41:45.876386",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "APPLE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T15:41:49.876844",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PUMPKIN",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T15:41:49.876844",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-05T15:41:49.876844",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "CAVE",
+        "count": 2,
+        "targets": [
+          "MAMMOTH",
+          "ROCK"
+        ],
+        "score": 0.4401,
+        "relations": [
+          "MAMMOTH (AtLocation)",
+          "ROCK (AtLocation)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T15:41:55.001865",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "HOLE",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-05T15:41:55.001865",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-05T15:41:55.001865",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "FABRIC",
+        "count": 2,
+        "targets": [
+          "DUCK",
+          "WEB"
+        ],
+        "score": 0.5007,
+        "relations": [
+          "DUCK (IsA)",
+          "WEB (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T15:42:03.612006",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "WEB",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T15:42:08.280037",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "BOW",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-05T15:42:08.280037",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-05T15:42:08.280037",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "FIELD",
+        "count": 2,
+        "targets": [
+          "MAMMOTH",
+          "ROCK"
+        ],
+        "score": 0.3972,
+        "relations": [
+          "MAMMOTH (AtLocation)",
+          "ROCK (AtLocation)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T15:42:27.724001",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "ROCK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T15:42:35.398348",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "AGENT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T15:42:39.523455",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "WELL",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-05T15:42:39.523455",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-05T15:42:39.523455",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "GOOFY",
+        "count": 1,
+        "targets": [
+          "SWITCH"
+        ],
+        "score": 0.95,
+        "relations": [
+          "SWITCH (SimilarTo)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T15:42:47.761439",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "DUCK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T15:42:49.431683",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-05T15:42:49.431683",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "CAT",
+        "count": 1,
+        "targets": [
+          "TAIL"
+        ],
+        "score": 0.838,
+        "relations": [
+          "TAIL (PartOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T15:43:03.943386",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "TAIL",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T15:43:09.941296",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SNOWMAN",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T15:43:09.941296",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-05T15:43:09.943335",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "REGULAR",
+        "count": 1,
+        "targets": [
+          "SWITCH"
+        ],
+        "score": 0.9025,
+        "relations": [
+          "SWITCH (SimilarTo)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T15:43:38.046007",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SPIKE",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T15:43:38.046007",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T15:43:38.047891",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "CLASSROOM",
+        "count": 1,
+        "targets": [
+          "TEACHER"
+        ],
+        "score": 1.2515,
+        "relations": [
+          "TEACHER (AtLocation)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T15:43:41.411703",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "TEACHER",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T15:43:43.549914",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-05T15:43:43.559001",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "CHANGE",
+        "count": 1,
+        "targets": [
+          "SWITCH"
+        ],
+        "score": 0.2378,
+        "relations": [
+          "SWITCH (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T15:43:47.162864",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SWITCH",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T15:43:48.066424",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-05T15:43:48.074957",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "FOREST",
+        "count": 1,
+        "targets": [
+          "MAMMOTH"
+        ],
+        "score": 0.5336,
+        "relations": [
+          "MAMMOTH (AtLocation)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T15:43:55.217827",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "HONEY",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-05T15:43:55.217827",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-05T15:43:55.217827",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "BROADCASTING",
+        "count": 1,
+        "targets": [
+          "TOWER"
+        ],
+        "score": 0.9025,
+        "relations": [
+          "TOWER (UsedFor)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T15:44:00.249524",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "TOWER",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T15:44:00.249524",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "RED",
+        "reason": "RED found all words"
+      }
+    }
+  ]
+}

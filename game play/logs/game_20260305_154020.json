@@ -1,0 +1,166 @@
+{
+  "game_id": "20260305_154020",
+  "started": "2026-03-05T15:40:27.891151",
+  "board": {
+    "red": [
+      "BUG",
+      "PLOT",
+      "LAP",
+      "TIME",
+      "SOUND",
+      "PHOENIX",
+      "MERCURY",
+      "TRAIN",
+      "MUG"
+    ],
+    "blue": [
+      "CHAIR",
+      "TAG",
+      "CHURCH",
+      "CLOAK",
+      "MAMMOTH",
+      "CLUB",
+      "DIAMOND",
+      "BUFFALO"
+    ],
+    "assassin": "SWITCH",
+    "neutral": [
+      "SCUBA DIVER",
+      "TUBE",
+      "BERRY",
+      "KNIFE",
+      "KANGAROO",
+      "MAPLE",
+      "PYRAMID"
+    ]
+  },
+  "ended": "2026-03-05T15:40:48.710034",
+  "winner": "RED",
+  "reason": "BLUE hit the assassin",
+  "events": [
+    {
+      "time": "2026-03-05T15:40:27.891151",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "BUG",
+          "PLOT",
+          "LAP",
+          "TIME",
+          "SOUND",
+          "PHOENIX",
+          "MERCURY",
+          "TRAIN",
+          "MUG"
+        ],
+        "blue": [
+          "CHAIR",
+          "TAG",
+          "CHURCH",
+          "CLOAK",
+          "MAMMOTH",
+          "CLUB",
+          "DIAMOND",
+          "BUFFALO"
+        ],
+        "assassin": "SWITCH",
+        "neutral": [
+          "SCUBA DIVER",
+          "TUBE",
+          "BERRY",
+          "KNIFE",
+          "KANGAROO",
+          "MAPLE",
+          "PYRAMID"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T15:40:28.191160",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "MOUTH",
+        "count": 2,
+        "targets": [
+          "SOUND",
+          "MERCURY"
+        ],
+        "score": 0.5987,
+        "relations": [
+          "MERCURY (AtLocation)",
+          "SOUND (AtLocation)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T15:40:39.034574",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "TUBE",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T15:40:39.034574",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T15:40:39.039376",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "GAME",
+        "count": 2,
+        "targets": [
+          "TAG",
+          "BUFFALO"
+        ],
+        "score": 0.3842,
+        "relations": [
+          "TAG (IsA)",
+          "BUFFALO (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T15:40:44.856251",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "TAG",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T15:40:48.710034",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SWITCH",
+        "result": "assassin"
+      }
+    },
+    {
+      "time": "2026-03-05T15:40:48.710034",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit assassin"
+      }
+    },
+    {
+      "time": "2026-03-05T15:40:48.710034",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "RED",
+        "reason": "BLUE hit the assassin"
+      }
+    }
+  ]
+}

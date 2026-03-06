@@ -1,0 +1,656 @@
+{
+  "game_id": "20260305_003227",
+  "started": "2026-03-05T00:33:12.439185",
+  "board": {
+    "red": [
+      "TOKYO",
+      "CONCERT",
+      "SPRING",
+      "PLAY",
+      "GREEN",
+      "DRESS",
+      "SLIP",
+      "SUB",
+      "LIGHT"
+    ],
+    "blue": [
+      "SCORPION",
+      "BACK",
+      "AMERICA",
+      "TIE",
+      "HORSESHOE",
+      "BERMUDA",
+      "LION",
+      "PIT"
+    ],
+    "assassin": "CANADA",
+    "neutral": [
+      "PLATYPUS",
+      "PALM",
+      "ICE",
+      "SNOW",
+      "SLUG",
+      "PASS",
+      "WELL"
+    ]
+  },
+  "ended": "2026-03-05T00:46:47.670264",
+  "winner": "RED",
+  "reason": "RED found all words",
+  "events": [
+    {
+      "time": "2026-03-05T00:33:12.439185",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "TOKYO",
+          "CONCERT",
+          "SPRING",
+          "PLAY",
+          "GREEN",
+          "DRESS",
+          "SLIP",
+          "SUB",
+          "LIGHT"
+        ],
+        "blue": [
+          "SCORPION",
+          "BACK",
+          "AMERICA",
+          "TIE",
+          "HORSESHOE",
+          "BERMUDA",
+          "LION",
+          "PIT"
+        ],
+        "assassin": "CANADA",
+        "neutral": [
+          "PLATYPUS",
+          "PALM",
+          "ICE",
+          "SNOW",
+          "SLUG",
+          "PASS",
+          "WELL"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T00:33:12.911573",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "BLUE",
+        "count": 2,
+        "targets": [
+          "GREEN",
+          "DRESS"
+        ],
+        "score": 1.5835,
+        "relations": [
+          "DRESS (HasProperty)",
+          "GREEN (DistinctFrom)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T00:35:21.081493",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "GREEN",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T00:35:28.689860",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "ICE",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T00:35:28.689860",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T00:35:28.689860",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PERSON",
+        "count": 2,
+        "targets": [
+          "SCORPION",
+          "LION"
+        ],
+        "score": 2.0,
+        "relations": [
+          "LION (IsA)",
+          "SCORPION (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T00:36:28.548943",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "BACK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T00:36:58.616723",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "PALM",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T00:36:58.616723",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T00:36:58.619162",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "SHOW",
+        "count": 2,
+        "targets": [
+          "CONCERT",
+          "PLAY"
+        ],
+        "score": 1.805,
+        "relations": [
+          "CONCERT (IsA)",
+          "PLAY (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T00:39:03.460729",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CONCERT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T00:39:26.538208",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PLAY",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T00:39:29.590675",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-05T00:39:29.606277",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "ANIMAL",
+        "count": 1,
+        "targets": [
+          "LION"
+        ],
+        "score": 3.254,
+        "relations": [
+          "LION (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T00:39:51.929631",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "PLATYPUS",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-05T00:39:51.929631",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-05T00:39:51.933642",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "DARK",
+        "count": 2,
+        "targets": [
+          "LIGHT",
+          "DRESS"
+        ],
+        "score": 1.5064,
+        "relations": [
+          "DRESS (HasProperty)",
+          "LIGHT (HasProperty)",
+          "LIGHT (Antonym)",
+          "LIGHT (DistinctFrom)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T00:40:29.479969",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "LIGHT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T00:40:48.470539",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PIT",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-05T00:40:48.470539",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-05T00:40:48.476037",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "STING",
+        "count": 1,
+        "targets": [
+          "SCORPION"
+        ],
+        "score": 1.0,
+        "relations": [
+          "SCORPION (CapableOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T00:41:09.086996",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SCORPION",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T00:41:15.939939",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "LION",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T00:41:15.939939",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-05T00:41:15.939939",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "ACTION",
+        "count": 1,
+        "targets": [
+          "DRESS"
+        ],
+        "score": 1.0,
+        "relations": [
+          "DRESS (CapableOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T00:43:13.845422",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "AMERICA",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-05T00:43:13.845422",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-05T00:43:13.845422",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "BEAM",
+        "count": 1,
+        "targets": [
+          "TIE"
+        ],
+        "score": 0.8574,
+        "relations": [
+          "TIE (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T00:44:24.200833",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "TIE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T00:44:26.526276",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-05T00:44:26.526276",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "METAL",
+        "count": 1,
+        "targets": [
+          "SPRING"
+        ],
+        "score": 1.2,
+        "relations": [
+          "SPRING (MadeOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T00:44:59.931569",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "HORSESHOE",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-05T00:44:59.931569",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-05T00:44:59.936606",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PASS",
+        "count": 0,
+        "targets": [],
+        "score": 0.0,
+        "relations": []
+      }
+    },
+    {
+      "time": "2026-03-05T00:44:59.938615",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "WATCH",
+        "count": 1,
+        "targets": [
+          "SPRING"
+        ],
+        "score": 1.0,
+        "relations": [
+          "SPRING (PartOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T00:46:10.535150",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "DRESS",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T00:46:13.317241",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-05T00:46:13.317241",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PASS",
+        "count": 0,
+        "targets": [],
+        "score": 0.0,
+        "relations": []
+      }
+    },
+    {
+      "time": "2026-03-05T00:46:13.317241",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "JAPAN",
+        "count": 1,
+        "targets": [
+          "TOKYO"
+        ],
+        "score": 1.14,
+        "relations": [
+          "TOKYO (PartOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T00:46:19.018630",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "TOKYO",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T00:46:21.922515",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-05T00:46:21.922515",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PASS",
+        "count": 0,
+        "targets": [],
+        "score": 0.0,
+        "relations": []
+      }
+    },
+    {
+      "time": "2026-03-05T00:46:21.922515",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "EVASION",
+        "count": 1,
+        "targets": [
+          "SLIP"
+        ],
+        "score": 0.8574,
+        "relations": [
+          "SLIP (IsA)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T00:46:28.320417",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SLIP",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T00:46:30.633356",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-05T00:46:30.633356",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PASS",
+        "count": 0,
+        "targets": [],
+        "score": 0.0,
+        "relations": []
+      }
+    },
+    {
+      "time": "2026-03-05T00:46:30.633356",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "BOUNCE",
+        "count": 1,
+        "targets": [
+          "SPRING"
+        ],
+        "score": 0.95,
+        "relations": [
+          "SPRING (CapableOf)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T00:46:37.021207",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SPRING",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T00:46:39.752675",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-05T00:46:39.752675",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PASS",
+        "count": 0,
+        "targets": [],
+        "score": 0.0,
+        "relations": []
+      }
+    },
+    {
+      "time": "2026-03-05T00:46:39.765659",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "OVER",
+        "count": 1,
+        "targets": [
+          "SUB"
+        ],
+        "score": 0.75,
+        "relations": [
+          "SUB (Antonym)"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-05T00:46:47.670264",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SUB",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-05T00:46:47.670264",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "RED",
+        "reason": "RED found all words"
+      }
+    }
+  ]
+}
