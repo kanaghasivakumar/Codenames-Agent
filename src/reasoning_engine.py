@@ -164,3 +164,13 @@ class ReasoningEngine:
             }
             for c, d in ranked[:top_n]
         ]
+    
+    def get_relation_weight(self, rel):
+        """Get weight for a relation, handling compound 2-hop relations like 'IsA->AtLocation'."""
+        if rel in self.relation_weights:
+            return self.relation_weights[rel]
+        if '->' in rel:
+            parts = rel.split('->')
+            weights = [self.relation_weights.get(p, 0.0) for p in parts]
+            return sum(weights) / len(weights)
+        return 0.0
