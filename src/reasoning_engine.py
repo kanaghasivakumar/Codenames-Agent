@@ -41,6 +41,22 @@ class ReasoningEngine:
     def update_relation_weights(self, new_weights):
         self.relation_weights = new_weights
 
+    def get_relation_weight(self, rel):
+        """Get weight for a relation, handling compound 2-hop relations like 'IsA->AtLocation'."""
+        # Direct lookup first
+        if rel in self.relation_weights:
+            return self.relation_weights[rel]
+
+        # Handle compound relations (e.g., "IsA->AtLocation")
+        if '->' in rel:
+            parts = rel.split('->')
+            weights = [self.relation_weights.get(p, 0.5) for p in parts]
+            # Average the weights for compound relations
+            return sum(weights) / len(weights)
+
+        # Default fallback
+        return 0.5
+
     def get_neighbors(self, word):
         return self.graph.get(word.lower(), [])
 
@@ -64,7 +80,7 @@ class ReasoningEngine:
                     logic_chains[concept].append(f"{word} ({rel})") # adds relation to logic chains if concept already related to target
 
                 else:
-                    score = weight * self.relation_weights.get(rel) # score for concept -> target
+                    score = weight * self.get_relation_weight(rel) # score for concept -> target
                     candidates[concept] += score                    # aggregates score for concept for all related targets
                     concept_coverage[concept].add(word)             # keeps track of all targets related to concept
                     logic_chains[concept].append(f"{word} ({rel})") # keeps track of relations related to concept
