@@ -5,12 +5,12 @@ from pathlib import Path
 from collections import defaultdict
 
 # --- Configuration ---
-CONCEPTNET_CSV = Path("/Users/aasrithagopalam/Downloads/Codenames-Agent/data/conceptnet-assertions-5.7.0.csv.gz")
-CODENAMES_WORDS_FILE = Path("/Users/aasrithagopalam/Downloads/Codenames-Agent/data/codenames_words.txt")
-COMMON_WORDS_FILE = Path("/Users/aasrithagopalam/Downloads/Codenames-Agent/data/common_words.txt")
+CONCEPTNET_CSV = Path("data/conceptnet-assertions-5.7.0.csv.gz")
+CODENAMES_WORDS_FILE = Path("data/codenames_words.txt")
+COMMON_WORDS_FILE = Path("data/common_words.txt")
 
 # Output
-OUTPUT_FILE = Path("/Users/aasrithagopalam/Downloads/Codenames-Agent/data/conceptnet_graph.json")
+OUTPUT_FILE = Path("data/conceptnet_graph.json")
 
 RELEVANT_RELATIONS = {
     "/r/IsA",
@@ -43,15 +43,23 @@ def is_single_word(word):
     return " " not in word
 
 def get_weight_alpha(rel):
-    """Get weight normalization alpha for a relation."""
+    """Get weight normalization alpha for a relation (matches original build_knowledge_graph.py)."""
     if rel in ('IsA', 'AtLocation'):
+        # no normalization
         return 0.0
     elif rel in ('PartOf', 'UsedFor', 'HasProperty', 'SimilarTo', 'CapableOf',
                  'Causes', 'MadeOf', 'HasSubevent', 'CreatedBy', 'LocatedNear'):
+        # moderate normalization
         return 0.8
     elif rel in ('Antonym', 'DistinctFrom', 'ReceivesAction', 'HasPrerequisite'):
+        # light normalization
         return 0.5
     return 0.5
+
+def normalize_weight(weight, rel):
+    """Apply weight normalization formula: normalized = weight + alpha * (1 - weight)"""
+    alpha = get_weight_alpha(rel)
+    return weight + alpha * (1 - weight)
 
 def build_graph():
     if not CONCEPTNET_CSV.exists():
@@ -166,8 +174,7 @@ def build_graph():
         game_conns = all_connections.get(game_word, set())
 
         for connected, rel, weight in game_conns:
-            alpha = get_weight_alpha(rel)
-            normalized_weight = weight + alpha * (1 - weight)
+            normalized_weight = normalize_weight(weight, rel)
 
             # Case 1: Direct connection to a single-word target
             if connected in target_words and is_single_word(connected):
@@ -221,9 +228,10 @@ def build_graph():
                     if edge_key in seen_edges[game_word]:
                         continue
 
-                    alpha2 = get_weight_alpha(rel2)
-                    avg_alpha = (alpha + alpha2) / 2
-                    norm_weight = combined_weight + avg_alpha * (1 - combined_weight)
+                    # Normalize each hop separately, then multiply
+                    norm1 = normalize_weight(weight, rel)
+                    norm2 = normalize_weight(weight2, rel2)
+                    norm_weight = norm1 * norm2
 
                     knowledge_graph[game_word].append({
                         "start": game_word,
@@ -243,9 +251,10 @@ def build_graph():
                     if edge_key in seen_edges[game_word]:
                         continue
 
-                    alpha2 = get_weight_alpha(rel2)
-                    avg_alpha = (alpha + alpha2) / 2
-                    norm_weight = combined_weight + avg_alpha * (1 - combined_weight)
+                    # Normalize each hop separately, then multiply
+                    norm1 = normalize_weight(weight, rel)
+                    norm2 = normalize_weight(weight2, rel2)
+                    norm_weight = norm1 * norm2
 
                     knowledge_graph[game_word].append({
                         "start": game_word,

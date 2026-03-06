@@ -53,10 +53,15 @@ class UserProfile:
         if guessed and isinstance(guessed, (list, tuple)):
             guessed_set = {g.strip().lower() for g in guessed if isinstance(g, str)}
 
-        # decay parameters
+        # update parameters
         DECAY_FACTOR = 0.95
+        GROWTH_FACTOR = 1.05
         MIN_WEIGHT = 0.01
+        MAX_WEIGHT = 16.0
 
+        # aggregate relations -> set(words)
+        from collections import defaultdict
+        rel_to_words = defaultdict(set)
         for entry in logic:
             if not isinstance(entry, str):
                 continue
@@ -76,13 +81,21 @@ class UserProfile:
 
             if not rel or not word:
                 continue
+            rel_to_words[rel].add(word.lower())
 
-            if word.lower() not in guessed_set:
-                if rel in self.relation_weights:
-                    new_w = max(MIN_WEIGHT, float(self.relation_weights[rel]) * DECAY_FACTOR)
-                    self.relation_weights[rel] = new_w
-                else:
-                    self.relation_weights[rel] = max(MIN_WEIGHT, 1.0 * DECAY_FACTOR)
+        # apply a single update per relation: reward if any word was guessed, otherwise decay
+        for rel, words in rel_to_words.items():
+            was_guessed = bool(words & guessed_set)
+            if was_guessed:
+                # increase weight
+                cur = float(self.relation_weights.get(rel, 1.0))
+                new_w = min(MAX_WEIGHT, cur * GROWTH_FACTOR)
+                self.relation_weights[rel] = new_w
+            else:
+                # decrease weight
+                cur = float(self.relation_weights.get(rel, 1.0))
+                new_w = max(MIN_WEIGHT, cur * DECAY_FACTOR)
+                self.relation_weights[rel] = new_w
 
         return self.relation_weights
     

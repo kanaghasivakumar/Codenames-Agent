@@ -1,0 +1,451 @@
+{
+  "game_id": "20260302_145026",
+  "started": "2026-03-02T14:50:38.760558",
+  "board": {
+    "red": [
+      "LOG",
+      "FAIR",
+      "MAPLE",
+      "LION",
+      "TRIP",
+      "POINT",
+      "SNOW",
+      "PRESS",
+      "MAMMOTH"
+    ],
+    "blue": [
+      "FIELD",
+      "CAT",
+      "TIME",
+      "TUBE",
+      "ALIEN",
+      "RULER",
+      "HOSPITAL",
+      "FOOT"
+    ],
+    "assassin": "GERMANY",
+    "neutral": [
+      "FIRE",
+      "AMBULANCE",
+      "ENGINE",
+      "SPIKE",
+      "ANGEL",
+      "SCORPION",
+      "LOCH NESS"
+    ]
+  },
+  "ended": "2026-03-02T14:57:53.822779",
+  "winner": "RED",
+  "reason": "RED found all words",
+  "events": [
+    {
+      "time": "2026-03-02T14:50:38.760621",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "LOG",
+          "FAIR",
+          "MAPLE",
+          "LION",
+          "TRIP",
+          "POINT",
+          "SNOW",
+          "PRESS",
+          "MAMMOTH"
+        ],
+        "blue": [
+          "FIELD",
+          "CAT",
+          "TIME",
+          "TUBE",
+          "ALIEN",
+          "RULER",
+          "HOSPITAL",
+          "FOOT"
+        ],
+        "assassin": "GERMANY",
+        "neutral": [
+          "FIRE",
+          "AMBULANCE",
+          "ENGINE",
+          "SPIKE",
+          "ANGEL",
+          "SCORPION",
+          "LOCH NESS"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-02T14:50:41.851453",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "ALASKA",
+        "count": 2,
+        "targets": [
+          "SNOW",
+          "MAMMOTH"
+        ],
+        "score": 0.9127
+      }
+    },
+    {
+      "time": "2026-03-02T14:51:16.372641",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SNOW",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T14:51:45.554146",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "TRIP",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T14:51:45.554178",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-02T14:51:45.561166",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "DESK",
+        "count": 2,
+        "targets": [
+          "RULER",
+          "FOOT"
+        ],
+        "score": 3.4495
+      }
+    },
+    {
+      "time": "2026-03-02T14:52:20.769923",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "MAPLE",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-02T14:52:20.769962",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-02T14:52:20.774139",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "PAINTING",
+        "count": 2,
+        "targets": [
+          "LION",
+          "MAMMOTH"
+        ],
+        "score": 0.867
+      }
+    },
+    {
+      "time": "2026-03-02T14:52:55.102358",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "TUBE",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-02T14:52:55.102404",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-02T14:52:55.110273",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "MEASUREMENT",
+        "count": 2,
+        "targets": [
+          "TIME",
+          "FOOT"
+        ],
+        "score": 2.828
+      }
+    },
+    {
+      "time": "2026-03-02T14:53:05.977369",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "RULER",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T14:53:57.458260",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "TIME",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T14:54:35.134466",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "LOG",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-02T14:54:35.134478",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-02T14:54:35.137784",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "KNIFE",
+        "count": 1,
+        "targets": [
+          "POINT"
+        ],
+        "score": 1.164
+      }
+    },
+    {
+      "time": "2026-03-02T14:55:12.356576",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "POINT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T14:55:14.318328",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-02T14:55:14.319381",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "WALKING",
+        "count": 2,
+        "targets": [
+          "FOOT",
+          "FIELD"
+        ],
+        "score": 2.2
+      }
+    },
+    {
+      "time": "2026-03-02T14:55:31.341908",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "FOOT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T14:55:56.963863",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "FIELD",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T14:56:00.424480",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-02T14:56:00.427838",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "ROAR",
+        "count": 1,
+        "targets": [
+          "LION"
+        ],
+        "score": 1.6
+      }
+    },
+    {
+      "time": "2026-03-02T14:56:09.362232",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "LION",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T14:56:11.233431",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-02T14:56:11.234443",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "TOWN",
+        "count": 2,
+        "targets": [
+          "CAT",
+          "HOSPITAL"
+        ],
+        "score": 1.3538
+      }
+    },
+    {
+      "time": "2026-03-02T14:56:25.955148",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "FAIR",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-02T14:56:25.955193",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-02T14:56:25.959133",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "ELEPHANT",
+        "count": 1,
+        "targets": [
+          "MAMMOTH"
+        ],
+        "score": 1.0
+      }
+    },
+    {
+      "time": "2026-03-02T14:57:01.970711",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "MAMMOTH",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T14:57:03.264877",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-02T14:57:03.265295",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "BEING",
+        "count": 1,
+        "targets": [
+          "ALIEN"
+        ],
+        "score": 0.475
+      }
+    },
+    {
+      "time": "2026-03-02T14:57:40.646287",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "ANGEL",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-02T14:57:40.646329",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-02T14:57:40.647504",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "PUSH",
+        "count": 1,
+        "targets": [
+          "PRESS"
+        ],
+        "score": 1.0
+      }
+    },
+    {
+      "time": "2026-03-02T14:57:53.822642",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PRESS",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-02T14:57:53.822760",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "RED",
+        "reason": "RED found all words"
+      }
+    }
+  ]
+}

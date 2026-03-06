@@ -1,0 +1,530 @@
+{
+  "game_id": "20260301_164624",
+  "started": "2026-03-01T16:46:31.262366",
+  "board": {
+    "red": [
+      "COMPOUND",
+      "TIE",
+      "PIRATE",
+      "FAIR",
+      "STRING",
+      "SOLDIER",
+      "CHANGE",
+      "WATCH",
+      "CARROT"
+    ],
+    "blue": [
+      "OPERA",
+      "SWING",
+      "SOUL",
+      "GLASS",
+      "MILLIONAIRE",
+      "REVOLUTION",
+      "SCREEN",
+      "LUCK"
+    ],
+    "assassin": "THIEF",
+    "neutral": [
+      "PIT",
+      "SHAKESPEARE",
+      "COOK",
+      "HEART",
+      "LASER",
+      "FLY",
+      "GREECE"
+    ]
+  },
+  "ended": "2026-03-01T16:48:02.259727",
+  "winner": "RED",
+  "reason": "RED found all words",
+  "events": [
+    {
+      "time": "2026-03-01T16:46:31.262405",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "COMPOUND",
+          "TIE",
+          "PIRATE",
+          "FAIR",
+          "STRING",
+          "SOLDIER",
+          "CHANGE",
+          "WATCH",
+          "CARROT"
+        ],
+        "blue": [
+          "OPERA",
+          "SWING",
+          "SOUL",
+          "GLASS",
+          "MILLIONAIRE",
+          "REVOLUTION",
+          "SCREEN",
+          "LUCK"
+        ],
+        "assassin": "THIEF",
+        "neutral": [
+          "PIT",
+          "SHAKESPEARE",
+          "COOK",
+          "HEART",
+          "LASER",
+          "FLY",
+          "GREECE"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-01T16:46:31.947190",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "CLOTHING",
+        "count": 2,
+        "targets": [
+          "TIE",
+          "CHANGE"
+        ],
+        "score": 1.5
+      }
+    },
+    {
+      "time": "2026-03-01T16:46:36.805510",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "TIE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-01T16:46:40.984124",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CHANGE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-01T16:46:40.984187",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-01T16:46:40.988406",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "THEATRE",
+        "count": 2,
+        "targets": [
+          "OPERA",
+          "SCREEN"
+        ],
+        "score": 1.0
+      }
+    },
+    {
+      "time": "2026-03-01T16:46:46.426397",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "OPERA",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-01T16:46:50.054140",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SCREEN",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-01T16:46:50.054226",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-01T16:46:50.061023",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "TIE",
+        "count": 1,
+        "targets": [
+          "STRING"
+        ],
+        "score": 1.6
+      }
+    },
+    {
+      "time": "2026-03-01T16:46:53.859271",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "STRING",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-01T16:46:55.484163",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-01T16:46:55.487973",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "EMBODIMENT",
+        "count": 1,
+        "targets": [
+          "SOUL"
+        ],
+        "score": 1.0
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:00.703702",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SOUL",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:03.002638",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:03.004410",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "BOAT",
+        "count": 1,
+        "targets": [
+          "PIRATE"
+        ],
+        "score": 1.0
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:11.216602",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PIRATE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:12.173654",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:12.176532",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PLAYGROUND",
+        "count": 1,
+        "targets": [
+          "SWING"
+        ],
+        "score": 1.2
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:18.346084",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SWING",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:19.558383",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:19.560655",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "SURVEILLANCE",
+        "count": 1,
+        "targets": [
+          "WATCH"
+        ],
+        "score": 1.0
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:23.832887",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "WATCH",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:25.014471",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:25.018534",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "BROKEN",
+        "count": 1,
+        "targets": [
+          "GLASS"
+        ],
+        "score": 2.3595
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:30.884940",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "GLASS",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:31.968633",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:31.969170",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "COMPLEX",
+        "count": 1,
+        "targets": [
+          "COMPOUND"
+        ],
+        "score": 1.2
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:36.323413",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "COMPOUND",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:37.378116",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:37.380072",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "CHANGE",
+        "count": 1,
+        "targets": [
+          "REVOLUTION"
+        ],
+        "score": 1.0
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:44.360859",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "REVOLUTION",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:45.069236",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:45.070017",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "REWARD",
+        "count": 1,
+        "targets": [
+          "CARROT"
+        ],
+        "score": 1.0
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:49.972720",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CARROT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:50.735841",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:50.736858",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PHENOMENON",
+        "count": 1,
+        "targets": [
+          "LUCK"
+        ],
+        "score": 1.0
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:54.964951",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "LUCK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:55.819803",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:55.821051",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "CLEAR",
+        "count": 1,
+        "targets": [
+          "FAIR"
+        ],
+        "score": 1.2
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:58.178708",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "FAIR",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:59.017778",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:59.018119",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PASS",
+        "count": 0,
+        "targets": [],
+        "score": 0.0
+      }
+    },
+    {
+      "time": "2026-03-01T16:47:59.019252",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "BATTLE",
+        "count": 1,
+        "targets": [
+          "SOLDIER"
+        ],
+        "score": 2.0
+      }
+    },
+    {
+      "time": "2026-03-01T16:48:02.259631",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SOLDIER",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-01T16:48:02.259710",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "RED",
+        "reason": "RED found all words"
+      }
+    }
+  ]
+}
