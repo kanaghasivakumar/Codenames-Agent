@@ -31,6 +31,7 @@ RELEVANT_RELATIONS = {
     "/r/HasSubevent"    
     "/r/CreatedBy",
     "/r/LocatedNear",
+    "/r/HasA",
 }
 
 def load_word_set(filepath):
