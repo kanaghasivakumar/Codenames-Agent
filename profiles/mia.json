@@ -1,10 +1,10 @@
 {
   "name": "mia",
-  "games_played": 1,
+  "games_played": 2,
   "relation_weights": {
-    "IsA": 0.475,
-    "AtLocation": 0.45125,
-    "PartOf": 1.0,
+    "IsA": 0.57736546875,
+    "AtLocation": 0.4738125,
+    "PartOf": 1.05,
     "Antonym": 0.75,
     "UsedFor": 1.0,
     "DistinctFrom": 1.0,

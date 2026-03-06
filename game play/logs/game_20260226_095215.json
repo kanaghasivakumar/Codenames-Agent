@@ -1,0 +1,351 @@
+{
+  "game_id": "20260226_095215",
+  "started": "2026-02-26T09:52:42.615621",
+  "board": {
+    "red": [
+      "PIE",
+      "SUIT",
+      "CASINO",
+      "KETCHUP",
+      "MAMMOTH",
+      "TRACK",
+      "SCREEN",
+      "GIANT",
+      "PAPER"
+    ],
+    "blue": [
+      "PLATE",
+      "ROSE",
+      "ICE",
+      "HOOD",
+      "CHOCOLATE",
+      "KEY",
+      "HOLLYWOOD",
+      "TICK"
+    ],
+    "assassin": "MOUTH",
+    "neutral": [
+      "BELL",
+      "TRIP",
+      "BERLIN",
+      "CALF",
+      "SPOT",
+      "BEACH",
+      "BELT"
+    ]
+  },
+  "ended": "2026-02-26T10:08:00.689870",
+  "winner": "RED",
+  "reason": "BLUE hit the assassin",
+  "events": [
+    {
+      "time": "2026-02-26T09:52:42.615648",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "PIE",
+          "SUIT",
+          "CASINO",
+          "KETCHUP",
+          "MAMMOTH",
+          "TRACK",
+          "SCREEN",
+          "GIANT",
+          "PAPER"
+        ],
+        "blue": [
+          "PLATE",
+          "ROSE",
+          "ICE",
+          "HOOD",
+          "CHOCOLATE",
+          "KEY",
+          "HOLLYWOOD",
+          "TICK"
+        ],
+        "assassin": "MOUTH",
+        "neutral": [
+          "BELL",
+          "TRIP",
+          "BERLIN",
+          "CALF",
+          "SPOT",
+          "BEACH",
+          "BELT"
+        ]
+      }
+    },
+    {
+      "time": "2026-02-26T09:52:47.015609",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "BOOKS",
+        "count": 2,
+        "targets": [
+          "PAPER",
+          "MAMMOTH"
+        ],
+        "score": 7.1211
+      }
+    },
+    {
+      "time": "2026-02-26T09:53:04.547025",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PAPER",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-26T09:53:40.523442",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SUIT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-26T09:53:40.523506",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-02-26T09:53:40.533433",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "MATERIAL",
+        "count": 3,
+        "targets": [
+          "PLATE",
+          "HOOD",
+          "ICE"
+        ],
+        "score": 10.6
+      }
+    },
+    {
+      "time": "2026-02-26T10:06:09.066686",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SCREEN",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-02-26T10:06:09.066746",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-02-26T10:06:09.083992",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "ENTERPRISE",
+        "count": 1,
+        "targets": [
+          "GIANT"
+        ],
+        "score": 10.0
+      }
+    },
+    {
+      "time": "2026-02-26T10:06:30.169216",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CASINO",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-26T10:06:34.052734",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-02-26T10:06:34.071027",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "TABLE",
+        "count": 2,
+        "targets": [
+          "PLATE",
+          "KEY"
+        ],
+        "score": 23.4315
+      }
+    },
+    {
+      "time": "2026-02-26T10:06:47.192292",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "PLATE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-02-26T10:06:58.230851",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SPOT",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-02-26T10:06:58.230930",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-02-26T10:06:58.256214",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "FOREST",
+        "count": 1,
+        "targets": [
+          "MAMMOTH"
+        ],
+        "score": 8.484
+      }
+    },
+    {
+      "time": "2026-02-26T10:07:13.930434",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "TICK",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-02-26T10:07:13.930464",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-02-26T10:07:13.938592",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "MELT",
+        "count": 2,
+        "targets": [
+          "CHOCOLATE",
+          "ICE"
+        ],
+        "score": 9.656
+      }
+    },
+    {
+      "time": "2026-02-26T10:07:22.273063",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "BELT",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-02-26T10:07:22.273095",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-02-26T10:07:22.295051",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "MOVIE",
+        "count": 1,
+        "targets": [
+          "MAMMOTH"
+        ],
+        "score": 6.0
+      }
+    },
+    {
+      "time": "2026-02-26T10:07:38.115184",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "HOLLYWOOD",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-02-26T10:07:38.115217",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-02-26T10:07:38.120909",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "DRINK",
+        "count": 2,
+        "targets": [
+          "CHOCOLATE",
+          "ICE"
+        ],
+        "score": 18.692
+      }
+    },
+    {
+      "time": "2026-02-26T10:08:00.689794",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "MOUTH",
+        "result": "assassin"
+      }
+    },
+    {
+      "time": "2026-02-26T10:08:00.689826",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit assassin"
+      }
+    },
+    {
+      "time": "2026-02-26T10:08:00.689862",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "RED",
+        "reason": "BLUE hit the assassin"
+      }
+    }
+  ]
+}
