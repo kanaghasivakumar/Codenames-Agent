@@ -1,0 +1,458 @@
+{
+  "game_id": "20260306_171704",
+  "started": "2026-03-06T17:17:18.571197",
+  "board": {
+    "red": [
+      "CANADA",
+      "GERMANY",
+      "GOLD",
+      "TEMPLE",
+      "SOLDIER",
+      "RACKET",
+      "CHEST",
+      "WALL",
+      "CAT"
+    ],
+    "blue": [
+      "SPIDER",
+      "KNIFE",
+      "POLE",
+      "STREAM",
+      "CAP",
+      "GREEN",
+      "BELT",
+      "WAVE"
+    ],
+    "assassin": "MERCURY",
+    "neutral": [
+      "ENGLAND",
+      "RABBIT",
+      "BRUSH",
+      "WITCH",
+      "STAR",
+      "CZECH",
+      "FLUTE"
+    ]
+  },
+  "ended": "2026-03-06T17:28:54.592531",
+  "winner": "BLUE",
+  "reason": "BLUE found all words",
+  "events": [
+    {
+      "time": "2026-03-06T17:17:18.571197",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "CANADA",
+          "GERMANY",
+          "GOLD",
+          "TEMPLE",
+          "SOLDIER",
+          "RACKET",
+          "CHEST",
+          "WALL",
+          "CAT"
+        ],
+        "blue": [
+          "SPIDER",
+          "KNIFE",
+          "POLE",
+          "STREAM",
+          "CAP",
+          "GREEN",
+          "BELT",
+          "WAVE"
+        ],
+        "assassin": "MERCURY",
+        "neutral": [
+          "ENGLAND",
+          "RABBIT",
+          "BRUSH",
+          "WITCH",
+          "STAR",
+          "CZECH",
+          "FLUTE"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-06T17:17:18.989724",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "HOUSE",
+        "count": 3,
+        "targets": [
+          "CHEST",
+          "WALL",
+          "CAT"
+        ],
+        "score": 12.7592
+      }
+    },
+    {
+      "time": "2026-03-06T17:17:42.958245",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "WALL",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:18:00.443542",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "TEMPLE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:19:15.926971",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player passed"
+      }
+    },
+    {
+      "time": "2026-03-06T17:19:15.963079",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "MOTION",
+        "count": 2,
+        "targets": [
+          "WAVE",
+          "STREAM"
+        ],
+        "score": 3.4
+      }
+    },
+    {
+      "time": "2026-03-06T17:19:33.476269",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "WAVE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:20:05.126703",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-06T17:20:05.160518",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "BEDROOM",
+        "count": 2,
+        "targets": [
+          "CHEST",
+          "CAT"
+        ],
+        "score": 3.4436
+      }
+    },
+    {
+      "time": "2026-03-06T17:21:08.644586",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "STAR",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-06T17:21:08.644586",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-06T17:21:08.685370",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "FLOOR",
+        "count": 2,
+        "targets": [
+          "SPIDER",
+          "CAP"
+        ],
+        "score": -22.3025
+      }
+    },
+    {
+      "time": "2026-03-06T17:21:57.329176",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "CAP",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:22:37.915402",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "BRUSH",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-06T17:22:37.915402",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-06T17:22:37.949450",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "PERSON",
+        "count": 2,
+        "targets": [
+          "CHEST",
+          "SOLDIER"
+        ],
+        "score": 4.9636
+      }
+    },
+    {
+      "time": "2026-03-06T17:22:50.718387",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SOLDIER",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:22:56.950740",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "WITCH",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-06T17:22:56.950740",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-06T17:22:56.977728",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "MAGNET",
+        "count": 1,
+        "targets": [
+          "POLE"
+        ],
+        "score": 1.6957
+      }
+    },
+    {
+      "time": "2026-03-06T17:23:15.877833",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "POLE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:23:49.678270",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "STREAM",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:23:49.678270",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-06T17:23:49.684171",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "COUNTRY",
+        "count": 2,
+        "targets": [
+          "CANADA",
+          "GERMANY"
+        ],
+        "score": 7.2439
+      }
+    },
+    {
+      "time": "2026-03-06T17:24:13.831664",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "GERMANY",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:24:26.884471",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CANADA",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:25:29.930843",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "BELT",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-06T17:25:29.930843",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-06T17:25:29.933423",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "ARACHNID",
+        "count": 1,
+        "targets": [
+          "SPIDER"
+        ],
+        "score": 1.3195
+      }
+    },
+    {
+      "time": "2026-03-06T17:25:41.026448",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SPIDER",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:27:22.713908",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "CHEST",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-06T17:27:22.713908",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-06T17:27:22.713908",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "LAP",
+        "count": 1,
+        "targets": [
+          "CAT"
+        ],
+        "score": 3.3918
+      }
+    },
+    {
+      "time": "2026-03-06T17:27:34.370490",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CAT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:28:45.088178",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "KNIFE",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-06T17:28:45.088178",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-06T17:28:45.088178",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "COLOR",
+        "count": 1,
+        "targets": [
+          "GREEN"
+        ],
+        "score": 2.8732
+      }
+    },
+    {
+      "time": "2026-03-06T17:28:54.592531",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "GREEN",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:28:54.592531",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "BLUE",
+        "reason": "BLUE found all words"
+      }
+    }
+  ]
+}

@@ -1,15 +1,15 @@
 {
-  "name": "kanagha",
+  "name": "harshitha",
   "games_played": 2,
   "relation_weights": {
-    "IsA": 0.3849584344716796,
-    "AtLocation": 0.4738125,
+    "IsA": 0.497503125,
+    "AtLocation": 0.42868749999999994,
     "PartOf": 1.1025,
-    "Antonym": 0.6768749999999999,
-    "UsedFor": 0.95,
+    "Antonym": 0.7124999999999999,
+    "UsedFor": 1.05,
     "DistinctFrom": 1.0,
     "HasProperty": 0.75,
-    "SimilarTo": 0.95,
+    "SimilarTo": 1.0,
     "CapableOf": 1.0,
     "Causes": 1.0,
     "MadeOf": 1.0,
@@ -17,6 +17,7 @@
     "HasPrerequisite": 0.75,
     "HasSubevent": 1.0,
     "CreatedBy": 1.0,
-    "LocatedNear": 1.0
+    "LocatedNear": 1.0,
+    "HasA": 1.0
   }
 }

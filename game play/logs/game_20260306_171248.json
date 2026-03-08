@@ -1,0 +1,188 @@
+{
+  "game_id": "20260306_171248",
+  "started": "2026-03-06T17:14:14.904964",
+  "board": {
+    "red": [
+      "ROSE",
+      "PILOT",
+      "VAN",
+      "WHALE",
+      "CANADA",
+      "SEAL",
+      "FOREST",
+      "BERLIN",
+      "SPOT"
+    ],
+    "blue": [
+      "MINE",
+      "ROBIN",
+      "WASHINGTON",
+      "DINOSAUR",
+      "DRAGON",
+      "BARK",
+      "ICE",
+      "RING"
+    ],
+    "assassin": "WALL",
+    "neutral": [
+      "FILM",
+      "OIL",
+      "MASS",
+      "MUG",
+      "EUROPE",
+      "BAR",
+      "POST"
+    ]
+  },
+  "ended": "2026-03-06T17:15:46.430223",
+  "winner": "BLUE",
+  "reason": "RED hit the assassin",
+  "events": [
+    {
+      "time": "2026-03-06T17:14:14.904964",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "ROSE",
+          "PILOT",
+          "VAN",
+          "WHALE",
+          "CANADA",
+          "SEAL",
+          "FOREST",
+          "BERLIN",
+          "SPOT"
+        ],
+        "blue": [
+          "MINE",
+          "ROBIN",
+          "WASHINGTON",
+          "DINOSAUR",
+          "DRAGON",
+          "BARK",
+          "ICE",
+          "RING"
+        ],
+        "assassin": "WALL",
+        "neutral": [
+          "FILM",
+          "OIL",
+          "MASS",
+          "MUG",
+          "EUROPE",
+          "BAR",
+          "POST"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-06T17:14:15.203277",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "COUNTRY",
+        "count": 2,
+        "targets": [
+          "CANADA",
+          "FOREST"
+        ],
+        "score": 6.5381
+      }
+    },
+    {
+      "time": "2026-03-06T17:14:28.387357",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "BERLIN",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:14:52.592967",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CANADA",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:14:52.592967",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-06T17:14:52.634958",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "GROUND",
+        "count": 2,
+        "targets": [
+          "MINE",
+          "ICE"
+        ],
+        "score": -9.5304
+      }
+    },
+    {
+      "time": "2026-03-06T17:15:14.154250",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "OIL",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-06T17:15:14.154250",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-06T17:15:14.200659",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "MARKING",
+        "count": 1,
+        "targets": [
+          "SPOT"
+        ],
+        "score": 0.8925
+      }
+    },
+    {
+      "time": "2026-03-06T17:15:46.430223",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "WALL",
+        "result": "assassin"
+      }
+    },
+    {
+      "time": "2026-03-06T17:15:46.430223",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit assassin"
+      }
+    },
+    {
+      "time": "2026-03-06T17:15:46.430223",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "BLUE",
+        "reason": "RED hit the assassin"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "jahnavi",
+  "games_played": 1,
+  "relation_weights": {
+    "IsA": 0.6381407812500002,
+    "AtLocation": 0.497503125,
+    "PartOf": 1.047375,
+    "Antonym": 0.7875000000000001,
+    "UsedFor": 1.0,
+    "DistinctFrom": 1.0,
+    "HasProperty": 0.75,
+    "SimilarTo": 1.0,
+    "CapableOf": 1.0,
+    "Causes": 1.0,
+    "MadeOf": 1.0,
+    "ReceivesAction": 0.75,
+    "HasPrerequisite": 0.75,
+    "HasSubevent": 1.0,
+    "CreatedBy": 1.0,
+    "LocatedNear": 1.0,
+    "HasA": 1.0
+  }
+}

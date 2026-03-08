@@ -1,0 +1,267 @@
+{
+  "game_id": "20260308_014048",
+  "started": "2026-03-08T01:41:01.776731",
+  "board": {
+    "red": [
+      "STREAM",
+      "ENGINE",
+      "AIR",
+      "GLASS",
+      "BOOM",
+      "DECK",
+      "CLOAK",
+      "SQUARE",
+      "SOCK"
+    ],
+    "blue": [
+      "AZTEC",
+      "EAGLE",
+      "SOLDIER",
+      "TURKEY",
+      "AMAZON",
+      "CENTER",
+      "NOVEL",
+      "SCUBA DIVER"
+    ],
+    "assassin": "MILLIONAIRE",
+    "neutral": [
+      "BEIJING",
+      "WAR",
+      "WASHER",
+      "ROBIN",
+      "MAPLE",
+      "CONTRACT",
+      "SPOT"
+    ]
+  },
+  "ended": "2026-03-08T01:42:05.707018",
+  "winner": "BLUE",
+  "reason": "RED hit the assassin",
+  "events": [
+    {
+      "time": "2026-03-08T01:41:01.776731",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "STREAM",
+          "ENGINE",
+          "AIR",
+          "GLASS",
+          "BOOM",
+          "DECK",
+          "CLOAK",
+          "SQUARE",
+          "SOCK"
+        ],
+        "blue": [
+          "AZTEC",
+          "EAGLE",
+          "SOLDIER",
+          "TURKEY",
+          "AMAZON",
+          "CENTER",
+          "NOVEL",
+          "SCUBA DIVER"
+        ],
+        "assassin": "MILLIONAIRE",
+        "neutral": [
+          "BEIJING",
+          "WAR",
+          "WASHER",
+          "ROBIN",
+          "MAPLE",
+          "CONTRACT",
+          "SPOT"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-08T01:41:02.260592",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "BRIDGE",
+        "count": 2,
+        "targets": [
+          "STREAM",
+          "AIR"
+        ],
+        "score": -0.7757
+      }
+    },
+    {
+      "time": "2026-03-08T01:41:07.506086",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "STREAM",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-08T01:41:14.811151",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "GLASS",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-08T01:41:14.811151",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-08T01:41:14.841732",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "BIRD",
+        "count": 2,
+        "targets": [
+          "EAGLE",
+          "TURKEY"
+        ],
+        "score": -4.1143
+      }
+    },
+    {
+      "time": "2026-03-08T01:41:20.324801",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "EAGLE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-08T01:41:27.429071",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "TURKEY",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-08T01:41:27.429071",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-08T01:41:27.441837",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "HOUSE",
+        "count": 2,
+        "targets": [
+          "AIR",
+          "SOCK"
+        ],
+        "score": 1.3101
+      }
+    },
+    {
+      "time": "2026-03-08T01:41:37.722522",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "DECK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-08T01:41:52.010855",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CONTRACT",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-08T01:41:52.010855",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-08T01:41:52.028592",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "WATER",
+        "count": 1,
+        "targets": [
+          "SCUBA DIVER"
+        ],
+        "score": -2.7014
+      }
+    },
+    {
+      "time": "2026-03-08T01:41:56.610232",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "AIR",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-08T01:41:56.610232",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-08T01:41:56.611767",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "PAID",
+        "count": 1,
+        "targets": [
+          "SQUARE"
+        ],
+        "score": 1.5304
+      }
+    },
+    {
+      "time": "2026-03-08T01:42:05.707018",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "MILLIONAIRE",
+        "result": "assassin"
+      }
+    },
+    {
+      "time": "2026-03-08T01:42:05.707018",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit assassin"
+      }
+    },
+    {
+      "time": "2026-03-08T01:42:05.707018",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "BLUE",
+        "reason": "RED hit the assassin"
+      }
+    }
+  ]
+}

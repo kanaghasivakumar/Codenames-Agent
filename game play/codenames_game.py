@@ -706,10 +706,12 @@ def print_decision_tree(player_name, turns, team):
             wa = w_after.get(rel)
             if wb is not None and wa is not None:
                 wb_f, wa_f = float(wb), float(wa)
-                if wa_f < wb_f:
+                if wa_f > wb_f:
+                    delta = GREEN(f'[{rel}  {wb_f:.3f} → {wa_f:.3f} ↑ rewarded]')
+                elif wa_f < wb_f:
                     delta = RED(f'[{rel}  {wb_f:.3f} → {wa_f:.3f} ↓ decayed]')
                 else:
-                    delta = GREEN(f'[{rel}  {wb_f:.3f} → {wa_f:.3f} — unchanged]')
+                    delta = DIM(f'[{rel}  {wb_f:.3f} → {wa_f:.3f} — unchanged]')
             else:
                 delta = DIM(f'[{rel}]')
 

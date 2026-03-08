@@ -1,15 +1,15 @@
 {
-  "name": "kanagha",
-  "games_played": 2,
+  "name": "raj",
+  "games_played": 1,
   "relation_weights": {
-    "IsA": 0.3849584344716796,
-    "AtLocation": 0.4738125,
-    "PartOf": 1.1025,
-    "Antonym": 0.6768749999999999,
-    "UsedFor": 0.95,
+    "IsA": 0.49874999999999997,
+    "AtLocation": 0.45125,
+    "PartOf": 1.0,
+    "Antonym": 0.75,
+    "UsedFor": 1.0,
     "DistinctFrom": 1.0,
     "HasProperty": 0.75,
-    "SimilarTo": 0.95,
+    "SimilarTo": 1.0,
     "CapableOf": 1.0,
     "Causes": 1.0,
     "MadeOf": 1.0,
@@ -17,6 +17,7 @@
     "HasPrerequisite": 0.75,
     "HasSubevent": 1.0,
     "CreatedBy": 1.0,
-    "LocatedNear": 1.0
+    "LocatedNear": 1.0,
+    "HasA": 1.0
   }
 }

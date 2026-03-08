@@ -1,0 +1,446 @@
+{
+  "game_id": "20260306_173156",
+  "started": "2026-03-06T17:32:09.909707",
+  "board": {
+    "red": [
+      "OLIVE",
+      "SHOP",
+      "POLE",
+      "MOON",
+      "FISH",
+      "TRIANGLE",
+      "DINOSAUR",
+      "NAIL",
+      "BEAT"
+    ],
+    "blue": [
+      "MISSILE",
+      "SEAL",
+      "BOOM",
+      "SOUL",
+      "BACK",
+      "CLOAK",
+      "LEAD",
+      "HIMALAYAS"
+    ],
+    "assassin": "PAPER",
+    "neutral": [
+      "LAWYER",
+      "POUND",
+      "SNOWMAN",
+      "TURKEY",
+      "CAST",
+      "CHICK",
+      "NINJA"
+    ]
+  },
+  "ended": "2026-03-06T17:35:59.741772",
+  "winner": "BLUE",
+  "reason": "RED hit the assassin",
+  "events": [
+    {
+      "time": "2026-03-06T17:32:09.909707",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "OLIVE",
+          "SHOP",
+          "POLE",
+          "MOON",
+          "FISH",
+          "TRIANGLE",
+          "DINOSAUR",
+          "NAIL",
+          "BEAT"
+        ],
+        "blue": [
+          "MISSILE",
+          "SEAL",
+          "BOOM",
+          "SOUL",
+          "BACK",
+          "CLOAK",
+          "LEAD",
+          "HIMALAYAS"
+        ],
+        "assassin": "PAPER",
+        "neutral": [
+          "LAWYER",
+          "POUND",
+          "SNOWMAN",
+          "TURKEY",
+          "CAST",
+          "CHICK",
+          "NINJA"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-06T17:32:10.479574",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "TOOL",
+        "count": 2,
+        "targets": [
+          "TRIANGLE",
+          "NAIL"
+        ],
+        "score": 1.4702
+      }
+    },
+    {
+      "time": "2026-03-06T17:32:19.797522",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "NAIL",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:32:27.760688",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "MISSILE",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-06T17:32:27.760688",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-06T17:32:27.791886",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "BODY",
+        "count": 2,
+        "targets": [
+          "BACK",
+          "SOUL"
+        ],
+        "score": 2.6695
+      }
+    },
+    {
+      "time": "2026-03-06T17:33:05.579809",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "BACK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:33:25.426161",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "CLOAK",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:33:25.426161",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-06T17:33:25.463860",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "SAILING",
+        "count": 1,
+        "targets": [
+          "BEAT"
+        ],
+        "score": 0.6561
+      }
+    },
+    {
+      "time": "2026-03-06T17:33:33.705141",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "FISH",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:33:55.094179",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "SHOP",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:33:55.094179",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-06T17:33:55.107430",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "INSPIRE",
+        "count": 1,
+        "targets": [
+          "SOUL"
+        ],
+        "score": 1.0
+      }
+    },
+    {
+      "time": "2026-03-06T17:34:27.795352",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SOUL",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:34:31.489025",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-06T17:34:31.493916",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "MAGNET",
+        "count": 1,
+        "targets": [
+          "POLE"
+        ],
+        "score": 1.785
+      }
+    },
+    {
+      "time": "2026-03-06T17:34:37.379021",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "POLE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:34:40.084291",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-06T17:34:40.086513",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "COATING",
+        "count": 1,
+        "targets": [
+          "SEAL"
+        ],
+        "score": 0.8479
+      }
+    },
+    {
+      "time": "2026-03-06T17:34:55.222502",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "LEAD",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:34:57.446336",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-06T17:34:57.456709",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "STROKE",
+        "count": 1,
+        "targets": [
+          "BEAT"
+        ],
+        "score": 0.6233
+      }
+    },
+    {
+      "time": "2026-03-06T17:35:16.994016",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "BEAT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:35:19.032378",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-06T17:35:19.032378",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "INDIA",
+        "count": 1,
+        "targets": [
+          "HIMALAYAS"
+        ],
+        "score": 1.785
+      }
+    },
+    {
+      "time": "2026-03-06T17:35:27.145849",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "HIMALAYAS",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:35:28.859826",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-06T17:35:28.862594",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "SPACE",
+        "count": 1,
+        "targets": [
+          "MOON"
+        ],
+        "score": 2.1333
+      }
+    },
+    {
+      "time": "2026-03-06T17:35:36.683656",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "MOON",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:35:37.765338",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-06T17:35:37.765338",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "POLE",
+        "count": 1,
+        "targets": [
+          "BOOM"
+        ],
+        "score": 0.8055
+      }
+    },
+    {
+      "time": "2026-03-06T17:35:45.589012",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "BOOM",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-06T17:35:47.430293",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-06T17:35:47.430293",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "CHROMATIC",
+        "count": 1,
+        "targets": [
+          "OLIVE"
+        ],
+        "score": 1.7
+      }
+    },
+    {
+      "time": "2026-03-06T17:35:59.741772",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PAPER",
+        "result": "assassin"
+      }
+    },
+    {
+      "time": "2026-03-06T17:35:59.741772",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit assassin"
+      }
+    },
+    {
+      "time": "2026-03-06T17:35:59.741772",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "BLUE",
+        "reason": "RED hit the assassin"
+      }
+    }
+  ]
+}
