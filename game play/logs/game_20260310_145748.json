@@ -1,0 +1,569 @@
+{
+  "game_id": "20260310_145748",
+  "started": "2026-03-10T14:59:09.847734",
+  "board": {
+    "red": [
+      "CONTRACT",
+      "NAIL",
+      "KANGAROO",
+      "PIANO",
+      "MOUTH",
+      "FIELD",
+      "FORCE",
+      "OCTOPUS",
+      "TORCH"
+    ],
+    "blue": [
+      "AGENT",
+      "HOSPITAL",
+      "FENCE",
+      "RABBIT",
+      "AMAZON",
+      "PLASTIC",
+      "SOLDIER",
+      "HAM"
+    ],
+    "assassin": "BALL",
+    "neutral": [
+      "HORN",
+      "POINT",
+      "WELL",
+      "BOW",
+      "NOVEL",
+      "WIND",
+      "TRACK"
+    ]
+  },
+  "ended": "2026-03-10T15:05:39.614239",
+  "winner": "BLUE",
+  "reason": "BLUE found all words",
+  "events": [
+    {
+      "time": "2026-03-10T14:59:09.847734",
+      "event": "BOARD_SETUP",
+      "data": {
+        "red": [
+          "CONTRACT",
+          "NAIL",
+          "KANGAROO",
+          "PIANO",
+          "MOUTH",
+          "FIELD",
+          "FORCE",
+          "OCTOPUS",
+          "TORCH"
+        ],
+        "blue": [
+          "AGENT",
+          "HOSPITAL",
+          "FENCE",
+          "RABBIT",
+          "AMAZON",
+          "PLASTIC",
+          "SOLDIER",
+          "HAM"
+        ],
+        "assassin": "BALL",
+        "neutral": [
+          "HORN",
+          "POINT",
+          "WELL",
+          "BOW",
+          "NOVEL",
+          "WIND",
+          "TRACK"
+        ]
+      }
+    },
+    {
+      "time": "2026-03-10T14:59:10.211429",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "BACKPACK",
+        "count": 1,
+        "targets": [
+          "TORCH"
+        ],
+        "score": 0.5
+      }
+    },
+    {
+      "time": "2026-03-10T15:00:18.285387",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "FIELD",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-10T15:00:18.285387",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-10T15:00:18.325731",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PERSON",
+        "count": 2,
+        "targets": [
+          "HAM",
+          "SOLDIER"
+        ],
+        "score": 2.2555
+      }
+    },
+    {
+      "time": "2026-03-10T15:00:26.454405",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "SOLDIER",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-10T15:00:36.547489",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "AGENT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-10T15:00:36.547489",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "max guesses reached"
+      }
+    },
+    {
+      "time": "2026-03-10T15:00:36.588356",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "PIANISSIMO",
+        "count": 1,
+        "targets": [
+          "PIANO"
+        ],
+        "score": 1.7
+      }
+    },
+    {
+      "time": "2026-03-10T15:00:53.541215",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PIANO",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-10T15:01:00.336028",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player passed"
+      }
+    },
+    {
+      "time": "2026-03-10T15:01:00.357934",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PIZZA",
+        "count": 1,
+        "targets": [
+          "HAM"
+        ],
+        "score": 1.0801
+      }
+    },
+    {
+      "time": "2026-03-10T15:01:09.177874",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "HAM",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-10T15:01:10.802875",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-10T15:01:10.836335",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "BRIDGE",
+        "count": 1,
+        "targets": [
+          "CONTRACT"
+        ],
+        "score": 0.85
+      }
+    },
+    {
+      "time": "2026-03-10T15:02:12.325913",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "POINT",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-10T15:02:12.325913",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-10T15:02:12.335235",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "BRAZIL",
+        "count": 1,
+        "targets": [
+          "AMAZON"
+        ],
+        "score": 1.8742
+      }
+    },
+    {
+      "time": "2026-03-10T15:02:19.078074",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "AMAZON",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-10T15:02:20.544545",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-10T15:02:20.567690",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "LIPS",
+        "count": 1,
+        "targets": [
+          "MOUTH"
+        ],
+        "score": 3.7293
+      }
+    },
+    {
+      "time": "2026-03-10T15:02:34.444014",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "MOUTH",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-10T15:02:36.502132",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-10T15:02:36.502132",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "EMERGENCIES",
+        "count": 1,
+        "targets": [
+          "HOSPITAL"
+        ],
+        "score": 2.1656
+      }
+    },
+    {
+      "time": "2026-03-10T15:02:42.414658",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "HOSPITAL",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-10T15:02:44.319556",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-10T15:02:44.332907",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "KERATIN",
+        "count": 1,
+        "targets": [
+          "NAIL"
+        ],
+        "score": 1.7
+      }
+    },
+    {
+      "time": "2026-03-10T15:03:13.328952",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "PLASTIC",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-10T15:03:13.328952",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-10T15:03:13.328952",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "HARE",
+        "count": 1,
+        "targets": [
+          "RABBIT"
+        ],
+        "score": 1.968
+      }
+    },
+    {
+      "time": "2026-03-10T15:03:21.542787",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "RABBIT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-10T15:03:23.097502",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-10T15:03:23.115434",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "INTENSITY",
+        "count": 1,
+        "targets": [
+          "FORCE"
+        ],
+        "score": 0.8075
+      }
+    },
+    {
+      "time": "2026-03-10T15:03:33.392031",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "FORCE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-10T15:03:35.057587",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-10T15:03:35.057587",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "LOOSE",
+        "count": 1,
+        "targets": [
+          "FENCE"
+        ],
+        "score": 1.0
+      }
+    },
+    {
+      "time": "2026-03-10T15:04:28.419325",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "NAIL",
+        "result": "opponent"
+      }
+    },
+    {
+      "time": "2026-03-10T15:04:28.419325",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit opponent word"
+      }
+    },
+    {
+      "time": "2026-03-10T15:04:28.419325",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "BID",
+        "count": 1,
+        "targets": [
+          "CONTRACT"
+        ],
+        "score": 0.8479
+      }
+    },
+    {
+      "time": "2026-03-10T15:04:40.243475",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "CONTRACT",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-10T15:04:46.141976",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player passed"
+      }
+    },
+    {
+      "time": "2026-03-10T15:04:46.141976",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "PARRY",
+        "count": 1,
+        "targets": [
+          "FENCE"
+        ],
+        "score": 0.95
+      }
+    },
+    {
+      "time": "2026-03-10T15:05:17.428196",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "BOW",
+        "result": "neutral"
+      }
+    },
+    {
+      "time": "2026-03-10T15:05:17.428196",
+      "event": "TURN_END",
+      "data": {
+        "team": "BLUE",
+        "reason": "hit neutral word"
+      }
+    },
+    {
+      "time": "2026-03-10T15:05:17.443992",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "RED",
+        "clue": "OCTOPOD",
+        "count": 1,
+        "targets": [
+          "OCTOPUS"
+        ],
+        "score": 0.8903
+      }
+    },
+    {
+      "time": "2026-03-10T15:05:31.992175",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "RED",
+        "word": "OCTOPUS",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-10T15:05:33.330051",
+      "event": "TURN_END",
+      "data": {
+        "team": "RED",
+        "reason": "player stopped"
+      }
+    },
+    {
+      "time": "2026-03-10T15:05:33.330051",
+      "event": "SPYMASTER_CLUE",
+      "data": {
+        "team": "BLUE",
+        "clue": "ATTACK",
+        "count": 1,
+        "targets": [
+          "FENCE"
+        ],
+        "score": 0.75
+      }
+    },
+    {
+      "time": "2026-03-10T15:05:39.614239",
+      "event": "PLAYER_GUESS",
+      "data": {
+        "team": "BLUE",
+        "word": "FENCE",
+        "result": "correct"
+      }
+    },
+    {
+      "time": "2026-03-10T15:05:39.614239",
+      "event": "GAME_OVER",
+      "data": {
+        "winner": "BLUE",
+        "reason": "BLUE found all words"
+      }
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 {
   "name": "kanagha",
-  "games_played": 2,
+  "games_played": 3,
   "relation_weights": {
-    "IsA": 0.3849584344716796,
-    "AtLocation": 0.4738125,
-    "PartOf": 1.1025,
+    "IsA": 0.40420635619526357,
+    "AtLocation": 0.49750312500000005,
+    "PartOf": 1.2155062500000002,
     "Antonym": 0.6768749999999999,
-    "UsedFor": 0.95,
+    "UsedFor": 0.9974999999999999,
     "DistinctFrom": 1.0,
     "HasProperty": 0.75,
     "SimilarTo": 0.95,
@@ -14,8 +14,8 @@
     "Causes": 1.0,
     "MadeOf": 1.0,
     "ReceivesAction": 0.75,
-    "HasPrerequisite": 0.75,
-    "HasSubevent": 1.0,
+    "HasPrerequisite": 0.7875000000000001,
+    "HasSubevent": 0.9025,
     "CreatedBy": 1.0,
     "LocatedNear": 1.0
   }
